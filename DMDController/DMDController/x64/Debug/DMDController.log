@@ -1,0 +1,22 @@
+﻿  ControllerFunctions.cpp
+  extraTestCode.cpp
+  main.cpp
+  testFunctions.cpp
+  Generating Code...
+ControllerFunctions.obj : error LNK2019: unresolved external symbol GetDLLRev referenced in function "int __cdecl myInitializeDMD(short)" (?myInitializeDMD@@YAHF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol GetUsbSpeed referenced in function "int __cdecl myInitializeDMD(short)" (?myInitializeDMD@@YAHF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol program_FPGA referenced in function "int __cdecl myReprogramFPGA(short)" (?myReprogramFPGA@@YAHF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol LoadControl referenced in function "void __cdecl myTemp::LoadBMP(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,short)" (?LoadBMP@myTemp@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol ClearFifos referenced in function "int __cdecl myInitializeDMD(short)" (?myInitializeDMD@@YAHF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol LoadData referenced in function "void __cdecl myTemp::LoadBMP(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,short)" (?LoadBMP@myTemp@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol SetBlkMd referenced in function "void __cdecl myTemp::LoadBMP(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,short)" (?LoadBMP@myTemp@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol SetBlkAd referenced in function "void __cdecl myTemp::LoadBMP(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,short)" (?LoadBMP@myTemp@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol SetRowMd referenced in function "void __cdecl myTemp::LoadBMP(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,short)" (?LoadBMP@myTemp@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol SetRowAddr referenced in function "void __cdecl myTemp::LoadBMP(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,short)" (?LoadBMP@myTemp@@YAXV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol SetWDT referenced in function "int __cdecl myInitializeDMD(short)" (?myInitializeDMD@@YAHF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol GetDMDTYPE referenced in function "int __cdecl myInitializeDMD(short)" (?myInitializeDMD@@YAHF@Z)
+ControllerFunctions.obj : error LNK2019: unresolved external symbol SetTPGEnable referenced in function "int __cdecl myInitializeDMD(short)" (?myInitializeDMD@@YAHF@Z)
+main.obj : error LNK2019: unresolved external symbol GetNumDev referenced in function main
+testFunctions.obj : error LNK2019: unresolved external symbol GetRowMd referenced in function "void __cdecl myCheckRowModes(void)" (?myCheckRowModes@@YAXXZ)
+C:\DLP-Discovery-DMD-Control\DMDController\DMDController\vendor\6562.D4100_usb.lib : warning LNK4272: library machine type 'x86' conflicts with target machine type 'x64'
+C:\DLP-Discovery-DMD-Control\DMDController\x64\Debug\DMDController.exe : fatal error LNK1120: 15 unresolved externals
