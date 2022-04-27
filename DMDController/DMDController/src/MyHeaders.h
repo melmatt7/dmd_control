@@ -23,12 +23,5 @@ int myLoadLive(unsigned char* myPattern, const int DMDByteSize, short devNum);
 
 void myLoadZebra(bool zebraState);
 short myPowerDownPrep(short devNum);
-void myLoadPattern(std::string patFilename, const int imageByteSize, short devNum);
-void myLoadPatterns(std::vector<std::string> patFilename, const int imageByteSize, short devNum, unsigned short numPatterns);
-
-
-
-void SaveZebra(bool zebraState);
-void LoadBMP(std::string patFilename, const int imageByteSize, short devNum);
-void LoadMultipleBMP(std::vector<std::string> patFilename, const int imageByteSize, short devNum, unsigned short numPatterns);
-
+void myLoadPattern(std::string patFilename, const int imageByteSize, short devNum, short dmdType);
+void myLoadPatterns(std::vector<std::string> patFilename, const int imageByteSize, short devNum, short dmdType, unsigned short numPatterns);

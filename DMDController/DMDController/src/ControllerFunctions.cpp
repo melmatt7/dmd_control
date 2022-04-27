@@ -231,9 +231,8 @@ void myActiveBoxEmbedPointScan(int bh, int bw, int topBuffer, int leftBuffer,
                                                 
 int myLoadLive(unsigned char* myFullPattern, const int DMDByteSize, short devNum) {
     
-    const int DMDBytesPerRow = 240;
-    
-    const int DMDRowsPerBlock = 72;
+    const int DMDBytesPerRow = 128;
+    const int DMDRowsPerBlock = 48;
 
     short dmd_type;
     dmd_type = USB::GetDMDTYPE(devNum);
@@ -250,7 +249,7 @@ int myLoadLive(unsigned char* myFullPattern, const int DMDByteSize, short devNum
     USB::LoadData(&myFullPattern[DMDBytesPerRow], DMDBytesPerRow * (DMDRowsPerBlock - 1), dmd_type, devNum);  //Load the rest of Block 1
     Sleep(1);
     // cin.get();
-    for (int i = 1; i < 15; i++) {
+    for (int i = 1; i < 16; i++) {
         USB::LoadData(&myFullPattern[DMDBytesPerRow * DMDRowsPerBlock * i], DMDBytesPerRow * DMDRowsPerBlock, dmd_type, devNum);  //Load the other 14 blocks
     }
     
@@ -270,7 +269,6 @@ int myLoadLive(unsigned char* myFullPattern, const int DMDByteSize, short devNum
 
     return status;
 }
-
 
 void myLoadZebra(bool zebraState) {
 
@@ -294,7 +292,7 @@ void myLoadZebra(bool zebraState) {
 
         for (int i = 0; i < 1024 * 768 / 8; i++)
         {
-            if (i % (128 * 48 * 2) < 128 * 48)
+            if (i % (128) < 64)
                 zebra[i] = 0x00;
             else
                 zebra[i] = 0xff;
@@ -303,34 +301,36 @@ void myLoadZebra(bool zebraState) {
     else {
         for (int i = 0; i < 1024 * 768 / 8; i++)
         {
-            if (i % (128 * 48 * 2) < 128 * 48)
+            if (i % (128) < 64)
                 zebra[i] = 0xff;
             else
                 zebra[i] = 0x00;
         }
     }
 
-    LoadData(&zebra[0], DMDBytesPerRow, dmd_type, 0);  //Load the first row of data  (e2e)
-    // cin.get();
-    Sleep(1);
-    SetRowMd(1, 0);              //Set the DMD pointer to Increment mode  (e2e)
-    LoadData(&zebra[DMDBytesPerRow], DMDBytesPerRow * (DMDRowsPerBlock - 1), dmd_type, 0);  //Load the rest of Block 1
-    Sleep(1);
-    // cin.get();
-    for (int i = 1; i < 16; i++) {
-        LoadData(&zebra[DMDBytesPerRow * DMDRowsPerBlock * i], DMDBytesPerRow * DMDRowsPerBlock, dmd_type, 0);  //Load the other 14 blocks
-    }
+    int status = myLoadLive(zebra, 0, 0);
 
-    SetRowMd(0, 0);
-    SetBlkMd(3, 0);
-    SetBlkAd(8, 0);
-    LoadControl(0);
+    //LoadData(&zebra[0], DMDBytesPerRow, dmd_type, 0);  //Load the first row of data  (e2e)
+    //// cin.get();
+    //Sleep(1);
+    //SetRowMd(1, 0);              //Set the DMD pointer to Increment mode  (e2e)
+    //LoadData(&zebra[DMDBytesPerRow], DMDBytesPerRow * (DMDRowsPerBlock - 1), dmd_type, 0);  //Load the rest of Block 1
+    //Sleep(1);
+    //// cin.get();
+    //for (int i = 1; i < 16; i++) {
+    //    LoadData(&zebra[DMDBytesPerRow * DMDRowsPerBlock * i], DMDBytesPerRow * DMDRowsPerBlock, dmd_type, 0);  //Load the other 14 blocks
+    //}
 
-    Sleep(1);
-    SetBlkMd(0, 0);
+    //SetRowMd(0, 0);
+    //SetBlkMd(3, 0);
+    //SetBlkAd(8, 0);
+    //LoadControl(0);
 
-    LoadControl(0);
-    LoadControl(0);
+    //Sleep(1);
+    //SetBlkMd(0, 0);
+
+    //LoadControl(0);
+    //LoadControl(0);
     // SetGPIORESETCOMPLETE(0);
     delete[] zebra;
 }
@@ -351,15 +351,12 @@ short myPowerDownPrep(short devNum) {
     return 0;
 }
 
-void myLoadPattern(std::string patFilename, const int imageByteSize, short devNum) {
-
+void myLoadPattern(std::string patFilename, const int imageByteSize, short devNum, short dmdType) {
+    //using namespace USB;
     const int DMDBytesPerRow = 128;
     const int DMDRowsPerBlock = 48;
 
-    short dmd_type;
-    dmd_type = USB::GetDMDTYPE(devNum);
-    std::cout << "dmd type " << dmd_type << std::endl;
-
+    std::cout << "dmd type " << dmdType << std::endl;
 
 
 
@@ -367,7 +364,7 @@ void myLoadPattern(std::string patFilename, const int imageByteSize, short devNu
 
 
     datFile.open(patFilename, std::ios::in | std::ios::binary);
-    unsigned char* myPattern = new unsigned char[imageByteSize];
+    unsigned char* myPattern = new unsigned char[1024 * 768 / 8];
 
     if (datFile) {
         datFile.read(reinterpret_cast<char*>(myPattern), imageByteSize);
@@ -379,60 +376,77 @@ void myLoadPattern(std::string patFilename, const int imageByteSize, short devNu
         exit(1);
     }
 
-    USB::SetBlkMd(0, devNum);         //Set BlkMode to No Op
-    //USB::LoadControl(devNum);
+    Sleep(10);
 
-    USB::SetRowMd(3, devNum);       //Set Row Mode to Set Address mode
-    USB::SetRowAddr(0, devNum);     //Set the Row address to the top of the DMD
+    int status = myLoadLive(myPattern, imageByteSize, devNum);
 
-    //USB::SetRowMd(1, devNum);              //Set the DMD pointer to Increment mode  (e2e)
-    //USB::SetNSFLIP(1, devNum);
-   // USB::LoadControl(devNum);
+   // USB::SetBlkMd(0, 0);         //Set BlkMode to No Op
+   // //USB::LoadControl(devNum);
 
-    //USB::ClearFifos(devNum);
-    USB::LoadData(&myPattern[0], DMDBytesPerRow, dmd_type, devNum);  //Load the first row of data  (e2e)
-    // cin.get();
-    Sleep(1);
-    USB::SetRowMd(1, 0);              //Set the DMD pointer to Increment mode  (e2e)
-    USB::LoadData(&myPattern[DMDBytesPerRow], DMDBytesPerRow * (DMDRowsPerBlock - 1), dmd_type, devNum);  //Load the rest of Block 1
-    Sleep(1);
-    // cin.get();
-    std::cout << (imageByteSize) << std::endl;
-    std::cout << (DMDBytesPerRow * DMDRowsPerBlock) << std::endl;
-    std::cout << (imageByteSize / (DMDBytesPerRow * DMDRowsPerBlock)) << std::endl;
+   // USB::SetRowMd(3, 0);       //Set Row Mode to Set Address mode
+   // USB::SetRowAddr(0, 0);     //Set the Row address to the top of the DMD
 
-    for (int i = 1; i < (imageByteSize/(DMDBytesPerRow * DMDRowsPerBlock)); i++) {
-        USB::LoadData(&myPattern[DMDBytesPerRow * DMDRowsPerBlock * i], DMDBytesPerRow * DMDRowsPerBlock, dmd_type, devNum);  //Load the other 14 blocks
-    }
+   // //USB::SetRowMd(1, devNum);              //Set the DMD pointer to Increment mode  (e2e)
+   // //USB::SetNSFLIP(1, devNum);
+   //// USB::LoadControl(devNum);
 
-  
-    //for (int i = 0; i < 15; i++) {
-    //    USB::LoadData(myPattern + (DMDBytesPerRow * DMDRowsPerBlock * i), 
-    //        DMDBytesPerRow * DMDRowsPerBlock, 0, devNum);  //Load all 15 blocks
-    //}
+   // //USB::ClearFifos(devNum);
+   // USB::LoadData(&myPattern[0], DMDBytesPerRow, dmdType, 0);  //Load the first row of data  (e2e)
+   // // cin.get();
+   // Sleep(1);
+   // USB::SetRowMd(1, 0);              //Set the DMD pointer to Increment mode  (e2e)
+   // USB::LoadData(&myPattern[DMDBytesPerRow], DMDBytesPerRow * (DMDRowsPerBlock - 1), dmdType, 0);  //Load the rest of Block 1
+   // Sleep(1);
+   // // cin.get();
+   // for (int i = 1; i < 16; i++) {
+   //     USB::LoadData(&myPattern[DMDBytesPerRow * DMDRowsPerBlock * i], DMDBytesPerRow * DMDRowsPerBlock, dmdType, 0);  //Load the other 14 blocks
+   // }
 
-    USB::SetRowMd(0, devNum);
-    USB::SetBlkMd(3, devNum);
-    USB::SetBlkAd(8, devNum);
-    USB::LoadControl(devNum);
-    /*USB::LoadControl(devNum);
-    USB::LoadControl(devNum);*/
-    Sleep(1);
-    USB::SetBlkMd(0, devNum);
-    USB::LoadControl(devNum);
-    USB::LoadControl(devNum); 
+
+   // //for (int i = 0; i < 15; i++) {
+   // //    USB::LoadData(myPattern + (DMDBytesPerRow * DMDRowsPerBlock * i), 
+   // //        DMDBytesPerRow * DMDRowsPerBlock, 0, devNum);  //Load all 15 blocks
+   // //}
+
+   // USB::SetRowMd(0, 0);
+   // USB::SetBlkMd(3, 0);
+   // USB::SetBlkAd(8, 0);
+   // USB::LoadControl(0);
+   // USB::LoadControl(0);
+   // USB::LoadControl(0);
+
+   // Sleep(1);
+   // USB::SetBlkMd(0, 0);
+   // USB::LoadControl(0);
+   // USB::LoadControl(0);
+   // USB::LoadControl(0);
+
     
-    //USB::LoadControl(devNum);
 
     delete[] myPattern;
 
 }
 
-void myLoadPatterns(std::vector<std::string> patFilename, const int imageByteSize, short devNum, unsigned short numPatterns) {
+void myLoadPatterns(std::vector<std::string> patFilename, const int imageByteSize, short devNum, short dmdType, unsigned short numPatterns) {
     
     int writeval;
-    writeval = USB::RegisterWrite(PATTERN_NUM, numPatterns, devNum);
+    writeval = USB::RegisterWrite(PATTERN_NUM, (numPatterns-1), devNum);
 
+    for (int i = 0; i < (int)numPatterns; i++) {
+    //    std::cout << "writen num " << patFilename[i] << std::endl;
+        myLoadPattern(patFilename[i], imageByteSize, devNum, dmdType);
+    //    myLoadPattern(patFilename[i], imageByteSize, devNum, dmdType);
+    //    myLoadPattern(patFilename[i], imageByteSize, devNum, dmdType);
+    //    //USB::ClearFifos(devNum);
+
+    //    //myLoadZebra(TRUE);
+    }
+    /*myLoadPattern(patFilename[0], imageByteSize, devNum, dmdType);
+    myLoadPattern(patFilename[1], imageByteSize, devNum, dmdType);
+    myLoadPattern(patFilename[2], imageByteSize, devNum, dmdType);*/
+    //myLoadPattern(patFilename[1], imageByteSize, devNum, dmdType);
+
+    /*
     int readval;
     readval = USB::RegisterRead(PATTERN_NUM, devNum);
 
@@ -441,18 +455,32 @@ void myLoadPatterns(std::vector<std::string> patFilename, const int imageByteSiz
 
     std::cout << "readval " << readval << std::endl;
 
-    for (int i = 0; i < (int)numPatterns; i++) {
+    //for (int i = 0; i < (int)numPatterns; i++) {
         //std::cout << "writen num " << patFilename[i] << std::endl;
         //myLoadPattern(patFilename[i], imageByteSize, devNum);
         //USB::ClearFifos(devNum);
         ////std::cout << "bool " << (bool)i << std::endl;    
 
-        myLoadZebra(TRUE);
-    }
+        //myLoadZebra(TRUE);
+    //}
 
-    
-    USB::ClearFifos(devNum);
-    USB::ClearFifos(devNum);
+    myLoadOn();
+    myLoadOn();
+    //USB::ClearFifos(devNum);
+    //USB::ClearFifos(devNum);
+    myLoadZebra(FALSE);
+    myLoadZebra(FALSE);
+    myLoadZebra(TRUE);
+    myLoadZebra(TRUE);
+    //USB::ClearFifos(devNum);
+    //USB::ClearFifos(devNum);
+    myLoadZebra(FALSE);
+    myLoadZebra(FALSE);    
+    myLoadZebra(TRUE);
+    myLoadZebra(TRUE);
+    //USB::ClearFifos(devNum);
+    //USB::ClearFifos(devNum);
+    myLoadZebra(FALSE);
     myLoadZebra(FALSE);
 
     //myLoadZebra(FALSE);
@@ -463,168 +491,10 @@ void myLoadPatterns(std::vector<std::string> patFilename, const int imageByteSiz
 
     //bool zeb = TRUE;
     //myLoadZebra(zeb);
-
+    */
     std::cout << "writen both" << '\n';
 
 
 
-}
-
-void SaveZebra(bool zebraState) {
-    const int imageByteSize = 1920 * 1080 / 8;
-    const int DMDBytesPerRow = 240;
-    const int DMDRowsPerBlock = 72;
-    const int BlocksPerLoad = 2;
-
-    unsigned char* zebra = new unsigned char[imageByteSize];
-
-    if (zebraState) {
-
-        for (int i = 0; i < 1920 * 1080 / 8; i++)
-        {
-            if (i % (240 * 72 * 2) < 240 * 72)
-                zebra[i] = 0x00;
-            else
-                zebra[i] = 0xff;
-        }
-    }
-    else {
-        for (int i = 0; i < 1920 * 1080 / 8; i++)
-        {
-            if (i % (240 * 72 * 2) < 240 * 72)
-                zebra[i] = 0xff;
-            else
-                zebra[i] = 0x00;
-        }
-    }
-
-    std::fstream datFile;
-    if (zebraState)
-        datFile.open("DMDController/data/zebra1.bin", std::ios::out | std::ios::binary);
-    else
-        datFile.open("DMDController/data/zebra0.bin", std::ios::out | std::ios::binary);
-
-    if (datFile) {
-        datFile.write(reinterpret_cast<char*>(zebra), imageByteSize);
-        datFile.close();
-    }
-    else {
-        std::cout << "Error opening file for writing !" << std::endl;
-        exit(1);
-    }
-
-    delete[] zebra;
-
-}
-
-void LoadBMP(std::string patFilename, const int imageByteSize, short devNum) {
-    const int DMDBytesPerRow = 240;
-    const int DMDRowsPerBlock = 72;
-
-    unsigned char* myPattern = nullptr;
-
-        
-    unsigned char* datBuff[2] = { nullptr, nullptr }; // Header buffers
-
-    BITMAPFILEHEADER* bmpHeader = nullptr; // Header
-    BITMAPINFOHEADER* bmpInfo = nullptr; // Info 
-
-
-    std::ifstream datFile(patFilename, std::ios::binary);
-    if (!datFile) {
-        std::cout << "Failure to open bitmap file: " << patFilename << std::endl;
-        exit(1);
-    }
-
-
-
-    // Allocate byte memory that will hold the two headers
-    datBuff[0] = new unsigned char[sizeof(BITMAPFILEHEADER)];
-    datBuff[1] = new unsigned char[sizeof(BITMAPINFOHEADER)];
-
-    datFile.read(reinterpret_cast<char*>(datBuff[0]), sizeof(BITMAPFILEHEADER));
-    datFile.read(reinterpret_cast<char*>(datBuff[1]), sizeof(BITMAPINFOHEADER));
-
-    // Construct the values from the buffers
-    bmpHeader = (BITMAPFILEHEADER*)datBuff[0];
-    bmpInfo = (BITMAPINFOHEADER*)datBuff[1];
-
-    // Check if the file is an actual BMP file
-    if (bmpHeader->bfType != 0x4D42) {
-        std::cout << "File \"" << patFilename << "\" isn't a bitmap file\n";
-        exit(1);
-    }
-
-    std::cout << "done4 " << '\n';
-
-    // First allocate pixel memory
-    myPattern = new unsigned char[bmpInfo->biSizeImage];
-    std::cout << bmpInfo->biSizeImage << std::endl;
-    // Go to where image data starts, then read in image data
-    datFile.seekg(bmpHeader->bfOffBits);
-    datFile.read(reinterpret_cast<char*>(myPattern), bmpInfo->biSizeImage);
-
-    // Delete the two buffers.
-    delete[] datBuff[0];
-    delete[] datBuff[1];
-
-
-
-        
-    std::cout << "done1 " << std::endl;
-
-
-
-    USB::SetBlkMd(0, devNum);         //Set BlkMode to No Op
-    USB::SetRowMd(3, devNum);       //Set Row Mode to Set Address mode
-    USB::SetRowAddr(0, devNum);     //Set the Row address to the top of the DMD
-
-    USB::SetRowMd(1, 0);              //Set the DMD pointer to Increment mode  (e2e)
-    std::cout << "done2 " << std::endl;
-
-
-    for (int i = 1; i < 10; i++) {
-        USB::LoadData(myPattern + (DMDBytesPerRow * DMDRowsPerBlock * i),
-            DMDBytesPerRow * DMDRowsPerBlock, 0, devNum);  //Load all 15 blocks
-    }
-
-    
-
-
-    USB::SetRowMd(0, devNum);
-    USB::SetBlkMd(3, devNum);
-    USB::SetBlkAd(8, devNum);
-    USB::LoadControl(devNum);
-
-    Sleep(1);
-    USB::SetBlkMd(0, 0);
-
-    USB::LoadControl(devNum);
-    USB::LoadControl(devNum);
-    
-
-    delete[] myPattern;
-
-}
-
-void LoadMultipleBMP(std::vector<std::string> patFilename, const int imageByteSize, short devNum, unsigned short numPatterns) {
-
-    int writeval;
-    writeval = USB::RegisterWrite(PATTERN_NUM, numPatterns, devNum);
-
-    int readval;
-    readval = USB::RegisterRead(PATTERN_NUM, devNum);
-
-
-    std::cout << "writeval " << writeval << std::endl;
-
-    std::cout << "readval " << readval << std::endl;
-
-    for (int i = 0; i < (int)numPatterns; i++) {
-        std::cout << "writen num " << patFilename[i] << std::endl;
-        LoadBMP(patFilename[i], imageByteSize, devNum);
-    }
-
-    std::cout << "writen both" << std::endl;
 }
     

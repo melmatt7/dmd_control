@@ -23,6 +23,7 @@ int main(int argc, char** argv) {
     std::cout << "Number of devices: " << x << std::endl;
 
     short devNum = x - 1;
+    short dmdType = USB::GetDMDTYPE(devNum);
 
  
 
@@ -105,7 +106,7 @@ int main(int argc, char** argv) {
 
         std::cout << "num_patterns " << (unsigned short)(patFiles.size()) << std::endl;
 
-        myLoadPatterns(patFiles, imageByteSize, devNum, (unsigned short)(patFiles.size()));
+        myLoadPatterns(patFiles, imageByteSize, devNum, dmdType, (unsigned short)(patFiles.size()));
 
         return 0;
 
@@ -133,7 +134,7 @@ int main(int argc, char** argv) {
     //const int imageByteSize = 1920 * 1080 / 8;
     const int imageByteSize = 1024 * 768 / 8;
 
-    myLoadPattern(patFilename, imageByteSize, devNum);
+    myLoadPattern(patFilename, imageByteSize, devNum, dmdType);
 
     //myLoadZebra(true);
 
