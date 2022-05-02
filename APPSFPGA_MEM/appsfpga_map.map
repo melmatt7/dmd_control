@@ -1,0 +1,2216 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Map Application Log File for Design 'appsfpga'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+Target Device  : xc5vlx50
+Target Package : ff1153
+Target Speed   : -1
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Sun Apr 17 14:58:57 2022
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc5vlx50' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<1>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<2>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<3>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<4>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<5>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<6>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<7>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<8>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:MapLib:39 - The timing specification "MAXDELAY=12000 pS" on net
+   "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.
+   rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<9>" has been discarded, because the
+   net was optimized out of the design.
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[0].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[1].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[2].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[3].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[4].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[5].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[6].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKAL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKAL_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBU connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBU_ti
+   esig
+WARNING:Pack:2874 - Trimming timing constraints from pin
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP
+   of frag REGCLKBL connected to power/ground net
+   i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.r
+   f/gntv_or_sync_fifo.mem/gbm.gbmg.gbmga.ngecc.bmg/gnativebmg.native_blk_mem_ge
+   n/valid.cstr/ramloop[7].ram.r/v5_noinit.ram/SDP.SINGLE_PRIM36.TDP_REGCLKBL_ti
+   esig
+Running directed packing...
+Running delay-based LUT packing...
+Updating timing models...
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs0_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs1_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs2_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs3_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs4_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs5_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs6_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs7_flops_to_clk2x_mem_path"
+   TIG ignored during timing analysis.
+WARNING:Pack:1653 - At least one timing constraint is impossible to meet because
+   component delays alone exceed the constraint. A timing constraint summary
+   below shows the failing constraints (preceded with an Asterisk (*)). Please
+   use the Timing Analyzer (GUI) or TRCE (command line) with the Mapped NCD and
+   PCF files to identify which constraints and paths are failing because of the
+   component delays alone. If the failing path(s) is mapped to Xilinx components
+   as expected, consider relaxing the constraint. If it is not mapped to
+   components as expected, re-evaluate your HDL and how synthesis is optimizing
+   the path. To allow the tools to bypass this error, set the environment
+   variable XIL_TIMING_ALLOW_IMPOSSIBLE to 1.
+
+
+   For more information about the Timing Analyzer, consult the Xilinx Timing
+   Analyzer Reference manual; for more information on TRCE, consult the Xilinx
+   Command Line Tools User Guide "TRACE" chapter.
+INFO:Timing:2802 - Read 210 constraints.  If you are experiencing memory or 
+   runtime issues it may help to consolidate some of these constraints.  For 
+   more details please do a search for "timing:2802" at 
+   http://www.xilinx.com/support.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs0_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs1_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs2_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs3_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs4_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs5_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs6_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+WARNING:Timing:3223 - Timing constraint PATH "TS_dqs7_flops_to_clk2x_mem_path" 
+   TIG ignored during timing analysis.
+INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more 
+   information, see the TSI report.  Please consult the Xilinx Command Line 
+   Tools User Guide for information on generating a TSI report.
+INFO:Timing:3284 - This timing report was generated using estimated delay 
+   information.  For accurate numbers, please refer to the post Place and Route 
+   timing report.
+Number of Timing Constraints that were not applied: 56
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+* TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0  | SETUP       |    -0.849ns|    10.063ns|      31|       18800
+  = PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem | HOLD        |    -0.117ns|            |      23|        2400
+  _CLKOUT1_BUF_0" TS_clk_i_flops / 3 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0  | SETUP       |     2.558ns|     2.442ns|       0|           0
+  = PERIOD TIMEGRP "i_appsfpga_io_i_PLL_clk | HOLD        |    -0.614ns|            |       8|        4600
+  _CLKOUT0_BUF_0" TS_clk_i_flops / 4 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FRO | SETUP       |    25.332ns|     1.334ns|       0|           0
+  M TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO TIME | HOLD        |    -0.206ns|            |       2|         412
+  GRP "RAMS" TS_i_appsfpga_io_i_pll_mem_CLK |             |            |            |        |            
+  OUT2_BUF * 4                              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGR | SETUP       |    25.897ns|     0.769ns|       0|           0
+  P "TNM_CAL_RDEN_DLY" TO TIMEGRP "FFS" TS_ | HOLD        |    -0.117ns|            |       5|         585
+  i_appsfpga_io_i_pll_mem_CLKOUT2_BUF * 4   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_i_appsfpga_io_i_pll_mem_CLKOUT0_BUF_0  | SETUP       |     5.809ns|     1.715ns|       0|           0
+  = PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem | HOLD        |    -0.117ns|            |     164|        7985
+  _CLKOUT0_BUF_0" TS_clk_i_flops / 1.5 HIGH | MINPERIOD   |     9.334ns|     3.999ns|       0|           0
+   50%                                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    25.897ns|     0.769ns|       0|           0
+  NM_RDEN_DLY" TO TIMEGRP "FFS" TS_i_appsfp | HOLD        |    -0.117ns|            |       5|         585
+  ga_io_i_pll_mem_CLKOUT2_BUF * 4           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    25.808ns|     0.858ns|       0|           0
+  NM_GATE_DLY" TO TIMEGRP "FFS" TS_i_appsfp | HOLD        |    -0.117ns|            |      20|        1905
+  ga_io_i_pll_mem_CLKOUT2_BUF * 4           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM | SETUP       |    25.243ns|     1.423ns|       0|           0
+   TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO TIMEG | HOLD        |    -0.093ns|            |     132|       12072
+  RP "FFS" TS_i_appsfpga_io_i_pll_mem_CLKOU |             |            |            |        |            
+  T2_BUF * 4                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+* TS_MC_RD_DATA_SEL = MAXDELAY FROM TIMEGRP | SETUP       |    25.782ns|     0.884ns|       0|           0
+   "TNM_RD_DATA_SEL" TO TIMEGRP "FFS" TS_i_ | HOLD        |    -0.030ns|            |     288|        5568
+  appsfpga_io_i_pll_mem_CLKOUT2_BUF * 4     |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<7>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<6>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<5>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<4>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<3>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<2>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<1>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.600ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/en_dqs<0>" MAXDELAY = 0.6 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk_i = PERIOD TIMEGRP "clk_i" 20 ns H | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
+  IGH 50% INPUT_JITTER 0.1 ns               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_PLL_clk_CLKOUT1_BUF =  | MINPERIOD   |     0.834ns|     1.666ns|       0|           0
+  PERIOD TIMEGRP "i_appsfpga_io_i_PLL_clk_C |             |            |            |        |            
+  LKOUT1_BUF" TS_clk_i / 8 HIGH 50% INPUT_J |             |            |            |        |            
+  ITTER 0.1 ns                              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_PLL_clk_CLKOUT1_BUF_0  | MINPERIOD   |     0.834ns|     1.666ns|       0|           0
+  = PERIOD TIMEGRP "i_appsfpga_io_i_PLL_clk |             |            |            |        |            
+  _CLKOUT1_BUF_0" TS_clk_i_flops / 8 HIGH 5 |             |            |            |        |            
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk_i_flops = PERIOD TIMEGRP "clk_i_fl | SETUP       |    18.280ns|     1.720ns|       0|           0
+  ops" 20 ns HIGH 50%                       | HOLD        |     0.195ns|            |       0|           0
+                                            | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[7].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[6].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[5].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[4].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[3].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[2].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[1].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/u_mig_top/ | MAXDELAY    |     0.850ns|     0.000ns|       0|           0
+  u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy |             |            |            |        |            
+  _io/gen_dqs[0].u_iob_dqs/en_dqs_sync" MAX |             |            |            |        |            
+  DELAY = 0.85 ns                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_ | SETUP       |     1.828ns|     1.239ns|       0|           0
+  CE_IDDR" TO TIMEGRP "TNM_DQS_FLOPS" 3.067 | HOLD        |     0.596ns|            |       0|           0
+   ns                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF_0  | SETUP       |     2.291ns|     2.084ns|       0|           0
+  = PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem | HOLD        |     0.106ns|            |       0|           0
+  _CLKOUT2_BUF_0" TS_clk_i_flops / 3 PHASE  | MINHIGHPULSE|     4.166ns|     2.500ns|       0|           0
+  1.66666667 ns HIGH 50%                    |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs7_flops = PERIOD TIMEGRP "dqs7_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs6_flops = PERIOD TIMEGRP "dqs6_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs5_flops = PERIOD TIMEGRP "dqs5_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs4_flops = PERIOD TIMEGRP "dqs4_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs3_flops = PERIOD TIMEGRP "dqs3_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs0_flops = PERIOD TIMEGRP "dqs0_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs1_flops = PERIOD TIMEGRP "dqs1_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_dqs2_flops = PERIOD TIMEGRP "dqs2_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF =  | MINPERIOD   |     2.778ns|     2.222ns|       0|           0
+  PERIOD TIMEGRP "i_appsfpga_io_i_PLL_clk_C |             |            |            |        |            
+  LKOUT0_BUF" TS_clk_i / 4 HIGH 50% INPUT_J |             |            |            |        |            
+  ITTER 0.1 ns                              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0  | SETUP       |     4.383ns|     0.617ns|       0|           0
+  = PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem | HOLD        |     0.195ns|            |       0|           0
+  _CLKOUT3_BUF_0" TS_clk_i_flops / 4 HIGH 5 | MINPERIOD   |     3.334ns|     1.666ns|       0|           0
+  0%                                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF =  | MINPERIOD   |     3.334ns|     1.666ns|       0|           0
+  PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem_C |             |            |            |        |            
+  LKOUT3_BUF" TS_clk_i / 4 HIGH 50% INPUT_J |             |            |            |        |            
+  ITTER 0.1 ns                              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF =  | MINHIGHPULSE|     4.116ns|     2.550ns|       0|           0
+  PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem_C |             |            |            |        |            
+  LKOUT1_BUF" TS_clk_i / 3 HIGH 50% INPUT_J |             |            |            |        |            
+  ITTER 0.1 ns                              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF =  | MINHIGHPULSE|     4.166ns|     2.500ns|       0|           0
+  PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem_C |             |            |            |        |            
+  LKOUT2_BUF" TS_clk_i / 3 PHASE 1.66666667 |             |            |            |        |            
+   ns HIGH 50% INPUT_JITTER 0.1 ns          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_pad_to_pad = MAXDELAY FROM TIMEGRP "PA | MAXDELAY    |     6.061ns|     3.939ns|       0|           0
+  DS" TO TIMEGRP "PADS" 10 ns               |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT0_BUF =  | MINPERIOD   |     9.334ns|     3.999ns|       0|           0
+  PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem_C |             |            |            |        |            
+  LKOUT0_BUF" TS_clk_i / 1.5 HIGH 50% INPUT |             |            |            |        |            
+  _JITTER 0.1 ns                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_clk_usb = PERIOD TIMEGRP "clk_usb_flop | MINLOWPULSE |    10.830ns|    10.000ns|       0|           0
+  s" 20.83 ns HIGH 50%                      |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  FTER COMP "clk_i"                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_cp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_bp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dvalid_ap_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  ER COMP "clk_i"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dvalid_bp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  ER COMP "clk_i"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dvalid_cp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  ER COMP "clk_i"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dvalid_dp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+  ER COMP "clk_i"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dclk_ap_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+   COMP "clk_i"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dclk_bp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+   COMP "clk_i"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dclk_cp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+   COMP "clk_i"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dclk_dp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |    11.098ns|     3.902ns|       0|           0
+   COMP "clk_i"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<6>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<5>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<4>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<3>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<2>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<1>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<15>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<14>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<13>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<12>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<11>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<10>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<0>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<7>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<8>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<9>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |    13.353ns|    16.647ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.768ns|     1.232ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     0.406ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.381ns|     0.619ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.219ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    18.673ns|     2.157ns|       0|           0
+  T1_BUF_0 = PERIOD TIMEGRP "i_appscore_USB | HOLD        |     0.120ns|            |       0|           0
+  _IO_INST_i_pll_usb_CLKOUT1_BUF_0" TS_clk_ | MINPERIOD   |    18.608ns|     2.222ns|       0|           0
+  usb PHASE 10.415 ns HIGH 50%              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<0>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<10>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    18.733ns|   -10.533ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<11>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    18.733ns|   -10.533ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<12>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    18.733ns|   -10.533ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<13>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    18.733ns|   -10.533ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<14>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    18.733ns|   -10.533ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<15>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    18.733ns|   -10.533ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<9>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<1>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<2>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<8>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<3>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<4>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<7>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<5>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<6>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    20.195ns|     0.635ns|       0|           0
+  T0_BUF_0 = PERIOD TIMEGRP "i_appscore_USB | HOLD        |     0.195ns|            |       0|           0
+  _IO_INST_i_pll_usb_CLKOUT0_BUF_0" TS_clk_ | MINPERIOD   |    19.164ns|     1.666ns|       0|           0
+  usb HIGH 50%                              |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "ctl0" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    20.568ns|   -10.238ns|       0|           0
+  OMP "clk_usb"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "ctl1" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    20.568ns|   -10.238ns|       0|           0
+  OMP "clk_usb"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "ctl2" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    20.568ns|   -10.238ns|       0|           0
+  OMP "clk_usb"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGR | SETUP       |    26.020ns|     0.646ns|       0|           0
+  P "TNM_RDEN_SEL_MUX" TO TIMEGRP "FFS" TS_ | HOLD        |     0.219ns|            |       0|           0
+  i_appsfpga_io_i_pll_mem_CLKOUT2_BUF * 4   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    28.046ns|     1.954ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.195ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<7 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<8 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_FROM_EN_DQS_FF_TO_DQ_CE_FF = MAXDELAY  | N/A         |         N/A|         N/A|     N/A|         N/A
+  FROM TIMEGRP "EN_DQS_FF" TO TIMEGRP "TNM_ |             |            |            |        |            
+  DQ_CE_IDDR" 3.85 ns DATAPATHONLY          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs0_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs1_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs2_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs3_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs4_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs5_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs6_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs7_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs0_flops_path" TI | SETUP       |         N/A|     2.302ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs1_flops_path" TI | SETUP       |         N/A|     2.302ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs2_flops_path" TI | SETUP       |         N/A|     2.302ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs3_flops_path" TI | SETUP       |         N/A|     2.281ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs4_flops_path" TI | SETUP       |         N/A|     2.281ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs5_flops_path" TI | SETUP       |         N/A|     2.281ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs6_flops_path" TI | SETUP       |         N/A|     2.281ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs7_flops_path" TI | SETUP       |         N/A|     2.281ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk_usb_to_TPT_ifclk_bufg_path"  | MAXDELAY    |         N/A|     1.332ns|     N/A|           0
+  TIG                                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_ffs_to_ddr2_ck_n_path" TIG       | MAXDELAY    |         N/A|     2.354ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TSfalse_path" TIG                   | SETUP       |         N/A|     0.904ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<5 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<4 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<3 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<2 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<1 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<9 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<8 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<7 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<6 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<5 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<4 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<3 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<2 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<1 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<7 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<8 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<1 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<2 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<3 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<4 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
+  /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
+  f/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<5 |             |            |            |        |            
+  >" MAXDELAY = 12 ns                       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+
+
+Derived Constraint Report
+Review Timing Report for more details on the following derived constraints.
+To create a Timing Report, run "trce -v 12 -fastpaths -o design_timing_report design.ncd design.pcf"
+or "Run Timing Analysis" from Timing Analyzer (timingan).
+Derived Constraints for TS_clk_i
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths
+Analyzed       |
+|           Constraint          | Requirement
+|-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    |
+Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|TS_clk_i                       |     20.000ns|      6.000ns|     13.328ns|            0|          452|            0|   
+      927|
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      2.500ns|      0.356ns|            0|          452|            0|   
+      927|
+| OUT2_BUF                      |             |             |             |             |             |             |   
+         |
+|  TS_MC_RD_DATA_SEL            |     26.667ns|      0.884ns|          N/A|          288|            0|          416|   
+        0|
+|  TS_MC_RDEN_SEL_MUX           |     26.667ns|      0.646ns|          N/A|            0|            0|          128|   
+        0|
+|  TS_MC_PHY_INIT_DATA_SEL_0    |     26.667ns|      1.423ns|          N/A|          132|            0|          300|   
+        0|
+|  TS_MC_PHY_INIT_DATA_SEL_90   |     26.667ns|      1.334ns|          N/A|            2|            0|            8|   
+        0|
+|  TS_MC_GATE_DLY               |     26.667ns|      0.858ns|          N/A|           20|            0|           65|   
+        0|
+|  TS_MC_RDEN_DLY               |     26.667ns|      0.769ns|          N/A|            5|            0|            5|   
+        0|
+|  TS_MC_CAL_RDEN_DLY           |     26.667ns|      0.769ns|          N/A|            5|            0|            5|   
+        0|
+| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      2.222ns|          N/A|            0|            0|            0|   
+        0|
+| OUT0_BUF                      |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_PLL_clk_CLK|      2.500ns|      1.666ns|          N/A|            0|            0|            0|   
+        0|
+| OUT1_BUF                      |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_pll_mem_CLK|     13.333ns|      3.999ns|          N/A|            0|            0|            0|   
+        0|
+| OUT0_BUF                      |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      2.550ns|          N/A|            0|            0|            0|   
+        0|
+| OUT1_BUF                      |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_pll_mem_CLK|      5.000ns|      1.666ns|          N/A|            0|            0|            0|   
+        0|
+| OUT3_BUF                      |             |             |             |             |             |             |   
+         |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+
+Derived Constraints for TS_clk_i_flops
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths
+Analyzed       |
+|           Constraint          | Requirement
+|-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    |
+Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|TS_clk_i_flops                 |     20.000ns|      6.000ns|     30.189ns|            0|          226|         5042|   
+    38335|
+| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      2.442ns|          N/A|            8|            0|         9963|   
+        0|
+| OUT0_BUF_0                    |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_PLL_clk_CLK|      2.500ns|      1.666ns|          N/A|            0|            0|            0|   
+        0|
+| OUT1_BUF_0                    |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_pll_mem_CLK|     13.333ns|      3.999ns|          N/A|          164|            0|        12172|   
+        0|
+| OUT0_BUF_0                    |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|     10.063ns|          N/A|           54|            0|        15533|   
+        0|
+| OUT1_BUF_0                    |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      2.500ns|          N/A|            0|            0|          643|   
+        0|
+| OUT2_BUF_0                    |             |             |             |             |             |             |   
+         |
+| TS_i_appsfpga_io_i_pll_mem_CLK|      5.000ns|      1.666ns|          N/A|            0|            0|           24|   
+        0|
+| OUT3_BUF_0                    |             |             |             |             |             |             |   
+         |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+
+Derived Constraints for TS_clk_usb
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|                               |   Period    |       Actual Period       |      Timing Errors        |      Paths
+Analyzed       |
+|           Constraint          | Requirement
+|-------------+-------------|-------------+-------------|-------------+-------------|
+|                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    |
+Derivative  |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+|TS_clk_usb                     |     20.830ns|     10.000ns|      2.222ns|            0|            0|            0|   
+     5058|
+| TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      1.666ns|          N/A|            0|            0|            1|   
+        0|
+| l_usb_CLKOUT0_BUF_0           |             |             |             |             |             |             |   
+         |
+| TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      2.222ns|          N/A|            0|            0|         5057|   
+        0|
+| l_usb_CLKOUT1_BUF_0           |             |             |             |             |             |             |   
+         |
++-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
+----------+
+
+9 constraints not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+Running timing-driven placement...
+Total REAL time at the beginning of Placer: 38 secs 
+Total CPU  time at the beginning of Placer: 15 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:50000d4f) REAL time: 40 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: apps_testpt<2>
+   	 Comp: apps_testpt<1>
+   	 Comp: apps_testpt<0>
+
+WARNING:Place:838 - An IO Bus with more than one IO standard is found.
+   Components associated with this bus are as follows: 
+   	 Comp: apps_testpt<0>   IOSTANDARD = LVCMOS25
+   	 Comp: apps_testpt<1>   IOSTANDARD = LVCMOS25
+   	 Comp: apps_testpt<2>   IOSTANDARD = LVCMOS25
+   	 Comp: apps_testpt<3>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<4>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<5>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<6>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<7>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<8>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<9>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<10>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<11>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<12>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<13>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<14>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<15>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<16>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<17>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<18>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<19>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<20>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<21>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<22>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<23>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<24>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<25>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<26>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<27>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<28>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<29>   IOSTANDARD = LVCMOS33
+   	 Comp: apps_testpt<30>   IOSTANDARD = LVCMOS33
+
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 378 IOs, 375 are locked
+   and 3 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:50000d4f) REAL time: 40 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:2d01bf17) REAL time: 40 secs 
+
+Phase 4.37  Local Placement Optimization
+Phase 4.37  Local Placement Optimization (Checksum:8f8c04d0) REAL time: 41 secs 
+
+Phase 5.33  Local Placement Optimization
+Phase 5.33  Local Placement Optimization (Checksum:8f8c04d0) REAL time: 57 secs 
+
+Phase 6.32  Local Placement Optimization
+Phase 6.32  Local Placement Optimization (Checksum:8f8c04d0) REAL time: 57 secs 
+
+Phase 7.2  Initial Clock and IO Placement
+....
+.....
+
+
+There are 12 clock regions on the target FPGA device:
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y5:                        | CLOCKREGION_X1Y5:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 3 in use      |   4 edge BUFIOs available, 3 in use      |
+|   0 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y4:                        | CLOCKREGION_X1Y4:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 2 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y3:                        | CLOCKREGION_X1Y3:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y2:                        | CLOCKREGION_X1Y2:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y1:                        | CLOCKREGION_X1Y1:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   2 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+| CLOCKREGION_X0Y0:                        | CLOCKREGION_X1Y0:                        |
+|   2 BUFRs available, 0 in use            |   2 BUFRs available, 0 in use            |
+|   4 Regional Clock Spines, 0 in use      |   4 Regional Clock Spines, 0 in use      |
+|   4 edge BUFIOs available, 0 in use      |   4 edge BUFIOs available, 0 in use      |
+|   0 center BUFIOs available, 0 in use    |   0 center BUFIOs available, 0 in use    |
+|                                          |                                          |
+|------------------------------------------|------------------------------------------|
+
+
+Clock-Region: <CLOCKREGION_X1Y4>
+  key resource utilizations (used/available): edge-bufios - 2/4; bufrs - 0/2; regional-clock-spines - 0/4
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Upper Region|   8  |  0  |  0 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   0  | <- Available resources in the upper region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|   8  |  0  |  0 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|   8  |  0  |  0 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<7>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<6>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y5>
+  key resource utilizations (used/available): edge-bufios - 3/4; bufrs - 0/2; regional-clock-spines - 0/4
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|   8  |  4  |  0 |   40   |   40   |  2240 |  1280 |  3200 |   8  |   0  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|   8  |  2  |  0 |   60   |   60   |  2240 |  1280 |  3200 |   8  |   0  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y5>
+  key resource utilizations (used/available): edge-bufios - 3/4; bufrs - 0/2; regional-clock-spines - 0/4
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|       |    clock    | BRAM |     |    |        |        |       |       |       |      |      |     |      |
+|       |    region   | FIFO | DCM | GT | ILOGIC | OLOGIC |   FF  |  LUTM |  LUTL | MULT | EMAC | PPC | PCIe | <- (Types of Resources in Clock Region)
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       |CurrentRegion|   8  |  0  |  0 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   0  | <- Available resources in the current region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+|       | Lower Region|   8  |  0  |  0 |   40   |   40   |  2560 |  1280 |  3840 |   0  |   0  |  0  |   0  | <- Available resources in the lower region
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| clock |    region   |                                                                                      -----------------------------------------------
+|  type |  expansion  |                                                                                      | <IO/Regional clock Net Name>
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<5>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<4>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+| BUFIO |             |   0  |  0  |  0 |    9   |    0   |     0 |     0 |     0 |   0  |   0  |  0  |   0  | "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3>"
+|-------|-------------|------|-----|----|--------|--------|-------|-------|-------|------|------|-----|------|----------------------------------------------
+
+
+
+
+######################################################################################
+# REGIONAL CLOCKING RESOURCE DISTRIBUTION UCF REPORT:
+#
+# Number of Regional Clocking Regions in the device: 12  (4 clock spines in each)
+# Number of Regional Clock Networks used in this design: 8 (each network can be
+# composed of up to 3 clock spines and cover up to 3 regional clock regions)
+# 
+######################################################################################
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<7>" driven by
+"BUFIO_X2Y18"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[7].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X2Y18" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<7>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<7>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<7>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<7>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<7>" RANGE
+= CLOCKREGION_X1Y4;
+
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<6>" driven by
+"BUFIO_X2Y19"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[6].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X2Y19" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<6>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<6>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<6>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<6>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<6>" RANGE
+= CLOCKREGION_X1Y4;
+
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<5>" driven by
+"BUFIO_X2Y20"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[5].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X2Y20" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<5>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<5>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<5>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<5>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<5>" RANGE
+= CLOCKREGION_X1Y5;
+
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<4>" driven by
+"BUFIO_X2Y22"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[4].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X2Y22" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<4>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<4>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<4>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<4>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<4>" RANGE
+= CLOCKREGION_X1Y5;
+
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3>" driven by
+"BUFIO_X2Y23"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[3].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X2Y23" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<3>" RANGE
+= CLOCKREGION_X1Y5;
+
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2>" driven by
+"BUFIO_X0Y20"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[2].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X0Y20" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<2>" RANGE
+= CLOCKREGION_X0Y5;
+
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1>" driven by
+"BUFIO_X0Y22"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X0Y22" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<1>" RANGE
+= CLOCKREGION_X0Y5;
+
+
+# IO-Clock "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0>" driven by
+"BUFIO_X0Y23"
+INST "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/u_bufio_dqs"
+LOC = "BUFIO_X0Y23" ;
+NET "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0>" TNM_NET =
+"TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0>" ;
+TIMEGRP "TN_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0>" AREA_GROUP
+= "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0>" ;
+AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/delayed_dqs<0>" RANGE
+= CLOCKREGION_X0Y5;
+
+
+...........
+Phase 7.2  Initial Clock and IO Placement (Checksum:ed0a4c7e) REAL time: 1 mins 2 secs 
+
+Phase 8.36  Local Placement Optimization
+Phase 8.36  Local Placement Optimization (Checksum:ed0a4c7e) REAL time: 1 mins 2 secs 
+
+...
+.......................
+Phase 9.30  Global Clock Region Assignment
+
+
+######################################################################################
+# GLOBAL CLOCK NET DISTRIBUTION UCF REPORT:
+#
+# Number of Global Clock Regions : 12
+# Number of Global Clock Networks: 12
+#
+# Clock Region Assignment: SUCCESSFUL
+
+# Location of Clock Components
+INST "i_appsfpga_io/i_PLL_clk/CLKOUT0_BUFG_INST" LOC = "BUFGCTRL_X0Y13" ;
+INST "i_appsfpga_io/i_PLL_clk/CLKOUT1_BUFG_INST" LOC = "BUFGCTRL_X0Y7" ;
+INST "i_appsfpga_io/i_pll_mem/CLKOUT0_BUFG_INST" LOC = "BUFGCTRL_X0Y25" ;
+INST "i_appsfpga_io/i_pll_mem/CLKOUT1_BUFG_INST" LOC = "BUFGCTRL_X0Y20" ;
+INST "i_appsfpga_io/i_pll_mem/CLKOUT2_BUFG_INST" LOC = "BUFGCTRL_X0Y28" ;
+INST "i_appsfpga_io/i_pll_mem/CLKOUT3_BUFG_INST" LOC = "BUFGCTRL_X0Y22" ;
+INST "i_appsfpga_io/i_BUFG_0" LOC = "BUFGCTRL_X0Y9" ;
+INST "i_appscore/USB_IO_INST/i_pll_usb/CLKOUT0_BUFG_INST" LOC = "BUFGCTRL_X0Y29" ;
+INST "i_appscore/USB_IO_INST/i_pll_usb/CLKOUT1_BUFG_INST" LOC = "BUFGCTRL_X0Y17" ;
+INST "i_appscore/USB_IO_INST/i_bufg_ifclk" LOC = "BUFGCTRL_X0Y21" ;
+INST "i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/I_USE_SOFTBSCAN_EQ0.I_USE_XST_TCK_WORKAROUND_EQ1.U_ICON_BSCAN_BUFG/U_BUFG" LOC = "BUFGCTRL_X0Y15" ;
+INST "clk_i_IBUFG_BUFG" LOC = "BUFGCTRL_X0Y2" ;
+INST "clk_usb" LOC = "N29" ;
+INST "clk_i" LOC = "AG21" ;
+INST "i_appsfpga_io/i_PLL_clk/PLL_ADV_INST" LOC = "PLL_ADV_X0Y1" ;
+INST "i_appsfpga_io/i_pll_mem/PLL_ADV_INST" LOC = "PLL_ADV_X0Y4" ;
+INST "i_appscore/USB_IO_INST/i_pll_usb/PLL_ADV_INST" LOC = "PLL_ADV_X0Y3" ;
+
+# clk_g driven by BUFGCTRL_X0Y13
+NET "clk_g" TNM_NET = "TN_clk_g" ;
+TIMEGRP "TN_clk_g" AREA_GROUP = "CLKAG_clk_g" ;
+AREA_GROUP "CLKAG_clk_g" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# i_appsfpga_io/clk2x driven by BUFGCTRL_X0Y7
+NET "i_appsfpga_io/clk2x" TNM_NET = "TN_i_appsfpga_io/clk2x" ;
+TIMEGRP "TN_i_appsfpga_io/clk2x" AREA_GROUP = "CLKAG_i_appsfpga_io/clk2x" ;
+AREA_GROUP "CLKAG_i_appsfpga_io/clk2x" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# mem_clk0 driven by BUFGCTRL_X0Y25
+NET "mem_clk0" TNM_NET = "TN_mem_clk0" ;
+TIMEGRP "TN_mem_clk0" AREA_GROUP = "CLKAG_mem_clk0" ;
+AREA_GROUP "CLKAG_mem_clk0" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# mem_clk2x driven by BUFGCTRL_X0Y20
+NET "mem_clk2x" TNM_NET = "TN_mem_clk2x" ;
+TIMEGRP "TN_mem_clk2x" AREA_GROUP = "CLKAG_mem_clk2x" ;
+AREA_GROUP "CLKAG_mem_clk2x" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# mem_clk2x90 driven by BUFGCTRL_X0Y28
+NET "mem_clk2x90" TNM_NET = "TN_mem_clk2x90" ;
+TIMEGRP "TN_mem_clk2x90" AREA_GROUP = "CLKAG_mem_clk2x90" ;
+AREA_GROUP "CLKAG_mem_clk2x90" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# mem_clk200 driven by BUFGCTRL_X0Y22
+NET "mem_clk200" TNM_NET = "TN_mem_clk200" ;
+TIMEGRP "TN_mem_clk200" AREA_GROUP = "CLKAG_mem_clk200" ;
+AREA_GROUP "CLKAG_mem_clk200" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# clk_r_o_OBUF driven by BUFGCTRL_X0Y9
+NET "clk_r_o_OBUF" TNM_NET = "TN_clk_r_o_OBUF" ;
+TIMEGRP "TN_clk_r_o_OBUF" AREA_GROUP = "CLKAG_clk_r_o_OBUF" ;
+AREA_GROUP "CLKAG_clk_r_o_OBUF" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# i_appscore/USB_IO_INST/clk_u driven by BUFGCTRL_X0Y29
+NET "i_appscore/USB_IO_INST/clk_u" TNM_NET = "TN_i_appscore/USB_IO_INST/clk_u" ;
+TIMEGRP "TN_i_appscore/USB_IO_INST/clk_u" AREA_GROUP = "CLKAG_i_appscore/USB_IO_INST/clk_u" ;
+AREA_GROUP "CLKAG_i_appscore/USB_IO_INST/clk_u" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# i_appscore/USB_IO_INST/clk_180_u driven by BUFGCTRL_X0Y17
+NET "i_appscore/USB_IO_INST/clk_180_u" TNM_NET = "TN_i_appscore/USB_IO_INST/clk_180_u" ;
+TIMEGRP "TN_i_appscore/USB_IO_INST/clk_180_u" AREA_GROUP = "CLKAG_i_appscore/USB_IO_INST/clk_180_u" ;
+AREA_GROUP "CLKAG_i_appscore/USB_IO_INST/clk_180_u" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# i_appscore/USB_IO_INST/ifclk_bufg driven by BUFGCTRL_X0Y21
+NET "i_appscore/USB_IO_INST/ifclk_bufg" TNM_NET = "TN_i_appscore/USB_IO_INST/ifclk_bufg" ;
+TIMEGRP "TN_i_appscore/USB_IO_INST/ifclk_bufg" AREA_GROUP = "CLKAG_i_appscore/USB_IO_INST/ifclk_bufg" ;
+AREA_GROUP "CLKAG_i_appscore/USB_IO_INST/ifclk_bufg" RANGE =   CLOCKREGION_X0Y4, CLOCKREGION_X1Y4 ;
+
+# CONTROL0<0> driven by BUFGCTRL_X0Y15
+NET "CONTROL0<0>" TNM_NET = "TN_CONTROL0<0>" ;
+TIMEGRP "TN_CONTROL0<0>" AREA_GROUP = "CLKAG_CONTROL0<0>" ;
+AREA_GROUP "CLKAG_CONTROL0<0>" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+
+# clk_i_IBUFG driven by BUFGCTRL_X0Y2
+NET "clk_i_IBUFG" TNM_NET = "TN_clk_i_IBUFG" ;
+TIMEGRP "TN_clk_i_IBUFG" AREA_GROUP = "CLKAG_clk_i_IBUFG" ;
+AREA_GROUP "CLKAG_clk_i_IBUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+
+# NOTE: 
+# This report is provided to help reproduce successful clock-region 
+# assignments. The report provides range constraints for all global 
+# clock networks, in a format that is directly usable in ucf files. 
+#
+#END of Global Clock Net Distribution UCF Constraints
+######################################################################################
+
+
+######################################################################################
+GLOBAL CLOCK NET LOADS DISTRIBUTION REPORT:
+
+Number of Global Clock Regions : 12
+Number of Global Clock Networks: 12
+
+Clock Region Assignment: SUCCESSFUL
+
+Clock-Region: <CLOCKREGION_X0Y0> 
+ key resource utilizations (used/available): global-clocks - 3/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      4 |      2 |      0 |     40 |     40 |      8 |      0 |      0 |      0 |      1 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |     21 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     31 |clk_g
+      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk_r_o_OBUF
+      0 |      0 |      0 |      0 |      0 |     21 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      1 |      0 |      0 |     42 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     31 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y0> 
+ key resource utilizations (used/available): global-clocks - 2/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |clk_g
+      0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y1> 
+ key resource utilizations (used/available): global-clocks - 4/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      2 |      1 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    167 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     10 |clk_i_IBUFG
+      0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     47 |mem_clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    224 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y1> 
+ key resource utilizations (used/available): global-clocks - 3/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    112 |clk_g
+      0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     23 |mem_clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    135 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y2> 
+ key resource utilizations (used/available): global-clocks - 6/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |     16 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     30 |     16 |CONTROL0<0>
+      2 |      0 |      0 |      0 |      0 |      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    196 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     21 |clk_i_IBUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     42 |mem_clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |     30 |    279 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y2> 
+ key resource utilizations (used/available): global-clocks - 3/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     59 |CONTROL0<0>
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     95 |clk_g
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    325 |mem_clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    479 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y3> 
+ key resource utilizations (used/available): global-clocks - 6/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |     16 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    133 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |clk_i_IBUFG
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    100 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |mem_clk0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     24 |mem_clk200
+      1 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     59 |mem_clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    348 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y3> 
+ key resource utilizations (used/available): global-clocks - 4/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     19 |clk_i_IBUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     48 |mem_clk0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    308 |mem_clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    383 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y4> 
+ key resource utilizations (used/available): global-clocks - 6/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      2 |      1 |      0 |     60 |     60 |      8 |      0 |      0 |      0 |      2 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |clk_g
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     72 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |i_appscore/USB_IO_INST/clk_u
+      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appscore/USB_IO_INST/ifclk_bufg
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    182 |mem_clk0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    160 |mem_clk2x
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    424 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y4> 
+ key resource utilizations (used/available): global-clocks - 6/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    200 |mem_clk0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      1 |mem_clk200
+      1 |      0 |      0 |      0 |      0 |     16 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    192 |mem_clk2x
+      0 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     29 |mem_clk2x90
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |     34 |      0 |      0 |      0 |      0 |      1 |      0 |      8 |    426 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X0Y5> 
+ key resource utilizations (used/available): global-clocks - 6/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      4 |      2 |      0 |     40 |     40 |      8 |      0 |      0 |      0 |      1 |      0 |   1280 |   2240 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk_r_o_OBUF
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     89 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    181 |mem_clk0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |mem_clk200
+      2 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |    277 |mem_clk2x
+      1 |      0 |      0 |      0 |      0 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     59 |mem_clk2x90
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      1 |      0 |      0 |     33 |      0 |      0 |      0 |      0 |      1 |      0 |      8 |    606 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+
+Clock-Region: <CLOCKREGION_X1Y5> 
+ key resource utilizations (used/available): global-clocks - 5/10 ;
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+   BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
+   FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      4 |      0 |      0 |      0 |     40 |     40 |      0 |      0 |      0 |      0 |      1 |      0 |   1280 |   2560 | <- (Available Resources in this Region)
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+        |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    281 |mem_clk0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |mem_clk200
+      3 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |     10 |    238 |mem_clk2x
+      1 |      0 |      0 |      0 |      0 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    106 |mem_clk2x90
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      6 |      0 |      0 |      0 |      0 |     33 |      0 |      0 |      0 |      0 |      1 |      0 |     16 |    629 | Total 
+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+
+NOTE:
+The above detailed report is the initial placement of the logic after the clock region assignment. The final placement
+may be significantly different because of the various optimization steps which will follow. Specifically, logic blocks
+maybe moved to adjacent clock-regions as long as the "number of clocks per region" constraint is not violated.
+
+
+# END of Global Clock Net Loads Distribution Report:
+######################################################################################
+
+
+Phase 9.30  Global Clock Region Assignment (Checksum:ed0a4c7e) REAL time: 1 mins 6 secs 
+
+Phase 10.3  Local Placement Optimization
+...
+Phase 10.3  Local Placement Optimization (Checksum:672635ae) REAL time: 1 mins 7 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:672635ae) REAL time: 1 mins 7 secs 
+
+Phase 12.8  Global Placement
+..................................................................
+.............
+...................................................
+................
+................
+................
+Phase 12.8  Global Placement (Checksum:1cc2ff2d) REAL time: 1 mins 19 secs 
+
+Phase 13.29  Local Placement Optimization
+Phase 13.29  Local Placement Optimization (Checksum:1cc2ff2d) REAL time: 1 mins 19 secs 
+
+Phase 14.5  Local Placement Optimization
+Phase 14.5  Local Placement Optimization (Checksum:1cc2ff2d) REAL time: 1 mins 20 secs 
+
+Phase 15.18  Placement Optimization
+Phase 15.18  Placement Optimization (Checksum:de65dbb7) REAL time: 1 mins 41 secs 
+
+Phase 16.5  Local Placement Optimization
+Phase 16.5  Local Placement Optimization (Checksum:de65dbb7) REAL time: 1 mins 42 secs 
+
+Phase 17.34  Placement Validation
+Phase 17.34  Placement Validation (Checksum:de65dbb7) REAL time: 1 mins 42 secs 
+
+Total REAL time to Placer completion: 1 mins 42 secs 
+Total CPU  time to Placer completion: 40 secs 
+Running post-placement packing...
+Writing output files...
+WARNING:PhysDesignRules:372 - Gated clock. Clock net i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_not0001 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_UPDATE_OUT[1].UPDATE_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal does not
+   drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal
+   <i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/phy_init_addr<4>> is
+   incomplete. The signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp756.PULL is set but the tri state is
+   not configured. 
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp756.PULL.1 is set but the tri state
+   is not configured. 
+
+Design Summary
+--------------
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   88
+Slice Logic Utilization:
+  Number of Slice Registers:                 3,991 out of  28,800   13%
+    Number used as Flip Flops:               3,990
+    Number used as Latches:                      1
+  Number of Slice LUTs:                      2,995 out of  28,800   10%
+    Number used as logic:                    2,918 out of  28,800   10%
+      Number using O6 output only:           2,378
+      Number using O5 output only:             195
+      Number using O5 and O6:                  345
+    Number used as Memory:                      40 out of   7,680    1%
+      Number used as Shift Register:            40
+        Number using O6 output only:            40
+    Number used as exclusive route-thru:        37
+  Number of route-thrus:                       231
+    Number using O6 output only:               230
+    Number using O5 output only:                 1
+
+Slice Logic Distribution:
+  Number of occupied Slices:                 1,918 out of   7,200   26%
+  Number of LUT Flip Flop pairs used:        5,080
+    Number with an unused Flip Flop:         1,089 out of   5,080   21%
+    Number with an unused LUT:               2,085 out of   5,080   41%
+    Number of fully used LUT-FF pairs:       1,906 out of   5,080   37%
+    Number of unique control sets:             240
+    Number of slice register sites lost
+      to control set restrictions:             361 out of  28,800    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+  OVERMAPPING of BRAM resources should be ignored if the design is
+  over-mapped for a non-BRAM resource or if placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                       378 out of     560   67%
+    Number of LOCed IOBs:                      375 out of     378   99%
+    IOB Flip Flops:                            270
+    IOB Master Pads:                            72
+    IOB Slave Pads:                             72
+
+Specific Feature Utilization:
+  Number of BlockRAM/FIFO:                      17 out of      48   35%
+    Number using BlockRAM only:                 14
+    Number using FIFO only:                      3
+    Total primitives used:
+      Number of 36k BlockRAM used:              11
+      Number of 18k BlockRAM used:               3
+      Number of 36k FIFO used:                   3
+    Total Memory used (KB):                    558 out of   1,728   32%
+  Number of BUFG/BUFGCTRLs:                     12 out of      32   37%
+    Number used as BUFGs:                       12
+  Number of IDELAYCTRLs:                         3 out of      16   18%
+  Number of BSCANs:                              1 out of       4   25%
+  Number of BUFIOs:                              8 out of      56   14%
+  Number of OSERDESs:                           91
+  Number of PLL_ADVs:                            3 out of       6   50%
+
+Average Fanout of Non-Clock Nets:                2.96
+
+Peak Memory Usage:  1069 MB
+Total REAL time to MAP completion:  1 mins 50 secs 
+Total CPU time to MAP completion:   42 secs 
+
+Mapping completed.
+See MAP report file "appsfpga_map.mrp" for details.

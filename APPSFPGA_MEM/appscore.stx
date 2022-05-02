@@ -1,0 +1,129 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ise/ise_proj/dmd-project/APPSFPGA_MEM/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/ise/ise_proj/dmd-project/APPSFPGA_MEM/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_calib.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_calib is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_dqs_iob.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_dqs_iob is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_dm_iob.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_dm_iob is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_dq_iob.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_dq_iob is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_usr_rd.vhd" in Library work.
+Architecture syn of Entity ddr2_usr_rd is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_usr_addr_fifo.vhd" in Library work.
+Architecture syn of Entity ddr2_usr_addr_fifo is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_usr_wr.vhd" in Library work.
+Architecture syn of Entity ddr2_usr_wr is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_write.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_write is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_io.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_io is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_ctl_io.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_ctl_io is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_init.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_init is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_phy_top.vhd" in Library work.
+Architecture syn of Entity ddr2_phy_top is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_usr_top.vhd" in Library work.
+Architecture syn of Entity ddr2_usr_top is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_ctrl.vhd" in Library work.
+Architecture syn of Entity ddr2_ctrl is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_mem_if_top.vhd" in Library work.
+Architecture syn of Entity ddr2_mem_if_top is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/usb_dcm.vhd" in Library work.
+Architecture behavioral of Entity pll_usb is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/fifo.vhd" in Library work.
+Architecture fifo_a of Entity fifo is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/fifo_register.vhd" in Library work.
+Architecture fifo_register_a of Entity fifo_register is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/counter_4096.vhd" in Library work.
+Architecture behavioral of Entity counter_4096 is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/appsfpga_dmd_types_pkg.vhd" in Library ddc4100.
+Architecture appsfpga_dmd_types_pkg of Entity appsfpga_dmd_types_pkg is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/write_counter.vhd" in Library work.
+Architecture behavioral of Entity write_counter is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_chipscope.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_idelay_ctrl.vhd" in Library work.
+Architecture syn of Entity ddr2_idelay_ctrl is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_infrastructure.vhd" in Library work.
+Architecture syn of Entity ddr2_infrastructure is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/ddr2_top.vhd" in Library work.
+Architecture syn of Entity ddr2_top is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgs_e.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgq_e.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgg_e.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgd_e.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_clear_e.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_e.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/cnts_e.vhd" in Library work.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/DDR2_2GB_150MHZ_pkg.vhd" in Library ddr2.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl" in Library work.
+Architecture behavioral of Entity dmd_trigger_control is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/DMD_control.vhd" in Library work.
+Architecture behavioral of Entity dmd_control is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/USB_IO.vhd" in Library work.
+Architecture behavioral of Entity usb_io is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/D4100_registers.vhd" in Library work.
+Architecture behavioral of Entity d4100_registers is up to date.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/appscore.vhd" in Library work.
+Entity <appscore> compiled.
+Entity <appscore> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/cnts_a_1and0clks.vhd" in Library work.
+Entity <cnts> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_a.vhd" in Library work.
+Entity <pgen> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_clear_a.vhd" in Library work.
+Entity <pgen_clear> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgd_a.vhd" in Library work.
+Entity <pgen_pgd> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgg_a.vhd" in Library work.
+Entity <pgen_pgg> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgq_a.vhd" in Library work.
+Entity <pgen_pgq> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/pgen_pgs_a.vhd" in Library work.
+Entity <pgen_pgs> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/read_fifo.vhd" in Library work.
+Entity <read_fifo> compiled.
+Entity <read_fifo> (Architecture <read_fifo_a>) compiled.
+Compiling vhdl file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/ipcore_dir/mig_top/user_design/rtl/mig_top.vhd" in Library work.
+Entity <mig_top> compiled.
+Entity <mig_top> (Architecture <arc_mem_interface_top>) compiled.
+Compiling verilog file "src/rtl/MEM_IO_Verilog.v" in library work
+Module <MEM_IO_Verilog> compiled
+No errors in compilation
+Analysis of file <"appscore.prj"> succeeded.
+ 
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+
+
+Total memory usage is 603548 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

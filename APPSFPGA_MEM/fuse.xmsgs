@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/MEM_IO_Verilog.v" Line 161: Parameter declaration becomes local in <arg fmt="%s" index="1">MEM_IO_Verilog</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/MEM_IO_Verilog.v" Line 162: Parameter declaration becomes local in <arg fmt="%s" index="1">MEM_IO_Verilog</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/MEM_IO_Verilog.v" Line 163: Parameter declaration becomes local in <arg fmt="%s" index="1">MEM_IO_Verilog</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/MEM_IO_Verilog.v" Line 179: Parameter declaration becomes local in <arg fmt="%s" index="1">MEM_IO_Verilog</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/MEM_IO_Verilog.v" Line 180: Parameter declaration becomes local in <arg fmt="%s" index="1">MEM_IO_Verilog</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="693" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/MEM_IO_Verilog.v" Line 181: Parameter declaration becomes local in <arg fmt="%s" index="1">MEM_IO_Verilog</arg> with formal parameter declaration list
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/sim/appsfpga_tb.v" Line 793: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">dm_rdqs</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/sim/appsfpga_tb.v" Line 796: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">dq</arg>&gt;. Formal port size is <arg fmt="%d" index="2">16</arg>-bit while actual signal size is <arg fmt="%d" index="1">8</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/sim/appsfpga_tb.v" Line 797: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">dqs</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/sim/appsfpga_tb.v" Line 798: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">dqs_n</arg>&gt;. Formal port size is <arg fmt="%d" index="2">2</arg>-bit while actual signal size is <arg fmt="%d" index="1">1</arg>-bit.
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3039: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3354: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3771: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3787: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3039: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3353: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3354: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3531: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3771: Range is empty (null range)
+</msg>
+
+<msg type="warning" file="HDLCompiler" num="746" delta="unknown" >"/build/xfndry10/P.20131013/rtf/vhdl/src/unisims/primitive/ARAMB36_INTERNAL.vhd" Line 3787: Range is empty (null range)
+</msg>
+
+</messages>
+

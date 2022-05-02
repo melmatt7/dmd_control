@@ -1,0 +1,9 @@
+/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.ngc 1650200301
+src/rtl/FIFO_RCV2.ngc 1646851566
+ipcore_dir/fifo.ngc 1646851564
+src/rtl/fifo_register.ngc 1646851566
+ipcore_dir/read_fifo.ngc 1646851565
+ipcore_dir/ICON.ngc 1646851564
+ipcore_dir/vio_sys.ngc 1646851565
+ipcore_dir/vio_mem.ngc 1646851565
+OK

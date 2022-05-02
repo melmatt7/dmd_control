@@ -1,0 +1,18 @@
+# Output products list for <vio_mem>
+_xmsgs/pn_parser.xmsgs
+vio_mem.asy
+vio_mem.cdc
+vio_mem.constraints/vio_mem.ucf
+vio_mem.constraints/vio_mem.xdc
+vio_mem.gise
+vio_mem.ngc
+vio_mem.sym
+vio_mem.ucf
+vio_mem.vhd
+vio_mem.vho
+vio_mem.xco
+vio_mem.xdc
+vio_mem.xise
+vio_mem_flist.txt
+vio_mem_readme.txt
+vio_mem_xmdf.tcl

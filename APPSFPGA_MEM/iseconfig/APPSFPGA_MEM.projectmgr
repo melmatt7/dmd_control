@@ -1,0 +1,244 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="APPSFPGA_MEM" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/MEM_IO - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|MEM_IO.vhd</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_a.vhd/i_appsfpga_io - appsfpga_io - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appscore - appscore - Behavioral/DMD_CONTROL_INST - DMD_control - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appscore - appscore - Behavioral/DMD_TRIGGER_CONTROL_INST - DMD_trigger_control - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appscore - appscore - Behavioral/DMD_TRIGGER_CONTROL_INST - DMD_trigger_control - Behavioral/trigger_pgen_pgg - pgen_pgg - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appscore - appscore - Behavioral/MEMORY_IO_INST - MEM_IO - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appscore - appscore - Behavioral/MEMORY_IO_INST - MEM_IO_Verilog</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appscore - appscore - Behavioral/USB_IO_INST - USB_IO - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appscore - appscore - Behavioral/i_pgen - pgen - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appsfpga_io - appsfpga_io - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|ise_proj|dmd-project|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd/i_appsfpga_io - appsfpga_io - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>appsfpga - Behavioral (/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/appsfpga_load4_a.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002cf000000020000000000000000000000000200000064ffffffff000000810000000300000002000002cf0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>appsfpga - Behavioral (/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/rtl/appsfpga_load4_a.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>appsfpga_e.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000306000000040101000100000000000000000000000064ffffffff000000810000000000000004000000e50000000100000000000000290000000100000000000000840000000100000000000001740000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>appsfpga_e.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>appsfpga_dmd_types_pkg.vhd</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000128000000010001000100000000000000000000000064ffffffff000000810000000000000001000001280000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>appsfpga_dmd_types_pkg.vhd</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Automatic `includes</ClosedNode>
+         <ClosedNode>/MEM_IO - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|MEM_IO.vhd</ClosedNode>
+         <ClosedNode>/appsfpga - Behavioral |home|ise|Desktop|APPSFPGA_MEM|src|rtl|appsfpga_load4_a.vhd</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v/uut - appsfpga - Behavioral/i_appscore - appscore - Behavioral/DMD_CONTROL_INST - DMD_control - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v/uut - appsfpga - Behavioral/i_appscore - appscore - Behavioral/DMD_TRIGGER_CONTROL_INST - DMD_trigger_control - Behavioral/trigger_pgen_pgg - pgen_pgg - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v/uut - appsfpga - Behavioral/i_appscore - appscore - Behavioral/MEMORY_IO_INST - MEM_IO - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v/uut - appsfpga - Behavioral/i_appscore - appscore - Behavioral/MEMORY_IO_INST - MEM_IO_Verilog</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v/uut - appsfpga - Behavioral/i_appscore - appscore - Behavioral/USB_IO_INST - USB_IO - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v/uut - appsfpga - Behavioral/i_appscore - appscore - Behavioral/i_pgen - pgen - Behavioral</ClosedNode>
+         <ClosedNode>/appsfpga_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|appsfpga_tb.v/uut - appsfpga - Behavioral/i_appsfpga_io - appsfpga_io - Behavioral</ClosedNode>
+         <ClosedNode>/mem_io_tb |home|ise|Desktop|APPSFPGA_MEM|mem_io_tb.v</ClosedNode>
+         <ClosedNode>/mem_io_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|mem_io_tb.v</ClosedNode>
+         <ClosedNode>/sim_tb_top |home|ise|Desktop|APPSFPGA_MEM|src|sim|sim_tb_top.v</ClosedNode>
+         <ClosedNode>/trigger_dmd_control_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|trigger_dmd_control_tb.v</ClosedNode>
+         <ClosedNode>/trigger_dmd_control_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|trigger_dmd_control_tb.v/uut - DMD_trigger_control - Behavioral</ClosedNode>
+         <ClosedNode>/usb_io_tb |home|ise|Desktop|APPSFPGA_MEM|src|sim|usb_io_tb.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>appsfpga_tb (/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/sim/appsfpga_tb.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000002e3000000020000000000000000000000000200000064ffffffff000000810000000300000002000002e30000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>appsfpga_tb (/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/src/sim/appsfpga_tb.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000208000000010000000100000000000000000000000064ffffffff000000810000000000000001000002080000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000315000000010000000100000000000000000000000064ffffffff000000810000000000000001000003150000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000208000000010000000100000000000000000000000064ffffffff000000810000000000000001000002080000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_CDC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_NGC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

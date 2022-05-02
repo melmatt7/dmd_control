@@ -1,0 +1,41 @@
+Release 14.7 - par P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Sun Apr 17 15:02:31 2022
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 29 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   apps_cntl_an_IBUF
+   apps_cntl_ap_IBUF
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp
+   i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp
+   i_vio_mem/U0/I_VIO/reset_f_edge/iDOUT<1>
+   i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp
+   i_vio_sys/U0/I_VIO/GEN_UPDATE_OUT[1].UPDATE_CELL/out_temp
+   in_dip_sw_i<0>_IBUF
+   in_dip_sw_i<1>_IBUF
+   in_dip_sw_i<2>_IBUF
+   in_dip_sw_i<3>_IBUF
+   in_dip_sw_i<4>_IBUF
+   in_dip_sw_i<5>_IBUF
+   in_dip_sw_i<6>_IBUF
+   in_rst_active_i_IBUF
+
+

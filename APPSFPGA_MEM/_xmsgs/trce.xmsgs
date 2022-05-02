@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;0&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26589)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;10&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26591)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;11&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26593)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;12&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26595)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;13&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26597)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;14&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26599)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;15&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26601)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;1&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26603)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;2&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26605)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;3&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26607)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;4&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26609)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;5&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26611)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;6&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26613)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;7&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26615)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;8&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26617)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;bidir&lt;9&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26619)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;ctl0&quot; OFFSET = IN 10.33 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26620)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;ctl1&quot; OFFSET = IN 10.33 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26621)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;COMP &quot;ctl2&quot; OFFSET = IN 10.33 ns BEFORE COMP &quot;clk_usb&quot;;&gt; [appsfpga.pcf(26622)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.
+</msg>
+
+<msg type="info" file="Timing" num="2802" delta="old" >Read <arg fmt="%d" index="1">210</arg> constraints.  If you are experiencing memory or runtime issues it may help to consolidate some of these constraints.  For more details please do a search for &quot;timing:2802&quot; at http://www.xilinx.com/support.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs0_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs1_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs2_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs3_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs4_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs5_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs6_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3223" delta="old" >Timing constraint <arg fmt="%s" index="1">PATH &quot;TS_dqs7_flops_to_clk2x_mem_path&quot; TIG;</arg> ignored during timing analysis.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;0&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;10&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;11&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;12&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;13&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;14&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;15&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;1&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;2&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;3&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;4&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;5&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;6&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;7&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;8&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;bidir&lt;9&gt;&quot; OFFSET = IN 8.2 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;ctl0&quot; OFFSET = IN 10.33 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;ctl1&quot; OFFSET = IN 10.33 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="warning" file="Timing" num="3391" delta="old" >Timing constraint <arg fmt="%s" index="1">COMP &quot;ctl2&quot; OFFSET = IN 10.33 ns BEFORE COMP &quot;clk_usb&quot;;</arg> does not specify a data valid duration and will not be hold checked. To enable hold checking on this offset constraint please specify a data valid duration using the VALID &lt;duration&gt; option.</msg>
+
+<msg type="info" file="Timing" num="3386" delta="old" >Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.</msg>
+
+<msg type="info" file="Timing" num="3412" delta="old" >To improve timing, see the Timing Closure User Guide (UG612).</msg>
+
+<msg type="info" file="Timing" num="2752" delta="old" >To get complete path coverage, use the unconstrained paths option. All paths that are not constrained will be reported in the unconstrained paths section(s) of the report.</msg>
+
+<msg type="info" file="Timing" num="3339" delta="old" >The clock-to-out numbers in this timing report are based on a 50 Ohm transmission line loading model.  For the details of this model, and for more information on accounting for different loading conditions, please see the device datasheet.</msg>
+
+</messages>
+

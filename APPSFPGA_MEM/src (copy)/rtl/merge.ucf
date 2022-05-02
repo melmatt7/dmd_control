@@ -1,0 +1,633 @@
+TIMESPEC TS_clk_i = PERIOD "clk_i" 20 ns INPUT_JITTER 100 ps;
+
+SYSTEM_JITTER = 200 PS;
+
+##### Imported USB constraints #####
+NET "clk_usb"                        TNM_NET = clk_usb_flops;
+TIMESPEC TS_clk_usb                 = PERIOD "clk_usb_flops"         20.83 ns HIGH 50%;
+
+# Multicycle path
+NET "bidir*" OFFSET = OUT 30 ns   AFTER  "clk_usb";
+NET "ctl*"   OFFSET = IN 10.33 ns BEFORE "clk_usb";
+NET "bidir*" OFFSET = IN 8.2 ns   BEFORE "clk_usb";
+
+####################################
+
+
+
+
+## False paths from PLL reset crossing clock domain
+#### Commenting.  These now appear to be invalid constraints
+## INST "i_appsfpga_io/pll_delay_cnt_8"            TNM = "PLL_rst_src1";
+## INST "i_appsfpga_io/pll_locked_rst_bq1"  TNM = "PLL_rst_dest1";
+## TIMESPEC TS_PLL_rst_time1 =  FROM  "PLL_rst_src1" TO "PLL_rst_dest1" TIG;
+## 
+## INST "i_appsfpga_io/pll_delay_cnt_8"            TNM = "PLL_rst_src2";
+## INST "i_appsfpga_io/pll_locked_rst_bq2"  TNM = "PLL_rst_dest2";
+## TIMESPEC TS_PLL_rst_time2 =  FROM  "PLL_rst_src2" TO "PLL_rst_dest2" TIG;
+## 
+## INST "i_appsfpga_io/pll_delay_cnt_8"            TNM = "PLL_rst_src3";
+## INST "i_appsfpga_io/pll_locked_rst_bq"  TNM = "PLL_rst_dest3";
+## TIMESPEC TS_PLL_rst_time3 =  FROM  "PLL_rst_src3" TO "PLL_rst_dest3" TIG;
+## 
+## INST "i_appsfpga_io/pll_delay_cnt_8"            TNM = "PLL_rst_src4";
+## INST "i_appsfpga_io/pll_locked_rstz_gq"  TNM = "PLL_rst_dest4";
+## TIMESPEC TS_PLL_rst_time4 =  FROM  "PLL_rst_src4" TO "PLL_rst_dest4" TIG;
+## 
+## INST "i_appsfpga_io/pll_delay_cnt_8"            TNM = "PLL_rst_src5";
+## INST "i_appsfpga_io/pll_locked_rstz_gq1"  TNM = "PLL_rst_dest5";
+## TIMESPEC TS_PLL_rst_time5 =  FROM  "PLL_rst_src5" TO "PLL_rst_dest5" TIG;
+## 
+## INST "i_appsfpga_io/pll_delay_cnt_8"            TNM = "PLL_rst_src6";
+## INST "i_appsfpga_io/pll_locked_rstz_gq2"  TNM = "PLL_rst_dest6";
+## TIMESPEC TS_PLL_rst_time6 =  FROM  "PLL_rst_src6" TO "PLL_rst_dest6" TIG;
+
+
+NET "dout_ap_o<*>" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dout_bp_o<*>" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dout_cp_o<*>" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dout_dp_o<*>" OFFSET = OUT 15 ns AFTER "clk_i";
+
+NET "dclk_ap_o" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dclk_bp_o" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dclk_cp_o" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dclk_dp_o" OFFSET = OUT 15 ns AFTER "clk_i";
+
+NET "dvalid_ap_o" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dvalid_bp_o" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dvalid_cp_o" OFFSET = OUT 15 ns AFTER "clk_i";
+NET "dvalid_dp_o" OFFSET = OUT 15 ns AFTER "clk_i";
+
+NET  "apps_testpt<*>"  TIG;
+
+
+
+
+
+
+NET "arstz_o" LOC = AF14;
+NET "blkad_o<0>" LOC = AK4;
+NET "blkad_o<1>" LOC = AJ5;
+NET "blkad_o<2>" LOC = AG5;
+NET "blkad_o<3>" LOC = AH5;
+NET "blkmd_o<0>" LOC = AE14;
+NET "blkmd_o<1>" LOC = AG23;
+NET "clk_i" LOC = AG21;
+NET "clk_r_o" LOC = AE18;
+## NET "comp_data_o" LOC = AF23;
+NET "dclk_an_o" LOC = AJ29;
+NET "dclk_ap_o" LOC = AK29;
+NET "dclk_bn_o" LOC = AH8;
+NET "dclk_bp_o" LOC = AG8;
+NET "dclk_cn_o" LOC = AA31;
+NET "dclk_cp_o" LOC = AB31;
+NET "dclk_dn_o" LOC = W4;
+NET "dclk_dp_o" LOC = Y4;
+NET "ddc_version_i<0>" LOC = AH20;
+NET "ddc_version_i<1>" LOC = AG13;
+NET "ddc_version_i<2>" LOC = AF18;
+NET "dmd_type_i<0>" LOC = AC15;
+NET "dmd_type_i<1>" LOC = AD15;
+NET "dmd_type_i<2>" LOC = AE22;
+NET "dmd_type_i<3>" LOC = AE19;
+
+NET "dout_an_o<0>"  LOC = AA26;
+NET "dout_an_o<1>"  LOC = AC27;
+NET "dout_an_o<2>"  LOC = AA24;
+NET "dout_an_o<3>"  LOC = AB26;
+NET "dout_an_o<4>"  LOC = AD27;
+NET "dout_an_o<5>"  LOC = AA28;
+NET "dout_an_o<6>"  LOC = AH28;
+NET "dout_an_o<7>"  LOC = AF28;
+NET "dout_an_o<8>"  LOC = AK27;
+NET "dout_an_o<9>"  LOC = AJ26;
+NET "dout_an_o<10>" LOC = AH25;
+NET "dout_an_o<11>" LOC = AG25;
+NET "dout_an_o<12>" LOC = AG26;
+NET "dout_an_o<13>" LOC = AF26;
+NET "dout_an_o<14>" LOC = AE26;
+NET "dout_an_o<15>" LOC = AC24;
+
+NET "dout_ap_o<0>"  LOC = AA25;
+NET "dout_ap_o<1>"  LOC = AB27;
+NET "dout_ap_o<2>"  LOC = Y24;
+NET "dout_ap_o<3>"  LOC = AB25;
+NET "dout_ap_o<4>"  LOC = AC28;
+NET "dout_ap_o<5>"  LOC = AB28;
+NET "dout_ap_o<6>"  LOC = AG28;
+NET "dout_ap_o<7>"  LOC = AE28;
+NET "dout_ap_o<8>"  LOC = AK28;
+NET "dout_ap_o<9>"  LOC = AH27;
+NET "dout_ap_o<10>" LOC = AJ25;
+NET "dout_ap_o<11>" LOC = AF24;
+NET "dout_ap_o<12>" LOC = AG27;
+NET "dout_ap_o<13>" LOC = AF25;
+NET "dout_ap_o<14>" LOC = AE27;
+NET "dout_ap_o<15>" LOC = AC25;
+
+NET "dout_bn_o<0>"  LOC = AA11;
+NET "dout_bn_o<1>"  LOC = AA9;
+NET "dout_bn_o<2>"  LOC = AB10;
+NET "dout_bn_o<3>"  LOC = AB7;
+NET "dout_bn_o<4>"  LOC = AC7;
+NET "dout_bn_o<5>"  LOC = AJ6;
+NET "dout_bn_o<6>"  LOC = AD7;
+NET "dout_bn_o<7>"  LOC = AH7;
+NET "dout_bn_o<8>"  LOC = AF8;
+NET "dout_bn_o<9>"  LOC = AD10;
+NET "dout_bn_o<10>" LOC = AK7;
+NET "dout_bn_o<11>" LOC = AF9;
+NET "dout_bn_o<12>" LOC = AJ9;
+NET "dout_bn_o<13>" LOC = AG10;
+NET "dout_bn_o<14>" LOC = AK8;
+NET "dout_bn_o<15>" LOC = AF11;
+
+NET "dout_bp_o<0>"  LOC = AA10;
+NET "dout_bp_o<1>"  LOC = AA8;
+NET "dout_bp_o<2>"  LOC = AB11;
+NET "dout_bp_o<3>"  LOC = AB8;
+NET "dout_bp_o<4>"  LOC = AC8;
+NET "dout_bp_o<5>"  LOC = AJ7;
+NET "dout_bp_o<6>"  LOC = AE7;
+NET "dout_bp_o<7>"  LOC = AG7;
+NET "dout_bp_o<8>"  LOC = AE8;
+NET "dout_bp_o<9>"  LOC = AC10;
+NET "dout_bp_o<10>" LOC = AK6;
+NET "dout_bp_o<11>" LOC = AE9;
+NET "dout_bp_o<12>" LOC = AH9;
+NET "dout_bp_o<13>" LOC = AF10;
+NET "dout_bp_o<14>" LOC = AK9;
+NET "dout_bp_o<15>" LOC = AG11;
+
+NET "dout_cn_o<0>"  LOC = V24;
+NET "dout_cn_o<1>"  LOC = W26;
+NET "dout_cn_o<2>"  LOC = W25;
+NET "dout_cn_o<3>"  LOC = W27;
+NET "dout_cn_o<4>"  LOC = W30;
+NET "dout_cn_o<5>"  LOC = V27;
+NET "dout_cn_o<6>"  LOC = Y31;
+NET "dout_cn_o<7>"  LOC = V29;
+NET "dout_cn_o<8>"  LOC = AB30;
+NET "dout_cn_o<9>"  LOC = AA30;
+NET "dout_cn_o<10>" LOC = AE31;
+NET "dout_cn_o<11>" LOC = AC29;
+NET "dout_cn_o<12>" LOC = AG31;
+NET "dout_cn_o<13>" LOC = AD29;
+NET "dout_cn_o<14>" LOC = AK31;
+NET "dout_cn_o<15>" LOC = AF30;
+
+NET "dout_cp_o<0>"  LOC = W24;
+NET "dout_cp_o<1>"  LOC = Y26;
+NET "dout_cp_o<2>"  LOC = V25;
+NET "dout_cp_o<3>"  LOC = Y27;
+NET "dout_cp_o<4>"  LOC = V30;
+NET "dout_cp_o<5>"  LOC = V28;
+NET "dout_cp_o<6>"  LOC = W31;
+NET "dout_cp_o<7>"  LOC = W29;
+NET "dout_cp_o<8>"  LOC = AC30;
+NET "dout_cp_o<9>"  LOC = AA29;
+NET "dout_cp_o<10>" LOC = AD31;
+NET "dout_cp_o<11>" LOC = AD30;
+NET "dout_cp_o<12>" LOC = AF31;
+NET "dout_cp_o<13>" LOC = AE29;
+NET "dout_cp_o<14>" LOC = AJ31;
+NET "dout_cp_o<15>" LOC = AF29;
+
+NET "dout_dn_o<0>"  LOC = W11;
+NET "dout_dn_o<1>"  LOC = Y9;
+NET "dout_dn_o<2>"  LOC = V10;
+NET "dout_dn_o<3>"  LOC = V8;
+NET "dout_dn_o<4>"  LOC = V7;
+NET "dout_dn_o<5>"  LOC = V5;
+NET "dout_dn_o<6>"  LOC = Y8;
+NET "dout_dn_o<7>"  LOC = W6;
+NET "dout_dn_o<8>"  LOC = AB5;
+NET "dout_dn_o<9>"  LOC = AC5;
+NET "dout_dn_o<10>" LOC = AD4;
+NET "dout_dn_o<11>" LOC = AD6;
+NET "dout_dn_o<12>" LOC = AF4;
+NET "dout_dn_o<13>" LOC = AE6;
+NET "dout_dn_o<14>" LOC = AJ4;
+NET "dout_dn_o<15>" LOC = AG6;
+
+NET "dout_dp_o<0>"  LOC = Y11;
+NET "dout_dp_o<1>"  LOC = W9;
+NET "dout_dp_o<2>"  LOC = W10;
+NET "dout_dp_o<3>"  LOC = V9;
+NET "dout_dp_o<4>"  LOC = W7;
+NET "dout_dp_o<5>"  LOC = W5;
+NET "dout_dp_o<6>"  LOC = Y7;
+NET "dout_dp_o<7>"  LOC = Y6;
+NET "dout_dp_o<8>"  LOC = AA4;
+NET "dout_dp_o<9>"  LOC = AB6;
+NET "dout_dp_o<10>" LOC = AC4;
+NET "dout_dp_o<11>" LOC = AD5;
+NET "dout_dp_o<12>" LOC = AE4;
+NET "dout_dp_o<13>" LOC = AF5;
+NET "dout_dp_o<14>" LOC = AH4;
+NET "dout_dp_o<15>" LOC = AF6;
+
+NET "dvalid_an_o" LOC = AJ27;
+NET "dvalid_ap_o" LOC = AK26;
+NET "dvalid_bn_o" LOC = AC9;
+NET "dvalid_bp_o" LOC = AD9;
+NET "dvalid_cn_o" LOC = Y29;
+NET "dvalid_cp_o" LOC = Y28;
+NET "dvalid_dn_o" LOC = AA5;
+NET "dvalid_dp_o" LOC = AA6;
+
+## NET "finished_iv_o" LOC = T25;
+## NET "in_init_active_i" LOC = AF21;
+## NET "in_rst_active_i" LOC = AF13;
+## NET "ns_flip_o" LOC = AE24;
+## NET "pwr_floatz_o" LOC = AG22;
+NET "reset_i" LOC = AG15;
+
+NET "rowad_o<0>"  LOC = AJ10;
+NET "rowad_o<1>"  LOC = AH10;
+NET "rowad_o<2>"  LOC = AD11;
+NET "rowad_o<3>"  LOC = AE11;
+NET "rowad_o<4>"  LOC = AJ30;
+NET "rowad_o<5>"  LOC = AH30;
+NET "rowad_o<6>"  LOC = AH29;
+NET "rowad_o<7>"  LOC = AG30;
+NET "rowad_o<8>"  LOC = AD26;
+NET "rowad_o<9>"  LOC = AD25;
+NET "rowad_o<10>" LOC = AD24;
+NET "rowmd_o<0>"  LOC = AE13;
+NET "rowmd_o<1>"  LOC = AD20;
+
+## NET "stepvcc_o" LOC = AE12;
+## NET "in_dip_sw_i<0>" LOC = G20;
+## NET "in_dip_sw_i<1>" LOC = G21;
+## NET "in_dip_sw_i<2>" LOC = F20;
+## NET "in_dip_sw_i<3>" LOC = G22;
+## NET "in_dip_sw_i<4>" LOC = H15;
+## NET "in_dip_sw_i<5>" LOC = H14;
+## NET "in_dip_sw_i<6>" LOC = H13;
+## NET "in_dip_sw_i<7>" LOC = J14;
+
+## NET "wdt_enablez_o" LOC = AF15;
+## NET "rst2blkz_o" LOC = AE23;
+## NET "in_pb_sw_i" LOC = P10;
+## NET "apps_cntl_an" LOC = AF16;
+## NET "apps_cntl_ap" LOC = AE16;
+## NET "apps_logic_rstn" LOC = T24;
+
+NET "arstz_o" IOSTANDARD = "LVCMOS25";
+NET "blkad_o<0>" IOSTANDARD = "LVCMOS25";
+NET "blkad_o<1>" IOSTANDARD = "LVCMOS25";
+NET "blkad_o<2>" IOSTANDARD = "LVCMOS25";
+NET "blkad_o<3>" IOSTANDARD = "LVCMOS25";
+NET "blkmd_o<0>" IOSTANDARD = "LVCMOS25";
+NET "blkmd_o<1>" IOSTANDARD = "LVCMOS25";
+NET "clk_i" IOSTANDARD = "LVCMOS25";
+NET "clk_r_o" IOSTANDARD = "LVCMOS25";
+## NET "comp_data_o" IOSTANDARD = "LVCMOS25";
+NET "dmd_type_i<0>" IOSTANDARD = "LVCMOS25";
+NET "dmd_type_i<1>" IOSTANDARD = "LVCMOS25";
+NET "dmd_type_i<2>" IOSTANDARD = "LVCMOS25";
+NET "dmd_type_i<3>" IOSTANDARD = "LVCMOS25";
+NET "rowmd_o<0>" IOSTANDARD = "LVCMOS25";
+NET "rowmd_o<1>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<0>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<1>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<2>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<3>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<4>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<5>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<6>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<7>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<8>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<9>" IOSTANDARD = "LVCMOS25";
+NET "rowad_o<10>" IOSTANDARD = "LVCMOS25";
+
+## NET "in_dip_sw_i<0>" IOSTANDARD = "LVCMOS25";
+## NET "in_dip_sw_i<1>" IOSTANDARD = "LVCMOS25";
+## NET "in_dip_sw_i<2>" IOSTANDARD = "LVCMOS25";
+## NET "in_dip_sw_i<3>" IOSTANDARD = "LVCMOS25";
+## NET "in_dip_sw_i<4>" IOSTANDARD = "LVCMOS25";
+## NET "in_dip_sw_i<5>" IOSTANDARD = "LVCMOS25";
+## NET "in_dip_sw_i<6>" IOSTANDARD = "LVCMOS25";
+## NET "in_dip_sw_i<7>" IOSTANDARD = "LVCMOS25";
+
+NET "dclk_an_o" IOSTANDARD = "LVDS_25";
+NET "dclk_bn_o" IOSTANDARD = "LVDS_25";
+NET "dclk_cn_o" IOSTANDARD = "LVDS_25";
+NET "dclk_dn_o" IOSTANDARD = "LVDS_25";
+NET "dclk_ap_o" IOSTANDARD = "LVDS_25";
+NET "dclk_bp_o" IOSTANDARD = "LVDS_25";
+NET "dclk_cp_o" IOSTANDARD = "LVDS_25";
+NET "dclk_dp_o" IOSTANDARD = "LVDS_25";
+
+NET "dout_an_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_an_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_an_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_an_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_an_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_an_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_an_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dout_ap_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_ap_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dout_bn_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_bn_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dout_bp_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_bp_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dout_cn_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_cn_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dout_cp_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_cp_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dout_dn_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_dn_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dout_dp_o<0>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<1>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<2>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<3>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<4>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<5>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<6>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<7>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<8>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<9>"  IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<10>" IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<11>" IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<12>" IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<13>" IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<14>" IOSTANDARD = "LVDS_25";
+NET "dout_dp_o<15>" IOSTANDARD = "LVDS_25";
+
+NET "dvalid_an_o" IOSTANDARD = "LVDS_25";
+NET "dvalid_bn_o" IOSTANDARD = "LVDS_25";
+NET "dvalid_cn_o" IOSTANDARD = "LVDS_25";
+NET "dvalid_dn_o" IOSTANDARD = "LVDS_25";
+NET "dvalid_ap_o" IOSTANDARD = "LVDS_25";
+NET "dvalid_bp_o" IOSTANDARD = "LVDS_25";
+NET "dvalid_cp_o" IOSTANDARD = "LVDS_25";
+NET "dvalid_dp_o" IOSTANDARD = "LVDS_25";
+
+NET "ddc_version_i<0>" IOSTANDARD = "LVCMOS25";
+NET "ddc_version_i<1>" IOSTANDARD = "LVCMOS25";
+NET "ddc_version_i<2>" IOSTANDARD = "LVCMOS25";
+NET "reset_i" IOSTANDARD = "LVCMOS25";
+## NET "rst2blkz_o" IOSTANDARD = "LVCMOS25";
+## NET "stepvcc_o" IOSTANDARD = "LVCMOS25";
+## NET "wdt_enablez_o" IOSTANDARD = "LVCMOS25";
+## NET "pwr_floatz_o" IOSTANDARD = "LVCMOS25";
+## NET "ns_flip_o" IOSTANDARD = "LVCMOS25";
+## NET "in_rst_active_i" IOSTANDARD = "LVCMOS25";
+## NET "in_init_active_i" IOSTANDARD = "LVCMOS25";
+## NET "apps_cntl_an" IOSTANDARD = "LVCMOS25";
+## NET "apps_cntl_ap" IOSTANDARD = "LVCMOS25";
+## NET "in_pb_sw_i" IOSTANDARD = "LVCMOS18";
+## NET "apps_logic_rstn" IOSTANDARD = "LVCMOS18";
+## NET "finished_iv_o" IOSTANDARD = "LVCMOS33";
+
+NET "clk_i" TNM_NET = clk_i;
+
+## ## Original Apps/TPG design testpoints (moved for gui design
+## ## NET "apps_testpt<0>"  LOC = H29 | IOSTANDARD = "LVCMOS33";
+## ## NET "apps_testpt<1>"  LOC = H30 | IOSTANDARD = "LVCMOS33";
+## ## NET "apps_testpt<2>"  LOC = J31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<3>"  LOC = G30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<4>"  LOC = J30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<5>"  LOC = G31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<6>"  LOC = J29 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<7>"  LOC = F29 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<8>"  LOC = K29 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<9>"  LOC = F30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<10>" LOC = L30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<11>" LOC = F31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<12>" LOC = L29 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<13>" LOC = E29 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<14>" LOC = E31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<15>" LOC = M30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<16>" LOC = K31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<17>" LOC = L31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<18>" LOC = P31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<19>" LOC = P30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<20>" LOC = N30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<21>" LOC = M31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<22>" LOC = R28 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<23>" LOC = R29 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<24>" LOC = T31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<25>" LOC = R31 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<26>" LOC = U30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<27>" LOC = T30 | IOSTANDARD = "LVCMOS33";
+## NET "apps_testpt<28>" LOC = T28 | IOSTANDARD = "LVCMOS33";
+## ## NET "apps_testpt<29>" LOC = T29 | IOSTANDARD = "LVCMOS33";
+## ## NET "apps_testpt<30>" LOC = U27 | IOSTANDARD = "LVCMOS33";
+
+#### Gui IO ##################################################
+##############################################################
+NET "finished_iv_o"         LOC = T25  | IOSTANDARD = "LVCMOS33";
+NET "in_init_active_i"      LOC = AF21 | IOSTANDARD = "LVCMOS25";
+NET "in_rst_active_i"       LOC = AF13 | IOSTANDARD = "LVCMOS25";
+NET "ns_flip_o"             LOC = AE24 | IOSTANDARD = "LVCMOS25";
+NET "pwr_floatz_o"          LOC = AG22 | IOSTANDARD = "LVCMOS25";
+NET "comp_data_o"           LOC = AF23 | IOSTANDARD = "LVCMOS25";
+NET "stepvcc_o"             LOC = AE12 | IOSTANDARD = "LVCMOS25";
+NET "wdt_enablez_o"         LOC = AF15 | IOSTANDARD = "LVCMOS25";
+NET "rst2blkz_o"            LOC = AE23 | IOSTANDARD = "LVCMOS25";
+NET "apps_cntl_an"          LOC = AF16 | IOSTANDARD = "LVCMOS25";
+NET "apps_cntl_ap"          LOC = AE16 | IOSTANDARD = "LVCMOS25"; 
+
+## Load4 output
+NET "ddcspare0"             LOC = AD19 | IOSTANDARD = "LVCMOS25"; 
+
+# DIP SWITCHES
+NET "apps_logic_rstn"       LOC = T24 | IOSTANDARD = "LVCMOS18";  
+NET "in_pb_sw_i"            LOC = P10 | IOSTANDARD = "LVCMOS18";  
+NET "in_dip_sw_i<0>"        LOC = G20 | IOSTANDARD = "LVCMOS25";
+NET "in_dip_sw_i<1>"        LOC = G21 | IOSTANDARD = "LVCMOS25";
+NET "in_dip_sw_i<2>"        LOC = F20 | IOSTANDARD = "LVCMOS25";
+NET "in_dip_sw_i<3>"        LOC = G22 | IOSTANDARD = "LVCMOS25";
+NET "in_dip_sw_i<4>"        LOC = H15 | IOSTANDARD = "LVCMOS25";
+NET "in_dip_sw_i<5>"        LOC = H14 | IOSTANDARD = "LVCMOS25";
+NET "in_dip_sw_i<6>"        LOC = H13 | IOSTANDARD = "LVCMOS25";
+NET "in_dip_sw_i<7>"        LOC = J14 | IOSTANDARD = "LVCMOS25";
+
+  
+# USB INTERFACE PINS
+
+NET "clk_usb"               LOC = N29 | IOSTANDARD = "LVCMOS33" | CLOCK_DEDICATED_ROUTE = FALSE;
+
+#####################################################################################################
+# USB settings
+
+NET "BIDIR<0>"  	    LOC = H29 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<1>"  	    LOC = H30 | IOSTANDARD = "LVCMOS33" | PULLDOWN;
+NET "BIDIR<2>"  	    LOC = J31 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<3>"  	    LOC = G30 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<4>"  	    LOC = J30 | IOSTANDARD = "LVCMOS33" | PULLDOWN;
+NET "BIDIR<5>"  	    LOC = G31 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<6>"  	    LOC = J29 | IOSTANDARD = "LVCMOS33" | PULLDOWN;
+NET "BIDIR<7>"  	    LOC = F29 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<8>"  	    LOC = K29 | IOSTANDARD = "LVCMOS33" | PULLDOWN;
+NET "BIDIR<9>"  	    LOC = F30 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<10>" 	    LOC = L30 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<11>" 	    LOC = F31 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<12>" 	    LOC = L29 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<13>" 	    LOC = E29 | IOSTANDARD = "LVCMOS33" | PULLDOWN;
+NET "BIDIR<14>" 	    LOC = E31 | IOSTANDARD = "LVCMOS33" | PULLUP;
+NET "BIDIR<15>" 	    LOC = M30 | IOSTANDARD = "LVCMOS33" | PULLUP;
+
+NET "CTL0"		    LOC = R31 | IOSTANDARD = "LVCMOS33";
+NET "CTL1"		    LOC = U30 | IOSTANDARD = "LVCMOS33";
+NET "CTL2"		    LOC = T30 | IOSTANDARD = "LVCMOS33";
+
+# MOVE test signals 15:0 & 27:25 to EXP BUS 1 bank 11  24:16 are still on Mictor
+
+##NET "apps_testpt<0>"	    LOC = B32 | IOSTANDARD = "LVCMOS33";
+##NET "apps_testpt<1>"	    LOC = A33 | IOSTANDARD = "LVCMOS33";
+##NET "apps_testpt<2>"	    LOC = B33 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<3>"	    LOC = C33 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<4>"	    LOC = C32 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<5>"	    LOC = D32 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<6>"	    LOC = C34 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<7>"	    LOC = D34 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<8>"	    LOC = G32 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<9>"	    LOC = H32 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<10>"	    LOC = F33 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<11>"	    LOC = E34 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<12>"	    LOC = E32 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<13>"	    LOC = E33 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<14>"	    LOC = G33 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<15>"	    LOC = F34 | IOSTANDARD = "LVCMOS33";
+
+NET "apps_testpt<16>"	    LOC = K31 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<17>"	    LOC = L31 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<18>"	    LOC = P31 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<19>"	    LOC = P30 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<20>"	    LOC = N30 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<21>"	    LOC = M31 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<22>"	    LOC = R28 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<23>"	    LOC = R29 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<24>"	    LOC = T31 | IOSTANDARD = "LVCMOS33";
+
+NET "apps_testpt<25>"	    LOC = J32 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<26>"	    LOC = H33 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<27>"	    LOC = H34 | IOSTANDARD = "LVCMOS33";
+
+NET "apps_testpt<28>"	    LOC = T28 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<29>"	    LOC = T29 | IOSTANDARD = "LVCMOS33";
+NET "apps_testpt<30>"	    LOC = U27 | IOSTANDARD = "LVCMOS33";
+
+NET "RDY0"                  LOC = R26 | IOSTANDARD = "LVCMOS33";
+NET "RDY1"                  LOC = R27 | IOSTANDARD = "LVCMOS33";
+NET "RDY2"                  LOC = U26 | IOSTANDARD = "LVCMOS33";
+
+NET "GPIOA_o<0>"            LOC = AG17 | IOSTANDARD = "LVCMOS25" | PULLDOWN;
+NET "GPIOA_o<1>"            LOC = AG16 | IOSTANDARD = "LVCMOS25" | PULLDOWN;
+NET "GPIOA_o<2>"            LOC = AH12 | IOSTANDARD = "LVCMOS25";
+NET "GPIOA_i<0>"            LOC = AG12 | IOSTANDARD = "LVCMOS25";
+NET "GPIOA_i<1>"            LOC = AF19 | IOSTANDARD = "LVCMOS25";
+NET "GPIOA_i<2>"            LOC = AF20 | IOSTANDARD = "LVCMOS25";
+
+NET "GPIO_EXT_REST_in"      LOC = AG20 |IOSTANDARD = "LVCMOS25" | PULLDOWN;
+
+NET "GPIO_reset_complete_o" LOC = AH19 | IOSTANDARD = "LVCMOS25";
+
+NET "led0"                  LOC = AK19 | IOSTANDARD = "LVCMOS25";
+NET "led1"                  LOC = AJ19 | IOSTANDARD = "LVCMOS25";
+#NET "trigger"						LOC = 
+

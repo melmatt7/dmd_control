@@ -1,0 +1,1872 @@
+Release 14.7 ngdbuild P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/ngdbuild -intstyle
+ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf
+-uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc
+appsfpga.ngd
+
+Reading NGO file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.ngc" ...
+Loading design module "src/rtl/FIFO_RCV2.ngc"...
+Loading design module "ipcore_dir/fifo.ngc"...
+Loading design module "src/rtl/fifo_register.ngc"...
+Loading design module "ipcore_dir/read_fifo.ngc"...
+Loading design module "ipcore_dir/ICON.ngc"...
+Loading design module "ipcore_dir/vio_sys.ngc"...
+Loading design module "ipcore_dir/vio_mem.ngc"...
+INFO:NgdBuild:1317 - Using core chipscope_vio_v1 requires a ChipScopePro
+   license.  The following blocks are instances of core chipscope_vio_v1:
+	/appsfpga/i_vio_sys
+	/appsfpga/i_vio_mem
+
+-----------------------------------------------
+INFO:Security:71 - If a license for part 'xc5vlx50' is available, it will be
+possible to use 'ChipScopePro_TDP' instead of 'ChipScopePro'.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+
+-----------------------------------------------
+
+-----------------------------------------------
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "src/rtl/ddr2_sdram.ucf" ...
+Annotating constraints to design from ucf file "src/rtl/merge.ucf" ...
+Annotating constraints to design from ucf file "src/rtl/timing.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   "TS_clk_180_u_flops_to_clk_g_flops"	    = FROM
+   "i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF" TO
+   "i_appsfpga_io_i_pll_clk_CLKOUT0_BUF"	        TIG;> [src/rtl/timing.ucf(27)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   "TS_clk_180_u_flops_to_clk_g_flops"	    = FROM
+   "i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF" TO
+   "i_appsfpga_io_i_pll_clk_CLKOUT0_BUF"	        TIG;> [src/rtl/timing.ucf(27)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'i_appsfpga_io_i_pll_clk_CLKOUT0_BUF'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   "TS_clk_g_flops_to_clk_180_u_flops"	    = FROM
+   "i_appsfpga_io_i_pll_clk_CLKOUT0_BUF"       TO
+   "i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF"   TIG;> [src/rtl/timing.ucf(28)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'i_appsfpga_io_i_pll_clk_CLKOUT0_BUF'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   "TS_clk_g_flops_to_clk_180_u_flops"	    = FROM
+   "i_appsfpga_io_i_pll_clk_CLKOUT0_BUF"       TO
+   "i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF"   TIG;> [src/rtl/timing.ucf(28)]:
+   Unable to find an active 'TimeGrp' or 'TNM' or 'TPSync' constraint named
+   'i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_J_TO_D = FROM J_CLK TO
+   D_CLK TIG ;> [src/rtl/timing.ucf(207)]: Unable to find an active 'TimeGrp' or
+   'TNM' or 'TPSync' constraint named 'D_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC TS_D_TO_J = FROM D_CLK TO
+   J_CLK TIG ;> [src/rtl/timing.ucf(208)]: Unable to find an active 'TimeGrp' or
+   'TNM' or 'TPSync' constraint named 'D_CLK'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   TS_i_appsfpga_io_i_PLL_clk_CLKFBOUT_CLKFBIN = PERIOD
+   "i_appsfpga_io_i_PLL_clk_CLKFBOUT_CLKFBIN" TS_clk_i HIGH 50% INPUT_JITTER 100
+   ps>: Unable to find an active 'TNM' constraint named
+   'i_appsfpga_io_i_PLL_clk_CLKFBOUT_CLKFBIN'.
+
+WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
+   TS_i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN" TS_clk_i HIGH 50% INPUT_JITTER 100
+   ps>: Unable to find an active 'TNM' constraint named
+   'i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN'.
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT0: <TIMESPEC TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = PERIOD
+   "i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF" TS_clk_i / 4 HIGH 50% INPUT_JITTER 100
+   ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT1: <TIMESPEC TS_i_appsfpga_io_i_PLL_clk_CLKOUT1_BUF = PERIOD
+   "i_appsfpga_io_i_PLL_clk_CLKOUT1_BUF" TS_clk_i / 8 HIGH 50% INPUT_JITTER 100
+   ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT0: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT0_BUF = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT0_BUF" TS_clk_i / 1.5 HIGH 50% INPUT_JITTER
+   100 ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT1: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF" TS_clk_i / 3 HIGH 50% INPUT_JITTER 100
+   ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT2: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT2_BUF" TS_clk_i / 3 PHASE 1.666666667 ns HIGH
+   50% INPUT_JITTER 100 ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
+   'TS_clk_i', was traced into PLL_ADV instance PLL_ADV_INST. The following new
+   TNM groups and period specifications were generated at the PLL_ADV output(s):
+    
+   CLKOUT3: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT3_BUF" TS_clk_i / 4 HIGH 50% INPUT_JITTER 100
+   ps>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i_flops', used in period specification
+   'TS_clk_i_flops', was traced into PLL_ADV instance PLL_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = PERIOD
+   "i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0" TS_clk_i_flops / 4 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i_flops', used in period specification
+   'TS_clk_i_flops', was traced into PLL_ADV instance PLL_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_i_appsfpga_io_i_PLL_clk_CLKOUT1_BUF_0 = PERIOD
+   "i_appsfpga_io_i_PLL_clk_CLKOUT1_BUF_0" TS_clk_i_flops / 8 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i_flops', used in period specification
+   'TS_clk_i_flops', was traced into PLL_ADV instance PLL_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT0: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT0_BUF_0 = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT0_BUF_0" TS_clk_i_flops / 1.5 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i_flops', used in period specification
+   'TS_clk_i_flops', was traced into PLL_ADV instance PLL_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT1: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0 = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0" TS_clk_i_flops / 3 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i_flops', used in period specification
+   'TS_clk_i_flops', was traced into PLL_ADV instance PLL_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT2: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF_0 = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT2_BUF_0" TS_clk_i_flops / 3 PHASE 1.666666667
+   ns HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_i_flops', used in period specification
+   'TS_clk_i_flops', was traced into PLL_ADV instance PLL_ADV_INST. The
+   following new TNM groups and period specifications were generated at the
+   PLL_ADV output(s): 
+   CLKOUT3: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0 = PERIOD
+   "i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0" TS_clk_i_flops / 4 HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_usb_flops', used in period specification
+   'TS_clk_usb', was traced into PLL_ADV instance PLL_ADV_INST. The following
+   new TNM groups and period specifications were generated at the PLL_ADV
+   output(s): 
+   CLKOUT0: <TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0 = PERIOD
+   "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0" TS_clk_usb HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_usb_flops', used in period specification
+   'TS_clk_usb', was traced into PLL_ADV instance PLL_ADV_INST. The following
+   new TNM groups and period specifications were generated at the PLL_ADV
+   output(s): 
+   CLKOUT1: <TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0 = PERIOD
+   "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0" TS_clk_usb PHASE 10.415 ns
+   HIGH 50%>
+
+WARNING:ConstraintSystem - The Offset constraint <NET "ctl*"   OFFSET = IN 10.33
+   ns BEFORE "clk_usb";> [src/rtl/merge.ucf(11)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "bidir*" OFFSET = IN 8.2
+   ns   BEFORE "clk_usb";> [src/rtl/merge.ucf(12)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "ctl*"   OFFSET = IN 10.33
+   ns BEFORE "clk_usb";> [src/rtl/timing.ucf(51)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:ConstraintSystem - The Offset constraint <NET "bidir*" OFFSET = IN 8.2
+   ns   BEFORE "clk_usb";> [src/rtl/timing.ucf(52)], is specified without a
+   duration.  This will result in a lack of hold time checks in timing reports. 
+   If hold time checks are desired a duration value should be specified
+   following the 'VALID' keyword.
+
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC TS_clk_usb                 =
+   PERIOD "clk_usb_flops"         20.83 ns HIGH 50%;> [src/rtl/merge.ucf(7)] is
+   overridden by the constraint <TIMESPEC TS_clk_usb                            
+       = PERIOD "clk_usb_flops"                      20.83 ns HIGH 50%;>
+   [src/rtl/timing.ucf(14)]. The overriden constraint usually comes from the
+   input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
+   promote this message to an error.
+WARNING:NgdBuild:1345 - The constraint <NET "bidir*" OFFSET = OUT 30 ns   AFTER 
+   "clk_usb";> [src/rtl/merge.ucf(10)] is overridden by the constraint <NET
+   "bidir*" OFFSET = OUT 30 ns   AFTER  "clk_usb";> [src/rtl/timing.ucf(50)].
+   The overriden constraint usually comes from the input netlist or ncf files.
+   Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an
+   error.
+WARNING:NgdBuild:1345 - The constraint <NET "ctl*"   OFFSET = IN 10.33 ns BEFORE
+   "clk_usb";> [src/rtl/merge.ucf(11)] is overridden by the constraint <NET
+   "ctl*"   OFFSET = IN 10.33 ns BEFORE "clk_usb";> [src/rtl/timing.ucf(51)].
+   The overriden constraint usually comes from the input netlist or ncf files.
+   Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an
+   error.
+WARNING:NgdBuild:1345 - The constraint <NET "bidir*" OFFSET = IN 8.2 ns   BEFORE
+   "clk_usb";> [src/rtl/merge.ucf(12)] is overridden by the constraint <NET
+   "bidir*" OFFSET = IN 8.2 ns   BEFORE "clk_usb";> [src/rtl/timing.ucf(52)].
+   The overriden constraint usually comes from the input netlist or ncf files.
+   Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to promote this message to an
+   error.
+WARNING:NgdBuild:1345 - The constraint <TIMESPEC "TSfalse" = FROM "SYS_GRP" TO
+   "MEM_GRP" TIG;> [src/rtl/timing.ucf(213)] is overridden by the constraint
+   <TIMESPEC "TSfalse" = FROM "MEM_GRP" TO "SYS_GRP" TIG;>
+   [src/rtl/timing.ucf(214)]. The overriden constraint usually comes from the
+   input netlist or ncf files. Please set XIL_NGDBUILD_CONSTR_OVERRIDE_ERROR to
+   promote this message to an error.
+Done...
+
+WARNING:NgdBuild:1440 - User specified non-default attribute value
+   (20.8329999999999984) was detected for the CLKIN1_PERIOD attribute on PLL
+   "PLL_ADV_INST".  This does not match the PERIOD constraint value (20.83 ns.).
+    The uncertainty calculation will use the PERIOD constraint value.  This
+   could result in incorrect uncertainty calculated for PLL output clocks.
+Checking expanded design ...
+WARNING:NgdBuild:443 - SFF primitive
+   'i_vio_mem/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT' has unconnected output pin
+WARNING:NgdBuild:452 - logical net 'N102' has no driver
+WARNING:NgdBuild:452 - logical net 'N103' has no driver
+WARNING:NgdBuild:452 - logical net 'N104' has no driver
+WARNING:NgdBuild:452 - logical net 'N105' has no driver
+WARNING:NgdBuild:452 - logical net 'N106' has no driver
+WARNING:NgdBuild:452 - logical net 'N107' has no driver
+WARNING:NgdBuild:452 - logical net 'N108' has no driver
+WARNING:NgdBuild:452 - logical net 'N109' has no driver
+WARNING:NgdBuild:452 - logical net 'N110' has no driver
+WARNING:NgdBuild:452 - logical net 'N111' has no driver
+WARNING:NgdBuild:452 - logical net 'N112' has no driver
+WARNING:NgdBuild:452 - logical net 'N113' has no driver
+WARNING:NgdBuild:452 - logical net 'N114' has no driver
+WARNING:NgdBuild:452 - logical net 'N115' has no driver
+WARNING:NgdBuild:452 - logical net 'N116' has no driver
+WARNING:NgdBuild:452 - logical net 'N117' has no driver
+WARNING:NgdBuild:452 - logical net 'N118' has no driver
+WARNING:NgdBuild:452 - logical net 'N119' has no driver
+WARNING:NgdBuild:452 - logical net 'N120' has no driver
+WARNING:NgdBuild:452 - logical net 'N121' has no driver
+WARNING:NgdBuild:452 - logical net 'N122' has no driver
+WARNING:NgdBuild:452 - logical net 'N123' has no driver
+WARNING:NgdBuild:452 - logical net 'N124' has no driver
+WARNING:NgdBuild:452 - logical net 'N125' has no driver
+WARNING:NgdBuild:452 - logical net 'N126' has no driver
+WARNING:NgdBuild:452 - logical net 'N127' has no driver
+WARNING:NgdBuild:452 - logical net 'N128' has no driver
+WARNING:NgdBuild:452 - logical net 'N129' has no driver
+WARNING:NgdBuild:452 - logical net 'N130' has no driver
+WARNING:NgdBuild:452 - logical net 'N131' has no driver
+WARNING:NgdBuild:452 - logical net 'N132' has no driver
+WARNING:NgdBuild:452 - logical net 'N133' has no driver
+WARNING:NgdBuild:452 - logical net 'N134' has no driver
+WARNING:NgdBuild:452 - logical net 'N135' has no driver
+WARNING:NgdBuild:452 - logical net 'N136' has no driver
+WARNING:NgdBuild:452 - logical net 'N137' has no driver
+WARNING:NgdBuild:452 - logical net 'N138' has no driver
+WARNING:NgdBuild:452 - logical net 'N139' has no driver
+WARNING:NgdBuild:452 - logical net 'N140' has no driver
+WARNING:NgdBuild:452 - logical net 'N141' has no driver
+WARNING:NgdBuild:452 - logical net 'N142' has no driver
+WARNING:NgdBuild:452 - logical net 'N143' has no driver
+WARNING:NgdBuild:452 - logical net 'N144' has no driver
+WARNING:NgdBuild:452 - logical net 'N145' has no driver
+WARNING:NgdBuild:452 - logical net 'N146' has no driver
+WARNING:NgdBuild:452 - logical net 'N147' has no driver
+WARNING:NgdBuild:452 - logical net 'N148' has no driver
+WARNING:NgdBuild:452 - logical net 'N149' has no driver
+WARNING:NgdBuild:452 - logical net 'N150' has no driver
+WARNING:NgdBuild:452 - logical net 'N151' has no driver
+WARNING:NgdBuild:452 - logical net 'N152' has no driver
+WARNING:NgdBuild:452 - logical net 'N153' has no driver
+WARNING:NgdBuild:452 - logical net 'N154' has no driver
+WARNING:NgdBuild:452 - logical net 'N155' has no driver
+WARNING:NgdBuild:452 - logical net 'N156' has no driver
+WARNING:NgdBuild:452 - logical net 'N157' has no driver
+WARNING:NgdBuild:452 - logical net 'N158' has no driver
+WARNING:NgdBuild:452 - logical net 'N159' has no driver
+WARNING:NgdBuild:452 - logical net 'N160' has no driver
+WARNING:NgdBuild:452 - logical net 'N161' has no driver
+WARNING:NgdBuild:452 - logical net 'N162' has no driver
+WARNING:NgdBuild:452 - logical net 'N163' has no driver
+WARNING:NgdBuild:452 - logical net 'N164' has no driver
+WARNING:NgdBuild:452 - logical net 'N165' has no driver
+WARNING:NgdBuild:452 - logical net 'N166' has no driver
+WARNING:NgdBuild:452 - logical net 'N167' has no driver
+WARNING:NgdBuild:452 - logical net 'N168' has no driver
+WARNING:NgdBuild:452 - logical net 'N169' has no driver
+WARNING:NgdBuild:452 - logical net 'N170' has no driver
+WARNING:NgdBuild:452 - logical net 'N171' has no driver
+WARNING:NgdBuild:452 - logical net 'N172' has no driver
+WARNING:NgdBuild:452 - logical net 'N173' has no driver
+WARNING:NgdBuild:452 - logical net 'N174' has no driver
+WARNING:NgdBuild:452 - logical net 'N175' has no driver
+WARNING:NgdBuild:452 - logical net 'N176' has no driver
+WARNING:NgdBuild:452 - logical net 'N177' has no driver
+WARNING:NgdBuild:452 - logical net 'N178' has no driver
+WARNING:NgdBuild:452 - logical net 'N179' has no driver
+WARNING:NgdBuild:452 - logical net 'N180' has no driver
+WARNING:NgdBuild:452 - logical net 'N181' has no driver
+WARNING:NgdBuild:452 - logical net 'N182' has no driver
+WARNING:NgdBuild:452 - logical net 'N183' has no driver
+WARNING:NgdBuild:452 - logical net 'N184' has no driver
+WARNING:NgdBuild:452 - logical net 'N185' has no driver
+WARNING:NgdBuild:452 - logical net 'N186' has no driver
+WARNING:NgdBuild:452 - logical net 'N187' has no driver
+WARNING:NgdBuild:452 - logical net 'N188' has no driver
+WARNING:NgdBuild:452 - logical net 'N189' has no driver
+WARNING:NgdBuild:452 - logical net 'N190' has no driver
+WARNING:NgdBuild:452 - logical net 'N191' has no driver
+WARNING:NgdBuild:452 - logical net 'N192' has no driver
+WARNING:NgdBuild:452 - logical net 'N193' has no driver
+WARNING:NgdBuild:452 - logical net 'N194' has no driver
+WARNING:NgdBuild:452 - logical net 'N195' has no driver
+WARNING:NgdBuild:452 - logical net 'N196' has no driver
+WARNING:NgdBuild:452 - logical net 'N197' has no driver
+WARNING:NgdBuild:452 - logical net 'appsfpga_io_cnthalt_q' has no driver
+WARNING:NgdBuild:452 - logical net 'appsfpga_io_comp_data_en_q' has no driver
+WARNING:NgdBuild:452 - logical net 'appsfpga_io_float_q' has no driver
+WARNING:NgdBuild:452 - logical net 'appsfpga_io_ns_flip_en_q' has no driver
+WARNING:NgdBuild:452 - logical net 'appsfpga_io_reset_type_q<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'appsfpga_io_reset_type_q<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'appsfpga_io_rowaddrmode_q' has no driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_active_cnt_q<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_active_cnt_q<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_active_cnt_q<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_active_cnt_q<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_active_cnt_q<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_active_cnten_q' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<12>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<13>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<14>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<15>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<16>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<17>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<18>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<19>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<20>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<21>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<22>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<23>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<24>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<25>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/cnts_pattern_cnt_q<26>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'i_appscore/mem_rd_cd_fifo_valid' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<0>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<100>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<101>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<102>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<103>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<104>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<105>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<106>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<107>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<108>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<109>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<110>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<111>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<112>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<113>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<114>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<115>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<116>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<117>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<118>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<119>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<11>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<120>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<121>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<122>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<123>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<124>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<125>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<126>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<127>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<128>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<129>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<12>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<130>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<131>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<132>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<133>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<134>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<135>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<136>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<137>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<138>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<139>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<13>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<140>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<141>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<142>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<143>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<144>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<145>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<146>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<147>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<148>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<149>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<14>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<150>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<151>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<152>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<153>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<154>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<155>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<156>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<157>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<158>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<159>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<15>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<160>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<161>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<162>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<163>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<164>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<165>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<166>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<167>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<168>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<169>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<16>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<170>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<171>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<172>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<173>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<174>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<175>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<176>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<177>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<178>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<179>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<17>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<180>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<181>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<182>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<183>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<184>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<185>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<186>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<187>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<188>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<189>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<18>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<190>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<191>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<192>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<193>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<194>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<195>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<196>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<197>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<198>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<199>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<19>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<1>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<200>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<201>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<202>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<203>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<204>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<205>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<206>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<207>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<208>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<209>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<20>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<210>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<211>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<212>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<213>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<214>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<215>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<216>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<217>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<218>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<219>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<21>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<220>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<221>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<222>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<223>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<224>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<225>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<226>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<227>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<228>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<229>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<22>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<230>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<231>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<232>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<233>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<234>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<235>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<236>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<237>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<238>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<239>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<23>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<240>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<241>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<242>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<243>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<244>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<245>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<246>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<247>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<248>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<249>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<24>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<250>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<251>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<252>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<253>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<254>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<255>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<256>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<257>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<258>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<259>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<25>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<260>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<261>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<262>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<263>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<264>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<265>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<266>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<267>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<268>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<269>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<26>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<270>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<271>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<272>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<273>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<274>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<275>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<276>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<277>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<278>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<279>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<27>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<280>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<281>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<282>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<283>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<284>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<285>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<286>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<287>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<288>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<289>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<28>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<290>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<291>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<292>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<293>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<294>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<295>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<296>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<297>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<298>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<299>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<29>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<300>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<301>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<302>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<303>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<304>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<305>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<306>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<307>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<308>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<309>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<30>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<310>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<311>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<312>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<313>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<314>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<315>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<316>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<317>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<318>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<319>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<31>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<320>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<321>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<322>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<323>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<324>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<325>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<326>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<327>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<328>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<329>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<32>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<330>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<331>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<332>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<333>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<334>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<335>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<336>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<337>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<338>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<339>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<33>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<340>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<341>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<342>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<343>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<344>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<345>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<346>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<347>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<348>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<349>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<34>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<350>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<351>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<352>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<353>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<354>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<355>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<356>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<357>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<358>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<359>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<35>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<360>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<361>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<362>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<363>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<364>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<365>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<366>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<367>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<368>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<369>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<36>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<370>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<371>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<372>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<373>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<374>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<375>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<376>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<377>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<378>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<379>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<37>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<380>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<381>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<382>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<383>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<38>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<39>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<40>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<41>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<42>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<43>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<44>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<45>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<46>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<47>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<48>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<49>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<4>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<50>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<51>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<52>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<53>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<54>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<55>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<56>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<57>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<58>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<59>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<5>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<60>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<61>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<62>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<63>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<64>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<65>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<66>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<67>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<68>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<69>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<70>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<71>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<72>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<73>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<74>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<75>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<76>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<77>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<78>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<79>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<80>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<81>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<82>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<83>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<84>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<85>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<86>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<87>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<88>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<89>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<90>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<91>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<92>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<93>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<94>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<95>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<96>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<97>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<98>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<99>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dq_tap_cnt<9>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<0>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<11>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<12>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<13>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<14>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<15>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<16>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<17>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<18>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<19>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<1>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<20>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<21>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<22>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<23>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<24>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<25>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<26>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<27>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<28>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<29>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<30>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<31>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<32>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<33>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<34>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<35>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<36>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<37>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<38>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<39>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<40>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<41>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<42>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<43>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<44>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<45>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<46>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<47>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<4>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<5>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_dqs_tap_cnt<9>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_err<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_err<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<0>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<10>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<11>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<12>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<13>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<14>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<15>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<16>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<17>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<18>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<19>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<1>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<20>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<21>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<22>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<23>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<24>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<25>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<26>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<27>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<28>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<29>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<2>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<30>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<31>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<32>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<33>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<34>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<35>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<36>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<37>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<38>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<39>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<3>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<40>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<41>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<42>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<43>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<44>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<45>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<46>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<47>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<4>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<5>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<6>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<7>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<8>'
+   has no driver
+WARNING:NgdBuild:452 - logical net
+   'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/dbg_calib_gate_tap_cnt<9>'
+   has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 627
+
+Total memory usage is 587732 kilobytes
+
+Writing NGD file "appsfpga.ngd" ...
+Total REAL time to NGDBUILD completion:  24 sec
+Total CPU time to NGDBUILD completion:   10 sec
+
+Writing NGDBUILD log file "appsfpga.bld"...

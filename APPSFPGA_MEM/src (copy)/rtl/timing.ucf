@@ -1,0 +1,214 @@
+# TIMING CONSTRAINTS
+NET "clk_i"                                         TNM_NET = clk_i_flops;
+NET "clk_usb"                                       TNM_NET = clk_usb_flops;
+NET "ddr2_dqs<0>"			            TNM_NET = dqs0_flops;
+NET "ddr2_dqs<1>"				    TNM_NET = dqs1_flops;
+NET "ddr2_dqs<2>"				    TNM_NET = dqs2_flops;
+NET "ddr2_dqs<3>"				    TNM_NET = dqs3_flops;
+NET "ddr2_dqs<4>"				    TNM_NET = dqs4_flops;
+NET "ddr2_dqs<5>"				    TNM_NET = dqs5_flops;
+NET "ddr2_dqs<6>"				    TNM_NET = dqs6_flops;
+NET "ddr2_dqs<7>"				    TNM_NET = dqs7_flops;
+
+TIMESPEC TS_clk_i_flops                             = PERIOD "clk_i_flops"                        20.00 ns HIGH 50%;
+TIMESPEC TS_clk_usb                                 = PERIOD "clk_usb_flops"                      20.83 ns HIGH 50%;
+
+TIMESPEC TS_dqs0_flops  			    = PERIOD "dqs0_flops"			  3.75 ns HIGH 50 %;
+TIMESPEC TS_dqs1_flops  			    = PERIOD "dqs1_flops"			  3.75 ns HIGH 50 %;
+TIMESPEC TS_dqs2_flops  			    = PERIOD "dqs2_flops"			  3.75 ns HIGH 50 %;
+TIMESPEC TS_dqs3_flops  			    = PERIOD "dqs3_flops"			  3.75 ns HIGH 50 %;
+TIMESPEC TS_dqs4_flops  			    = PERIOD "dqs4_flops"			  3.75 ns HIGH 50 %;
+TIMESPEC TS_dqs5_flops  			    = PERIOD "dqs5_flops"			  3.75 ns HIGH 50 %;
+TIMESPEC TS_dqs6_flops  			    = PERIOD "dqs6_flops"			  3.75 ns HIGH 50 %;
+TIMESPEC TS_dqs7_flops  			    = PERIOD "dqs7_flops"			  3.75 ns HIGH 50 %;
+
+TIMESPEC "TS_pad_to_pad"                            = FROM PADS              TO PADS	          10.00 ns;
+
+TIMESPEC "TS_clk_180_u_flops_to_clk_g_flops"	    = FROM "i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF" TO "i_appsfpga_io_i_pll_clk_CLKOUT0_BUF"	        TIG;
+TIMESPEC "TS_clk_g_flops_to_clk_180_u_flops"	    = FROM "i_appsfpga_io_i_pll_clk_CLKOUT0_BUF"       TO "i_appscore_USB_COMM_i_pll_usb_CLKOUT1_BUF"   TIG;
+
+TIMESPEC "TS_dqs0_flops_to_clk2x_mem"	            = FROM "dqs0_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+TIMESPEC "TS_dqs1_flops_to_clk2x_mem"	            = FROM "dqs1_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+TIMESPEC "TS_dqs2_flops_to_clk2x_mem"	            = FROM "dqs2_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+TIMESPEC "TS_dqs3_flops_to_clk2x_mem"	            = FROM "dqs3_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+TIMESPEC "TS_dqs4_flops_to_clk2x_mem"	            = FROM "dqs4_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+TIMESPEC "TS_dqs5_flops_to_clk2x_mem"	            = FROM "dqs5_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+TIMESPEC "TS_dqs6_flops_to_clk2x_mem"	            = FROM "dqs6_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+TIMESPEC "TS_dqs7_flops_to_clk2x_mem"	            = FROM "dqs7_flops"      TO "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"   TIG;
+
+TIMESPEC "TS_clk2x_mem_to_dqs0_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs0_flops"	TIG;
+TIMESPEC "TS_clk2x_mem_to_dqs1_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs1_flops"	TIG;
+TIMESPEC "TS_clk2x_mem_to_dqs2_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs2_flops"	TIG;
+TIMESPEC "TS_clk2x_mem_to_dqs3_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs3_flops"	TIG;
+TIMESPEC "TS_clk2x_mem_to_dqs4_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs4_flops"	TIG;
+TIMESPEC "TS_clk2x_mem_to_dqs5_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs5_flops"	TIG;
+TIMESPEC "TS_clk2x_mem_to_dqs6_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs6_flops"	TIG;
+TIMESPEC "TS_clk2x_mem_to_dqs7_flops"		    = FROM "i_appsfpga_io_i_pll_mem_CLKOUT1_BUF"  TO "dqs7_flops"	TIG;
+
+
+# Multicycle path
+NET "bidir*" OFFSET = OUT 30 ns   AFTER  "clk_usb";
+NET "ctl*"   OFFSET = IN 10.33 ns BEFORE "clk_usb";
+NET "bidir*" OFFSET = IN 8.2 ns   BEFORE "clk_usb";
+
+NET "ddr2_dq*"                  TIG;
+NET "ddr2_dqs*"                 TIG;
+NET "ddr2_dm*"                  TIG;
+NET "ddr2_a*"                   TIG;
+NET "ddr2_ba*"                  TIG;
+NET "ddr2_odt*"                 TIG;
+NET "ddr2_cas*"                 TIG;
+NET "ddr2_ras*"                 TIG;
+NET "ddr2_we*"                  TIG;
+NET "ddr2_cke*"                 TIG;
+NET "ddr2_cs*"                  TIG;
+
+
+#NET "arstz_o"                 TIG;
+#NET "clk_r_o"                 TIG;
+#NET "apps_logic_rstz"         TIG;
+#NET "dout*"                   TIG;
+#NET "dvalid*"                 TIG;
+#NET "dclk*"                   TIG;
+#NET "row*"                    TIG;
+#NET "blk*"                    TIG;
+#NET "rdy*"                    TIG;	       	       
+#NET "stepvcc_o"	              TIG;
+#NET "comp_data_o"	      TIG;
+#NET "ns_flip_o"	              TIG;	
+#NET "wdt_enablez_o"	      TIG;
+#NET "ddc_version_i*"	      TIG;
+#NET "dmd_type_i*"	      TIG;
+#NET "pwr_floatz_o"	      TIG;	  
+#NET "rst2blkz_o"	      TIG;   
+#NET "in_init_active_i"        TIG;
+#NET "in_dip_sw_i*"	      TIG;
+#NET "apps_mirror_floatz"      TIG;
+#NET "led0"                    TIG;
+#NET "led1"                    TIG;
+#NET "finished_iv_o"           TIG;
+#NET "gpioa_o*" 	              TIG;
+#NET "gpioa_i*" 	              TIG;
+#NET "gpio_ext_rest_in"        TIG;
+#NET "gpio_reset_complete_o"   TIG;
+#NET "apps_testpt*"            TIG;
+
+#INST "i_appsfpga_io/arst_g_3q"   LOC = SLICE_X27Y54;
+#INST "i_appsfpga_io/i_bufg_arst_g" LOC = BUFGCTRL_X0Y14;
+#
+#NET "arst_mem2x90"            TIG;
+
+NET "ddr2_ck<0>" TIG;
+NET "ddr2_ck<1>" TIG;
+
+#NET "i_appsfpga_io/clk0_delay"             TPTHRU = "TPT_clk_0_delay";
+#TIMESPEC "TS_clk_i_to_TPT_clk_0_delay"     = FROM PADS("*clk_i*")   THRU "TPT_clk_0_delay"     TIG;
+
+NET "i_appscore/USB_IO_INST/ifclk_bufg"      TPTHRU = "TPT_ifclk_bufg";
+TIMESPEC "TS_clk_usb_to_TPT_ifclk_bufg"   = FROM PADS("*clk_usb*") THRU "TPT_ifclk_bufg"     TIG;
+
+#NET "i_appsfpga_io/clk_a"            TPTHRU = "TPT_clk_a";
+#TIMESPEC "TS_clk_i_to_TPT_clk_a"     = FROM PADS("*clk_i*")   THRU "TPT_clk_a"     TIG;
+
+TIMESPEC "TS_ffs_to_ddr2_ck_n"             = FROM FFS   TO PADS("*ddr2_ck_n*")                 TIG;
+
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<1>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<2>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<3>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<4>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<5>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<6>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<7>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<8>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<9>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<1>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<2>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<3>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<4>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<5>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<7>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<8>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>" MAXDELAY = 12 ns;
+
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<1>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<2>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<3>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<4>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<5>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<6>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<7>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<8>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<9>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<1>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<2>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<3>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<4>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<5>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<7>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<8>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>" TIG;
+
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<1>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<2>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<3>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<4>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<5>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<6>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<7>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<8>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<9>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<1>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<2>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<3>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<4>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<5>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<7>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<8>" MAXDELAY = 12 ns;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>" MAXDELAY = 12 ns;
+
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<0>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<1>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<2>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<3>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<4>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<5>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<6>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<7>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<8>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc<9>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<0>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<1>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<2>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<3>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<4>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<5>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<6>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<7>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<8>" TIG;
+NET "i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_gc<9>" TIG;
+
+
+NET "*/U0/U_ICON/*/iDRCK_LOCAL" TNM_NET = J_CLK ;
+TIMESPEC TS_J_CLK = PERIOD J_CLK 30 ns ;
+#Update Constraints
+NET "*/U0/iUPDATE_OUT" TNM_NET = U_CLK ;
+NET "*/U0/iSHIFT_OUT" TIG ;
+TIMESPEC TS_U_TO_J = FROM U_CLK TO J_CLK 15 ns ;
+TIMESPEC TS_U_TO_U = FROM U_CLK TO U_CLK 15 ns ;
+TIMESPEC TS_J_TO_D = FROM J_CLK TO D_CLK TIG ;
+TIMESPEC TS_D_TO_J = FROM D_CLK TO J_CLK TIG ;
+
+NET "*/clk_g" TNM_NET=  "SYS_GRP";
+NET "*/mem_clk2x" TNM_NET=  "MEM_GRP";
+
+TIMESPEC "TSfalse" = FROM "SYS_GRP" TO "MEM_GRP" TIG;
+TIMESPEC "TSfalse" = FROM "MEM_GRP" TO "SYS_GRP" TIG;

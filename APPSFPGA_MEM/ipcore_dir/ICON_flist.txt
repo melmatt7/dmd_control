@@ -1,0 +1,27 @@
+# Output products list for <ICON>
+ICON/example_design/example_ICON.ucf
+ICON/example_design/example_icon.vhd
+ICON/implement/chipscope_vio.xco
+ICON/implement/coregen.cgp
+ICON/implement/example_ICON.prj
+ICON/implement/example_ICON.xst
+ICON/implement/ise_implement.bat
+ICON/implement/ise_implement.sh
+ICON/implement/pa_ise_implement.tcl
+ICON/read_me.txt
+ICON.asy
+ICON.constraints/ICON.ucf
+ICON.constraints/ICON.xdc
+ICON.gise
+ICON.ngc
+ICON.sym
+ICON.ucf
+ICON.vhd
+ICON.vho
+ICON.xco
+ICON.xdc
+ICON.xise
+ICON_flist.txt
+ICON_readme.txt
+ICON_xmdf.tcl
+_xmsgs/pn_parser.xmsgs

@@ -1,0 +1,17 @@
+# Output products list for <chipscopeB>
+_xmsgs/pn_parser.xmsgs
+chipscopeB.asy
+chipscopeB.constraints/chipscopeB.ucf
+chipscopeB.constraints/chipscopeB.xdc
+chipscopeB.gise
+chipscopeB.ngc
+chipscopeB.sym
+chipscopeB.ucf
+chipscopeB.vhd
+chipscopeB.vho
+chipscopeB.xco
+chipscopeB.xdc
+chipscopeB.xise
+chipscopeB_flist.txt
+chipscopeB_readme.txt
+chipscopeB_xmdf.tcl

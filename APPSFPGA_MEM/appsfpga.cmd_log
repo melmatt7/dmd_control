@@ -1,0 +1,105 @@
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+xst -intstyle ise -ifn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.xst" -ofn "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc appsfpga.ngd  
+map -intstyle ise -p xc5vlx50-ff1153-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o appsfpga_map.ncd appsfpga.ngd appsfpga.pcf 
+par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd appsfpga.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml appsfpga.twx appsfpga.ncd -o appsfpga.twr appsfpga.pcf 
+bitgen -intstyle ise -f appsfpga.ut appsfpga.ncd 

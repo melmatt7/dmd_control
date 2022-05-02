@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga_tb_isim_beh.exe" -prj "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga_tb_beh.prj" "work.appsfpga_tb" "work.glbl" 

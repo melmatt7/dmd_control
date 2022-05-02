@@ -1,0 +1,5 @@
+set -tmpdir "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/xst/projnav.tmp"
+set -xsthdpdir "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/xst"
+elaborate
+-ifn appscore.prj
+-ifmt mixed

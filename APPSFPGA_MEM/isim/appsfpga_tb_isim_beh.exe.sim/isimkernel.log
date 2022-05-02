@@ -1,0 +1,10 @@
+Command line:
+   appsfpga_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  44724
+
+Sun Mar 20 08:21:49 2022
+
+
+ Elaboration Time: 2.28 sec

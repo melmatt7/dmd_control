@@ -1,0 +1,13 @@
+run
+-ifmt VHDL
+-ent mem_read_enable_fifo_exdes 
+-p xc5vlx50-ff1153-1
+-ifn xst.prj
+-write_timing_constraints No
+-iobuf YES
+-max_fanout 100
+-ofn mem_read_enable_fifo_exdes 
+-ofmt NGC
+-bus_delimiter ()
+-hierarchy_separator /
+-case Maintain
