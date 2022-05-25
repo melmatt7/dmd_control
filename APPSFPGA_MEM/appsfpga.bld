@@ -6,7 +6,7 @@ ise -dd _ngo -sd src/rtl -sd ipcore_dir -nt timestamp -uc src/rtl/ddr2_sdram.ucf
 -uc src/rtl/merge.ucf -uc src/rtl/timing.ucf -p xc5vlx50-ff1153-1 appsfpga.ngc
 appsfpga.ngd
 
-Reading NGO file "/home/ise/ise_proj/dmd-project/APPSFPGA_MEM/appsfpga.ngc" ...
+Reading NGO file "/home/ise/dmd_control/APPSFPGA_MEM/appsfpga.ngc" ...
 Loading design module "src/rtl/FIFO_RCV2.ngc"...
 Loading design module "ipcore_dir/fifo.ngc"...
 Loading design module "src/rtl/fifo_register.ngc"...
@@ -84,6 +84,21 @@ WARNING:ConstraintSystem:56 - Constraint <TIMESPEC
    "i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN" TS_clk_i HIGH 50% INPUT_JITTER 100
    ps>: Unable to find an active 'TNM' constraint named
    'i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN'.
+
+INFO:ConstraintSystem:178 - TNM 'clk_usb_flops', used in period specification
+   'TS_clk_usb', was traced into PLL_ADV instance PLL_ADV_INST. The following
+   new TNM groups and period specifications were generated at the PLL_ADV
+   output(s): 
+   CLKOUT0: <TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF = PERIOD
+   "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF" TS_clk_usb HIGH 50%>
+
+INFO:ConstraintSystem:178 - TNM 'clk_usb_flops', used in period specification
+   'TS_clk_usb', was traced into PLL_ADV instance PLL_ADV_INST. The following
+   new TNM groups and period specifications were generated at the PLL_ADV
+   output(s): 
+   CLKOUT1: <TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF = PERIOD
+   "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF" TS_clk_usb PHASE 10.415 ns
+   HIGH 50%>
 
 INFO:ConstraintSystem:178 - TNM 'clk_i', used in period specification
    'TS_clk_i', was traced into PLL_ADV instance PLL_ADV_INST. The following new
@@ -175,21 +190,6 @@ INFO:ConstraintSystem:178 - TNM 'clk_i_flops', used in period specification
    PLL_ADV output(s): 
    CLKOUT3: <TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0 = PERIOD
    "i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0" TS_clk_i_flops / 4 HIGH 50%>
-
-INFO:ConstraintSystem:178 - TNM 'clk_usb_flops', used in period specification
-   'TS_clk_usb', was traced into PLL_ADV instance PLL_ADV_INST. The following
-   new TNM groups and period specifications were generated at the PLL_ADV
-   output(s): 
-   CLKOUT0: <TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0 = PERIOD
-   "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0" TS_clk_usb HIGH 50%>
-
-INFO:ConstraintSystem:178 - TNM 'clk_usb_flops', used in period specification
-   'TS_clk_usb', was traced into PLL_ADV instance PLL_ADV_INST. The following
-   new TNM groups and period specifications were generated at the PLL_ADV
-   output(s): 
-   CLKOUT1: <TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0 = PERIOD
-   "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0" TS_clk_usb PHASE 10.415 ns
-   HIGH 50%>
 
 WARNING:ConstraintSystem - The Offset constraint <NET "ctl*"   OFFSET = IN 10.33
    ns BEFORE "clk_usb";> [src/rtl/merge.ucf(11)], is specified without a
@@ -1863,10 +1863,10 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings: 627
 
-Total memory usage is 587732 kilobytes
+Total memory usage is 588016 kilobytes
 
 Writing NGD file "appsfpga.ngd" ...
-Total REAL time to NGDBUILD completion:  24 sec
-Total CPU time to NGDBUILD completion:   10 sec
+Total REAL time to NGDBUILD completion:  10 sec
+Total CPU time to NGDBUILD completion:   9 sec
 
 Writing NGDBUILD log file "appsfpga.bld"...

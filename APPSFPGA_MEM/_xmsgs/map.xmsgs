@@ -355,40 +355,55 @@ For more information about the Timing Analyzer, consult the Xilinx Timing Analyz
 <msg type="info" file="Pack" num="1650" delta="old" >Map created a placed design.
 </msg>
 
+<msg type="warning" file="PhysDesignRules" num="372" delta="new" >Gated clock. Clock net <arg fmt="%s" index="1">i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear_not0001</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
+</msg>
+
 <msg type="warning" file="PhysDesignRules" num="372" delta="old" >Gated clock. Clock net <arg fmt="%s" index="1">i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_not0001</arg> is sourced by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the flip-flop.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
@@ -397,31 +412,25 @@ For more information about the Timing Analyzer, consult the Xilinx Timing Analyz
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_sys/U0/I_VIO/GEN_UPDATE_OUT[1].UPDATE_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 <msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/reset_f_edge/iDOUT&lt;1&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_appscore/mem_dmd_rowad&lt;6&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_appscore/mem_dmd_rowad&lt;2&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/phy_init_addr&lt;4&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="367" delta="new" >The signal &lt;<arg fmt="%s" index="1">i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/phy_init_addr&lt;4&gt;</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
+<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp805.PULL</arg> is set but the tri state is not configured. 
 </msg>
 
-<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp756.PULL</arg> is set but the tri state is not configured. 
-</msg>
-
-<msg type="warning" file="PhysDesignRules" num="781" delta="old" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp756.PULL.1</arg> is set but the tri state is not configured. 
+<msg type="warning" file="PhysDesignRules" num="781" delta="new" ><arg fmt="%s" index="1">PULLDOWN</arg> on an active net. <arg fmt="%s" index="2">PULLDOWN</arg> of comp <arg fmt="%s" index="3">ProtoComp805.PULL.1</arg> is set but the tri state is not configured. 
 </msg>
 
 </messages>

@@ -28,6 +28,7 @@ entity DMD_trigger_control is
         appsfpga_io_STEP_VCC_enbl_q :in std_logic;
         appsfpga_io_float_q         :in std_logic;
         in_dmd_type                 :in std_logic_vector(3 downto 0);
+        update_mode                 :in std_logic_vector(2 downto 0);
 
         --DDC control
         ddc_init_active             :in std_logic;
@@ -57,6 +58,8 @@ entity DMD_trigger_control is
         rd_ab_fifo_out              :in std_logic_vector(127 downto 0);
         rd_cd_fifo_out              :in std_logic_vector(127 downto 0);
 		  mem_preload_done				:in std_logic;
+		  rd_pattern_id					:in std_logic_vector(14 downto 0);
+		  num_patterns					:in std_logic_vector(14 downto 0);
 		  mem_read_enable					:out std_logic;
 		  trigger_miss					   :out std_logic; --test only
         
@@ -105,7 +108,6 @@ architecture Behavioral of DMD_trigger_control is
 
 	 
 	 --reset indicated by inputs and reset being used
-	 signal    current_reset_type          : std_logic_vector (1 downto 0);
 	 signal    rowaddrmode                 : std_logic;
 	 
 
@@ -113,7 +115,18 @@ architecture Behavioral of DMD_trigger_control is
 	 signal assign_type                 :DMD_TYPE_ASSIGN; -- type defined in appsfpga_dmd_types_pkg.vhd
 	 signal WL_count                    :std_logic_vector(5 downto 0);
 	 signal BSA_count                   :std_logic_vector(4 downto 0);
-	 signal row_count                   :std_logic_vector(10 downto 0);
+	 
+     signal row_count                 :std_logic_vector(10 downto 0);
+     signal    rowmd                  :std_logic_vector(1 downto 0);
+     signal    rowad                  :std_logic_vector(10 downto 0);
+	  signal    phased_rowad           :std_logic_vector(10 downto 0);
+     signal    blkad                  :std_logic_vector(3 downto 0);
+     signal    blkmd                  :std_logic_vector(1 downto 0);
+	  signal 	phased					  :std_logic;
+	  signal phased_num					  :std_logic_vector(3 downto 0);
+	  signal phased_init					  :std_logic_vector(3 downto 0);
+	  signal phased_max					  :std_logic_vector(3 downto 0);
+	  signal block_clear					  :std_logic;
 
     signal counter_en           :std_logic;
 	 signal counter_reset 		  :std_logic;
@@ -170,7 +183,124 @@ architecture Behavioral of DMD_trigger_control is
 
         WL_count  <= GET_WL_COUNT(assign_type);
         BSA_count <= GET_BSA_COUNT(assign_type);
-        row_count <= GET_ROW_COUNT(assign_type);
+		  
+		  phased_init <= "1010";
+		  phased_max <= "1011";
+		  
+		  
+		  process (clk_g, locked_init_rstz_gq)
+        begin
+		  case phased_num is
+				when "1010" =>
+				phased_rowad <= "00111011111"; --row 479
+				
+				when "1011" =>
+				phased_rowad <= "01000001111"; --row 527
+				
+				when others =>
+				phased_rowad <= "00000000000"; --row 479
+				
+		  end case;
+		  end process;
+		  
+        ------------------------------------------------------------------------
+        --000: Global
+        --001: Float
+        --010: Single
+        --011: Dual
+        --100: Quad
+		  --101: Phased
+        ------------------------------------------------------------------------
+        process (clk_g, locked_init_rstz_gq)
+        begin
+		  case update_mode is
+            when "000" => 
+            row_count <= GET_ROW_COUNT(assign_type);
+            rowmd <= "11";
+            rowad <= (others => '0');
+            blkad <="1000";
+            blkmd <= "11";
+				dmd_rst2blkz <= '0';
+				phased <= '0';
+				
+            when "001" =>
+            row_count <= GET_ROW_COUNT(assign_type);
+            rowmd <= "11";
+            rowad <= (others => '0');
+            blkad <= "1111";
+            blkmd <= "11";
+				dmd_rst2blkz <= '0';
+				phased <= '0';
+				
+            when "010" =>
+            row_count <= "00000101111"; --47
+            rowmd <= "10";
+            rowad <= "01000001111"; --row 527
+            blkad <= "1011"; --block 11
+            blkmd <= "10";
+				dmd_rst2blkz <= '0';
+				phased <= '0';
+				
+            when "011" =>
+            row_count <= "00001011111"; --95
+            rowmd <= "10";
+            rowad <= "00111011111"; --row 479
+            blkad <= "0101"; --block 10-11
+            blkmd <= "11";
+				dmd_rst2blkz <= '0';
+				phased <= '0';
+				
+            when "100" => 
+            row_count <= "00010111111"; --191
+            rowmd <= "10";
+            rowad <= "00101111111"; --row 383
+            blkad <= "0101"; --block 8-11
+            blkmd <= "11";
+				dmd_rst2blkz <= '1';
+				phased <= '0';
+				
+				when "101" =>
+				row_count <= "00000101111"; --47 
+--				if phased_num > phased_init then
+--					blkad <= phased_num - "0001"; --block 10
+--					rowad <= "01000001111"; --row 527
+--				elsif phased_num = phased_init then
+--					blkad <= phased_max;
+--					rowad <= "00111011111"; --block 11
+--
+--				end if;
+
+				blkad <= phased_num;
+				rowad <= phased_rowad;
+				blkmd <= "10";
+				rowmd <= "10";
+				
+            
+--				if phased_flag = '1' then
+--				   blkad <= "1011"; --block 11
+--					blkmd <= "10";
+--					rowmd <= "10";
+--					rowad <= "01000001111"; --row 527
+--			   else
+--					blkad <= "1010"; --block 10
+--					blkmd <= "10";
+--					rowmd <= "10";
+--					rowad <= "00111011111"; --row 479	
+--				end if;
+				
+				dmd_rst2blkz <= '0';
+				phased <= '1';
+				
+            when others =>
+            row_count <= GET_ROW_COUNT(assign_type);
+            rowmd <= "11";
+            rowad <= (others => '0');
+            blkad <="1000";
+            blkmd <= "11";
+				dmd_rst2blkz <= '0';
+				phased <= '0';
+        end case;
+		  end process;
 
         process (clk_g, locked_init_rstz_gq)
         begin
@@ -217,30 +347,115 @@ architecture Behavioral of DMD_trigger_control is
         process (clk_g, locked_init_rstz_gq)
         begin
             if locked_init_rstz_gq = '0' then
-                dmd_blkmd <= "00";
-                dmd_blkad <= "0000";
+                
 					 blk_dvalid <= '0';
 					 rst_enable <= '0';
 					 rst_count <= "0000";
+					 dmd_blkmd <= "00";
+					 dmd_blkad <= "0000";
+--					 block_clear <= '0';
+					 
+--						if phased = '1' and phased_num > phased_init then
+--							dmd_blkad <= phased_num - "0001"; --block 10
+--							dmd_blkmd <= "01";
+--						elsif phased = '1' and phased_num = phased_init then
+--							dmd_blkad <= phased_max; --block 11
+--							dmd_blkmd <= "01";
+--						else
+--							dmd_blkmd <= "00";
+--							dmd_blkad <= "0000";
+--						end if;
             elsif clk_g = '1' and clk_g'event then
 					 if cnts_row_pos_cnt = "00000000000" and cnts_row_pos_cnt_q1 = row_count then
-					     rst_enable <= '1';
+					     rst_enable <= '1';	
+							
+----						  if phased = '1' and phased_num > phased_init then
+----								dmd_blkad <= phased_num - "0001"; --block 10
+----								dmd_blkmd <= "01";
+----								block_clear <= '1';
+----								blk_dvalid <= '0';
+----							elsif phased = '1' and phased_num = phased_init then
+----								dmd_blkad <= phased_max; --block 11
+----								dmd_blkmd <= "01";
+----								block_clear <= '1';
+----								blk_dvalid <= '0';
+----							end if;
 					 end if;
 					 
 					 if rst_enable = '1' then
 					     if rst_count = "0111" then
 						      rst_enable <= '0';
 								rst_count <= "0000";
+--								block_clear <= '0';
+								
+								
 						  else
 						      rst_count <= rst_count + "0001";
+								
+								
 						  end if;
-						  dmd_blkmd <= "11";
-						  dmd_blkad <= "1000";
-						  blk_dvalid <= '1';
+						  
+						  if block_clear = '1' then
+							  dmd_blkmd <= "01";
+								if phased_num > phased_init then
+									dmd_blkad <= phased_num - "0001"; --block 10
+								elsif phased_num = phased_init then
+									dmd_blkad <= phased_max;
+								end if;
+--								dmd_blkad <= phased_num;
+--							  blk_dvalid <= '0';
+						  else 
+							  dmd_blkmd <= blkmd;
+							  dmd_blkad <= blkad;
+							  blk_dvalid <= '1';
+						  end if;
+--						  block_clear <= '1';
+						  
+--						  if phased = '1' and phased_num > phased_init then
+--									dmd_blkad <= phased_num - "0001"; --block 10
+--									dmd_blkmd <= "10";
+--									blk_dvalid <= '1';
+--									block_clear <= '1';
+--							elsif phased = '1' and phased_num = phased_init then
+--								dmd_blkad <= phased_max; --block 11
+--								dmd_blkmd <= "10";
+--								blk_dvalid <= '1';
+--								block_clear <= '1';
+--							else								
+--								dmd_blkmd <= blkmd;
+--								dmd_blkad <= blkad;
+--								blk_dvalid <= '1';
+--							end if;
+						  
+								
+--						  if phased = '1' and cnts_row_pos_cnt > "00000101111" then
+--							  dmd_blkmd <= blkmd;				  
+--							  dmd_blkad <= "1011";
+--							  blk_dvalid <= '1';
+--						  else
+--							  dmd_blkmd <= blkmd;
+--							  dmd_blkad <= blkad;
+--							  blk_dvalid <= '1';
+--						  end if;
+
+						  
+
 					 else
-					     dmd_blkmd <= "00";
-						  dmd_blkad <= "0000";
-						  blk_dvalid <= '0';
+						
+						blk_dvalid <= '0';
+--						block_clear <= '0';
+--						if phased = '1' and phased_num > phased_init then
+--							dmd_blkad <= phased_num - "0001"; --block 10
+--							dmd_blkmd <= "10";
+--						elsif phased = '1' and phased_num = phased_init then
+--							dmd_blkad <= phased_max; --block 11
+--							dmd_blkmd <= "10";
+--						else 							
+--							dmd_blkmd <= "00";
+--							dmd_blkad <= "0000";
+--						end if;
+						dmd_blkmd <= "00";
+					   dmd_blkad <= "0000";
 					 end if;
 				end if;
         end process;
@@ -249,17 +464,31 @@ architecture Behavioral of DMD_trigger_control is
             begin
             if locked_init_rstz_gq = '0' then
                 dmd_rowmd <= "00";
+					 dmd_rowad <= (others => '0');
             elsif clk_g = '1' and clk_g'event then
 					 if dmd_dvalid_1 = '0' then
+--						  block_clear <= '0';
 						  dmd_rowmd <= "00" AFTER 1 PS;
+						  dmd_rowad <= (others => '0');
+--					 elsif block_clear = '1' then
+--						  dmd_rowmd <= "00" AFTER 1 PS;
+--						  dmd_rowad <= (others => '0');
+--					 elsif cnts_row_pos_cnt = row_count then 
+--						if phased = '1' then
+--								block_clear <= '0';
+--						end if;
 					 elsif cnts_row_pos_cnt = "00000000000" then
-					     dmd_rowmd <= "11" AFTER 1 PS;
+						  
+					     dmd_rowmd <= rowmd AFTER 1 PS;
+						  dmd_rowad <= rowad;
 					 else
+						  
 						  dmd_rowmd <= "01" AFTER 1 PS;
+						  dmd_rowad <= (others => '0');
 					 end if;
             end if;
         end process;
-		  dmd_rowad <= (others => '0');
+		  
 
         --generate trigger pulse
 		  --[TODO maybe] remove when external trigger implemented
@@ -314,28 +543,58 @@ architecture Behavioral of DMD_trigger_control is
 				  dmd_dvalid_1 <= '0';
 				  counter_reset <= '0';
 				  mem_read_enable <= '0';
+				  if phased = '1' then
+						block_clear <= '0';
+					end if;
+					  
 				  if trigger = '1' and ddc_init_active = '0' and mem_preload_done = '1' then
 						next_state <= S1;
+						phased_num <= phased_init + rd_pattern_id(3 downto 0);
+						
+--						if phased = '1' then
+--							if phased_num = "0000" then
+--								phased_num <= phased_init;
+--							elsif phased_num < phased_max then
+--								phased_num <= phased_num + "0001";
+--							else 
+--								phased_num <= phased_init;
+--							end if;
+--						end if;
 				  else
 						next_state <= S0;
 				  end if;
 				  
-				  when S1 =>
+				  when S1 =>		
 				  if cnts_row_pos_cnt = "00000000000" and cnts_row_pos_cnt_q1 = row_count then
 						next_state <= S0;
+						
 						counter_reset <= '1';
 						counter_en <= '0';
 						get_row_data <= '0';
 						dmd_dvalid_1 <= '0';
 						mem_read_enable <= '0';
+						if phased = '1' then
+							block_clear <= '1';
+						end if;
+
+--						if phased = '1' then
+--							phased_num <= phased_init;
+--						elsif phased_num < phased_max then
+--							phased_num <= phased_num + "0001";
+--						else 
+--							phased_num <= phased_init;
+--						end if;
+						
 				  else
 						if data_in_count = "0000" then
 							get_row_data <= rd_ab_fifo_valid;
+								
 						end if;
 						
 					   if rd_ab_fifo_data_valid = '1' or rd_cd_fifo_data_valid = '1' then
 							counter_en <= '1';
 							dmd_dvalid_1 <= '1';
+							
 						else
 							counter_en <= '0';
 							dmd_dvalid_1 <= '0';
@@ -412,7 +671,6 @@ architecture Behavioral of DMD_trigger_control is
 
 		  dmd_comp_data <= '0'; --pgen_comp_data_q;
         dmd_ns_flip <= '0'; --pgen_ns_flip_q;
-        dmd_rst2blkz <= '0'; --pgen_rst2blkz_q;
 		  
 		  dmd_STEP_VCC <= '0';
 

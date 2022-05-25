@@ -130,8 +130,10 @@ module MEM_IO_Verilog#(
 	input system_clk,
 	input system_reset,
 	output mem_preload_done,
+	output[14:0] rd_pattern_id,
 	input mem_read_enable,
 	input[14:0] num_patterns,
+	input[2:0] update_mode,
 //	input dmd_1080p_connected,
 	input [127:0] wr_data,
 	input wr_valid,
@@ -166,6 +168,8 @@ module MEM_IO_Verilog#(
 	reg[2:0] next_state;
 	
 	reg mem_preload_done1;
+	reg[14:0] rd_pattern_id1;
+	
 	reg pattern_read_done1;
 	reg[14:0] write_pattern_count;
 	reg burst_indicator;
@@ -176,7 +180,6 @@ module MEM_IO_Verilog#(
 	
 	reg mem_get_data1;
 	
-	parameter[13:0] max_offset = 14'd3072;
 	parameter[2:0] READ = 3'b001;
 	parameter[2:0] WRITE = 3'b000;
 	
@@ -196,7 +199,7 @@ module MEM_IO_Verilog#(
 //	reg dmd_1080p_connected_1q;
 	wire dmd_1080p_connected_2q;
 	
-	reg[14:0] rd_pattern_id;
+	
 	
 	reg mem_preload_done_1q;
 	reg mem_preload_done_2q;
@@ -214,7 +217,67 @@ module MEM_IO_Verilog#(
 //	reg[14:0] num_patterns_q1;
 //	reg[14:0] num_patterns_q2;
 	
+	reg[13:0] max_offset;
+	reg[13:0] data_count;
 	
+	reg phased;
+	parameter[4:0] PHASE_NUM = 2;
+	parameter[2:0] PHASE_SIZE = 1;
+	
+	////////////////////////////////////////////////////////////////////////
+	//000: Global
+	//001: Float
+	//010: Single
+	//011: Dual
+	//100: Quad
+	//100: Phased	
+	////////////////////////////////////////////////////////////////////////
+	always@(*) begin
+		case(update_mode)
+		//000: Global
+			3'b000: begin
+				max_offset <= 14'd3072;
+				data_count <= 14'd6145;
+				phased <= 0;
+			end
+		//001: Float
+			3'b001: begin
+				max_offset <= 14'd3072;
+				data_count <= 14'd6145;
+				phased <= 0;
+			end
+		//010: Single
+			3'b010: begin
+				max_offset <= 14'd192;
+				data_count <= 14'd385;
+				phased <= 0;
+			end
+		//011: Dual
+			3'b011: begin
+				max_offset <= 14'd384;
+				data_count <= 14'd769;
+				phased <= 0;
+			end
+		//100: Quad	
+			3'b100: begin
+				max_offset <= 14'd768;
+				data_count <= 14'd1537;
+				phased <= 0;
+			end
+		//100: Phased	
+			3'b101: begin
+				max_offset <= 14'd192;
+				data_count <= 14'd385;
+				phased <= 1;
+			end 
+			
+			default: begin
+				max_offset <= 14'd3072;
+				data_count <= 14'd6145;
+				phased <= 0;
+			end
+		endcase
+	end
 	
 	assign system_reset_n = ~system_reset;
 	 
@@ -460,7 +523,7 @@ module MEM_IO_Verilog#(
 							app_af_addr <= 0;
 							app_af_wren <= 0;
 						end else begin
-							app_af_addr <= {rd_pattern_id, rd_offset_addr, 2'd0};
+							app_af_addr <= {rd_pattern_id1, rd_offset_addr, 2'd0};
 							app_af_cmd <= READ;
 							app_af_wren <= 1;
 							//change how address is incremented dependent on fs state defined in dmd trigger control
@@ -486,14 +549,14 @@ module MEM_IO_Verilog#(
 	always@(posedge clk0) begin
 		if(rst0 == 1) begin
 			pattern_read_done_q1 <= 0;
-			rd_pattern_id <= 0;
+			rd_pattern_id1 <= 0;
 		end else begin
 			pattern_read_done_q1 <= pattern_read_done1;
 			if(pattern_read_done1 == 1 && pattern_read_done_q1 == 0) begin
-				if (rd_pattern_id >= num_patterns)
-					rd_pattern_id <= 0;
+				if (rd_pattern_id1 >= num_patterns)
+					rd_pattern_id1 <= 0;
 				else
-					rd_pattern_id <= rd_pattern_id + 1;
+					rd_pattern_id1 <= rd_pattern_id1 + 1;
 			end
 		end
 	end
@@ -570,8 +633,7 @@ module MEM_IO_Verilog#(
 			if (rd_data_valid == 1) begin
 				rd_data_count <= rd_data_count + 1;
 				
-				//[TODO] arbitrary number area
-				if (rd_data_count > 0 && rd_data_count < 14'd6145) begin
+				if (rd_data_count > 0 && rd_data_count < data_count) begin
 					rd_ab_fifo_wren <= 1;
 					rd_data_fifo_out_1q <= rd_data_fifo_out;
 					//rd_data_fifo_out_1q <= {64'd0, 64'hffffffffffffffff};
@@ -583,7 +645,7 @@ module MEM_IO_Verilog#(
 				rd_data_fifo_out_1q <= 0;
 				rd_ab_fifo_wren <= 0;
 			end
-			if (current_state == S0 && rd_data_count >= 14'd6145) begin
+			if (current_state == S0 && rd_data_count >= data_count) begin
 				rd_data_count <= 0;
 			end
 		end
@@ -610,6 +672,7 @@ module MEM_IO_Verilog#(
 	assign rd_ready = ~(app_af_afull || rd_ab_fifo_afull || rd_cd_fifo_afull);
 //	assign rd_ready = ~app_af_afull;
 	assign mem_preload_done = mem_preload_done_1q & mem_preload_done_2q;
+	assign rd_pattern_id = rd_pattern_id1;
 	assign rd_ab_fifo_valid = ~rd_ab_fifo_empty;
 	assign rd_cd_fifo_valid = ~rd_cd_fifo_empty;
 	assign mem_get_data = mem_get_data1;

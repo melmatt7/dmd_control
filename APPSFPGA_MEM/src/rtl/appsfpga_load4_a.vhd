@@ -983,7 +983,7 @@ apps_testpt(30) <=  appcore_rowad_q(1);
 --apps_testpt(29) <= appcore_dout_a_q(12);
 --apps_testpt(30) <= appcore_dout_a_q(13);
 
-led0 <= not num_patterns(1);
+led0 <= not pll_locked_rstz_gq ;
 led1 <= not mem_read_ready;
 
 END Behavioral;

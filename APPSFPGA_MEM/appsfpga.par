@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-localhost.localdomain::  Sun Apr 17 15:00:51 2022
+localhost.localdomain::  Fri May 13 01:03:19 2022
 
 par -w -intstyle ise -ol high -mt off appsfpga_map.ncd appsfpga.ncd
 appsfpga.pcf 
@@ -17,79 +17,79 @@ to function, but you no longer qualify for Xilinx software updates or new releas
 
 ----------------------------------------------------------------------
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<0>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26589)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26664)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<10>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26591)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26666)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<11>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26593)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26668)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<12>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26595)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26670)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<13>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26597)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26672)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<14>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26599)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26674)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<15>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26601)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26676)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<1>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26603)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26678)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<2>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26605)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26680)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<3>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26607)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26682)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<4>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26609)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26684)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<5>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26611)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26686)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<6>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26613)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26688)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<7>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26615)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26690)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<8>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26617)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26692)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "bidir<9>" OFFSET = IN 8.2 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26619)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26694)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "ctl0" OFFSET = IN 10.33 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26620)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26695)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "ctl1" OFFSET = IN 10.33 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26621)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26696)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 WARNING:ConstraintSystem - The Offset constraint <COMP "ctl2" OFFSET = IN 10.33 ns BEFORE COMP "clk_usb";>
-   [appsfpga.pcf(26622)], is specified without a duration.  This will result in a lack of hold time checks in timing
+   [appsfpga.pcf(26697)], is specified without a duration.  This will result in a lack of hold time checks in timing
    reports.  If hold time checks are desired a duration value should be specified following the 'VALID' keyword.
 
 
@@ -130,14 +130,14 @@ Device Utilization Summary:
    Number of RAMB18X2s                       1 out of 48      2%
    Number of RAMB18X2SDPs                    2 out of 48      4%
    Number of RAMB36_EXPs                    11 out of 48     22%
-   Number of Slices                       1918 out of 7200   26%
-   Number of Slice Registers              3991 out of 28800  13%
-      Number used as Flip Flops           3990
-      Number used as Latches                 1
+   Number of Slices                       1908 out of 7200   26%
+   Number of Slice Registers              4025 out of 28800  13%
+      Number used as Flip Flops           4019
+      Number used as Latches                 6
       Number used as LatchThrus              0
 
-   Number of Slice LUTS                   2995 out of 28800  10%
-   Number of Slice LUT-Flip Flop pairs    5080 out of 28800  17%
+   Number of Slice LUTS                   3012 out of 28800  10%
+   Number of Slice LUT-Flip Flop pairs    5104 out of 28800  17%
 
 
 Overall effort level (-ol):   High 
@@ -155,11 +155,9 @@ WARNING:Timing:3223 - Timing constraint PATH "TS_dqs6_flops_to_clk2x_mem_path" T
 WARNING:Timing:3223 - Timing constraint PATH "TS_dqs7_flops_to_clk2x_mem_path" TIG; ignored during timing analysis.
 INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please
    consult the Xilinx Command Line Tools User Guide for information on generating a TSI report.
-Starting initial Timing Analysis.  REAL time: 22 secs 
-Finished initial Timing Analysis.  REAL time: 22 secs 
+Starting initial Timing Analysis.  REAL time: 9 secs 
+Finished initial Timing Analysis.  REAL time: 9 secs 
 
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
 WARNING:Par:288 - The signal in_dip_sw_i<0>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal in_dip_sw_i<1>_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal in_dip_sw_i<2>_IBUF has no load.  PAR will not attempt to route this signal.
@@ -170,46 +168,48 @@ WARNING:Par:288 - The signal in_dip_sw_i<6>_IBUF has no load.  PAR will not atte
 WARNING:Par:288 - The signal apps_cntl_an_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal apps_cntl_ap_IBUF has no load.  PAR will not attempt to route this signal.
 WARNING:Par:288 - The signal in_rst_active_i_IBUF has no load.  PAR will not attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
 WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
 WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
 WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
 WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+WARNING:Par:288 - The signal i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+   attempt to route this signal.
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
 WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
 WARNING:Par:288 - The signal i_vio_sys/U0/I_VIO/GEN_UPDATE_OUT[1].UPDATE_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp has no load.  PAR will not
+WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp has no load.  PAR will not
    attempt to route this signal.
 WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/reset_f_edge/iDOUT<1> has no load.  PAR will not attempt to route this
    signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
-WARNING:Par:288 - The signal i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp has no load.  PAR will not
-   attempt to route this signal.
 Starting Router
 
 
-Phase  1  : 22212 unrouted;      REAL time: 24 secs 
+Phase  1  : 22313 unrouted;      REAL time: 10 secs 
 INFO:Route:538 - One or more MIG cores have been detected in your design and have been successfully
    placed and routed. These MIG core(s) have critical skew and delay requirements 
    that are independent of the user (UCF) timing constraints. These MIG-related timing 
@@ -217,40 +217,38 @@ INFO:Route:538 - One or more MIG cores have been detected in your design and hav
    separately that all timing constraints specified in the UCF file have been met.
 
 
-Phase  2  : 17158 unrouted;      REAL time: 28 secs 
+Phase  2  : 17296 unrouted;      REAL time: 12 secs 
 
-Phase  3  : 5654 unrouted;      REAL time: 37 secs 
+Phase  3  : 4851 unrouted;      REAL time: 17 secs 
 
-Phase  4  : 5644 unrouted; (Setup:77531, Hold:32871, Component Switching Limit:0)     REAL time: 44 secs 
-
-Updating file: appsfpga.ncd with current fully routed design.
-
-Phase  5  : 0 unrouted; (Setup:75530, Hold:31803, Component Switching Limit:0)     REAL time: 52 secs 
-
-Phase  6  : 0 unrouted; (Setup:75530, Hold:31803, Component Switching Limit:0)     REAL time: 54 secs 
-
-Phase  7  : 0 unrouted; (Setup:72351, Hold:31803, Component Switching Limit:0)     REAL time: 1 mins 6 secs 
+Phase  4  : 4895 unrouted; (Setup:1340550, Hold:32390, Component Switching Limit:0)     REAL time: 20 secs 
 
 Updating file: appsfpga.ncd with current fully routed design.
 
-Phase  8  : 0 unrouted; (Setup:72351, Hold:31803, Component Switching Limit:0)     REAL time: 1 mins 12 secs 
+Phase  5  : 0 unrouted; (Setup:1358379, Hold:31974, Component Switching Limit:0)     REAL time: 24 secs 
+
+Phase  6  : 0 unrouted; (Setup:1356924, Hold:31974, Component Switching Limit:0)     REAL time: 25 secs 
+
+Phase  7  : 0 unrouted; (Setup:1356924, Hold:31974, Component Switching Limit:0)     REAL time: 25 secs 
+
+Phase  8  : 0 unrouted; (Setup:1356924, Hold:31974, Component Switching Limit:0)     REAL time: 25 secs 
 WARNING:Route:522 - Unusually high hold time violation detected among 8 connections.The router will continue and try to
    fix it 
-	i_appsfpga_io/pll_delay_cnt<9>:BQ -> i_appsfpga_io/pll_locked_rstz_gq2:A4 -4207
-	debounced_dip_sw_iq<7>:AQ -> appsfpga_io_WDT_enbl_q:AI -4106
-	i_appsfpga_io/pll_delay_cnt<9>:BQ -> i_appsfpga_io/pll_locked_rstz_gq2:B6 -3933
-	i_appsfpga_io/pll_locked_rstz_gq2:A -> i_appsfpga_io/pll_locked_rst_bq2:BX -3885
-	debounced_pwr_float_iq:AQ -> appsfpga_io_pwr_floatz_q:AI -3870
-	i_appsfpga_io/pll_delay_cnt<9>:BQ -> i_appsfpga_io/pll_locked_rst_bq:B5 -3751
-	i_appsfpga_io/pll_delay_cnt<9>:BQ -> arstz_o_OBUF:A6 -3722
-	i_appsfpga_io/pll_locked_rst_bq:B -> i_appsfpga_io/pll_locked_rst_bq2:AX -3421
+	i_appsfpga_io/pll_delay_cnt<9>:BQ -> arstz_o_OBUF:A6 -4341
+	i_appsfpga_io/pll_delay_cnt<9>:BQ -> i_appsfpga_io/pll_locked_rstz_gq2:B6 -4272
+	i_appsfpga_io/pll_delay_cnt<9>:BQ -> i_appsfpga_io/pll_locked_rstz_gq2:A4 -4260
+	debounced_pwr_float_iq:AQ -> appsfpga_io_pwr_floatz_q:CI -3895
+	debounced_dip_sw_iq<7>:DQ -> appsfpga_io_WDT_enbl_q:CI -3837
+	i_appsfpga_io/pll_locked_rstz_gq2:A -> i_appsfpga_io/pll_locked_rst_bq2:CX -3761
+	i_appsfpga_io/pll_delay_cnt<9>:BQ -> i_appsfpga_io/pll_locked_rst_bq:B5 -3706
+	i_appsfpga_io/pll_locked_rst_bq:B -> i_appsfpga_io/pll_locked_rst_bq2:BX -3047
 
 
-Phase  9  : 0 unrouted; (Setup:72351, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 12 secs 
+Phase  9  : 0 unrouted; (Setup:1356924, Hold:0, Component Switching Limit:0)     REAL time: 25 secs 
 
-Phase 10  : 0 unrouted; (Setup:72351, Hold:0, Component Switching Limit:0)     REAL time: 1 mins 14 secs 
-Total REAL time to Router completion: 1 mins 14 secs 
-Total CPU time to Router completion: 31 secs 
+Phase 10  : 0 unrouted; (Setup:1356924, Hold:0, Component Switching Limit:0)     REAL time: 26 secs 
+Total REAL time to Router completion: 26 secs 
+Total CPU time to Router completion: 26 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -268,27 +266,27 @@ Generating Clock Report
 +---------------------+--------------+------+------+------------+-------------+
 |        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
 +---------------------+--------------+------+------+------------+-------------+
-|         clk_i_IBUFG | BUFGCTRL_X0Y2| No   |   22 |  0.145     |  1.654      |
+|         clk_i_IBUFG | BUFGCTRL_X0Y8| No   |   22 |  0.112     |  1.644      |
 +---------------------+--------------+------+------+------------+-------------+
-|            mem_clk0 |BUFGCTRL_X0Y25| No   |  430 |  0.344     |  1.870      |
+|            mem_clk0 | BUFGCTRL_X0Y6| No   |  423 |  0.367     |  1.870      |
 +---------------------+--------------+------+------+------------+-------------+
-|          mem_clk200 |BUFGCTRL_X0Y22| No   |   10 |  0.116     |  1.692      |
+|          mem_clk200 | BUFGCTRL_X0Y1| No   |   10 |  0.131     |  1.692      |
 +---------------------+--------------+------+------+------------+-------------+
-|         mem_clk2x90 |BUFGCTRL_X0Y28| No   |  168 |  0.315     |  1.907      |
+|         mem_clk2x90 | BUFGCTRL_X0Y5| No   |  171 |  0.307     |  1.870      |
 +---------------------+--------------+------+------+------------+-------------+
-|           mem_clk2x |BUFGCTRL_X0Y20| No   |  633 |  0.399     |  1.905      |
+|           mem_clk2x |BUFGCTRL_X0Y10| No   |  637 |  0.368     |  1.868      |
 +---------------------+--------------+------+------+------------+-------------+
-|               clk_g |BUFGCTRL_X0Y13| No   |  379 |  0.352     |  1.866      |
+|               clk_g |BUFGCTRL_X0Y24| No   |  394 |  0.369     |  1.868      |
 +---------------------+--------------+------+------+------------+-------------+
-|         CONTROL0<0> |BUFGCTRL_X0Y15| No   |   48 |  0.133     |  1.699      |
+|         CONTROL0<0> |BUFGCTRL_X0Y14| No   |   48 |  0.129     |  1.711      |
 +---------------------+--------------+------+------+------------+-------------+
-| i_appsfpga_io/clk2x | BUFGCTRL_X0Y7| No   |   91 |  0.268     |  1.841      |
-+---------------------+--------------+------+------+------------+-------------+
-|i_appscore/USB_IO_IN |              |      |      |            |             |
-|        ST/clk_180_u |BUFGCTRL_X0Y17| No   |   97 |  0.272     |  1.868      |
+| i_appsfpga_io/clk2x |BUFGCTRL_X0Y18| No   |   91 |  0.268     |  1.841      |
 +---------------------+--------------+------+------+------------+-------------+
 |i_appscore/USB_IO_IN |              |      |      |            |             |
-|            ST/clk_u |BUFGCTRL_X0Y29| No   |    2 |  0.005     |  1.620      |
+|        ST/clk_180_u |BUFGCTRL_X0Y30| No   |   94 |  0.291     |  1.796      |
++---------------------+--------------+------+------+------------+-------------+
+|i_appscore/USB_IO_IN |              |      |      |            |             |
+|            ST/clk_u |BUFGCTRL_X0Y17| No   |    2 |  0.013     |  1.594      |
 +---------------------+--------------+------+------+------------+-------------+
 |i_appscore/MEMORY_IO |              |      |      |            |             |
 |_INST/u_mig_top/u_dd |              |      |      |            |             |
@@ -338,14 +336,22 @@ Generating Clock Report
 |p/u_phy_top/u_phy_io |              |      |      |            |             |
 |     /delayed_dqs<0> |        IO Clk| No   |   17 |  0.101     |  0.425      |
 +---------------------+--------------+------+------+------------+-------------+
-|        trigger_miss |         Local|      |    6 |  0.031     |  0.512      |
+|        trigger_miss |         Local|      |    6 |  0.105     |  0.762      |
 +---------------------+--------------+------+------+------------+-------------+
 |i_icon/U0/iUPDATE_OU |              |      |      |            |             |
-|                   T |         Local|      |    1 |  0.000     |  0.692      |
+|                   T |         Local|      |    1 |  0.000     |  0.800      |
++---------------------+--------------+------+------+------------+-------------+
+|i_appscore/DMD_TRIGG |              |      |      |            |             |
+|ER_CONTROL_INST/curr |              |      |      |            |             |
+|        ent_state<0> |         Local|      |   16 |  0.000     |  1.745      |
++---------------------+--------------+------+------+------------+-------------+
+|i_appscore/DMD_TRIGG |              |      |      |            |             |
+|ER_CONTROL_INST/bloc |              |      |      |            |             |
+|     k_clear_not0001 |         Local|      |    1 |  0.000     |  0.464      |
 +---------------------+--------------+------+------+------------+-------------+
 |i_appscore/DMD_TRIGG |              |      |      |            |             |
 |ER_CONTROL_INST/get_ |              |      |      |            |             |
-|    row_data_not0001 |         Local|      |    1 |  0.000     |  0.441      |
+|    row_data_not0001 |         Local|      |    1 |  0.000     |  0.426      |
 +---------------------+--------------+------+------+------------+-------------+
 
 * Net Skew is the difference between the minimum and maximum routing
@@ -356,7 +362,7 @@ the minimum and maximum path delays which includes logic delays.
 * The fanout is the number of component pins not the individual BEL loads,
 for example SLICE loads not FF loads.
 
-Timing Score: 72351 (Setup: 72351, Hold: 0, Component Switching Limit: 0)
+Timing Score: 1356924 (Setup: 1356924, Hold: 0, Component Switching Limit: 0)
 
 WARNING:Par:468 - Your design did not meet timing.  The following are some suggestions to assist you to meet timing in
    your design.
@@ -375,7 +381,7 @@ WARNING:Par:468 - Your design did not meet timing.  The following are some sugge
    TechXclusives->Timing Closure" for tips and suggestions for meeting timing
    in your design.
 
-Number of Timing Constraints that were not applied: 44
+Number of Timing Constraints that were not applied: 34
 
 Asterisk (*) preceding a constraint indicates it was not met.
    This may be due to a setup or hold violation.
@@ -384,10 +390,15 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0  | SETUP       |    -2.632ns|    17.197ns|      32|       72351
-  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.099ns|            |       0|           0
+* TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0  | SETUP       |    -4.436ns|    24.415ns|     424|     1356924
+  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.038ns|            |       0|           0
   _pll_mem_CLKOUT1_BUF_0" TS_clk_i_flops /  |             |            |            |        |            
   3 HIGH 50%                                |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.012ns|     0.838ns|       0|           0
+  mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
+  op/u_phy_io/gen_dqs[1].u_iob_dqs/en_dqs_s |             |            |            |        |            
+  ync"         MAXDELAY = 0.85 ns           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.045ns|     0.805ns|       0|           0
   mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
@@ -406,17 +417,12 @@ Asterisk (*) preceding a constraint indicates it was not met.
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.047ns|     0.803ns|       0|           0
   mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
-  op/u_phy_io/gen_dqs[1].u_iob_dqs/en_dqs_s |             |            |            |        |            
-  ync"         MAXDELAY = 0.85 ns           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.047ns|     0.803ns|       0|           0
-  mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
   op/u_phy_io/gen_dqs[3].u_iob_dqs/en_dqs_s |             |            |            |        |            
   ync"         MAXDELAY = 0.85 ns           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.047ns|     0.803ns|       0|           0
   mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
-  op/u_phy_io/gen_dqs[4].u_iob_dqs/en_dqs_s |             |            |            |        |            
+  op/u_phy_io/gen_dqs[7].u_iob_dqs/en_dqs_s |             |            |            |        |            
   ync"         MAXDELAY = 0.85 ns           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.047ns|     0.803ns|       0|           0
@@ -426,17 +432,17 @@ Asterisk (*) preceding a constraint indicates it was not met.
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.047ns|     0.803ns|       0|           0
   mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
-  op/u_phy_io/gen_dqs[7].u_iob_dqs/en_dqs_s |             |            |            |        |            
+  op/u_phy_io/gen_dqs[4].u_iob_dqs/en_dqs_s |             |            |            |        |            
   ync"         MAXDELAY = 0.85 ns           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0  | SETUP       |     0.064ns|     4.936ns|       0|           0
+  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.301ns|            |       0|           0
+  _PLL_clk_CLKOUT0_BUF_0" TS_clk_i_flops /  |             |            |            |        |            
+  4 HIGH 50%                                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.069ns|     0.531ns|       0|           0
   mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
   op/u_phy_io/en_dqs<2>"         MAXDELAY = |             |            |            |        |            
-   0.6 ns                                   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.069ns|     0.531ns|       0|           0
-  mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
-  op/u_phy_io/en_dqs<0>"         MAXDELAY = |             |            |            |        |            
    0.6 ns                                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.078ns|     0.522ns|       0|           0
@@ -444,10 +450,10 @@ Asterisk (*) preceding a constraint indicates it was not met.
   op/u_phy_io/en_dqs<1>"         MAXDELAY = |             |            |            |        |            
    0.6 ns                                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0  | SETUP       |     0.146ns|     4.854ns|       0|           0
-  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.313ns|            |       0|           0
-  _PLL_clk_CLKOUT0_BUF_0" TS_clk_i_flops /  |             |            |            |        |            
-  4 HIGH 50%                                |             |            |            |        |            
+  NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.079ns|     0.521ns|       0|           0
+  mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
+  op/u_phy_io/en_dqs<0>"         MAXDELAY = |             |            |            |        |            
+   0.6 ns                                   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/u_ | MAXDELAY    |     0.300ns|     0.300ns|       0|           0
   mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_t |             |            |            |        |            
@@ -484,64 +490,39 @@ Asterisk (*) preceding a constraint indicates it was not met.
   _PLL_clk_CLKOUT1_BUF_0" TS_clk_i_flops /  |             |            |            |        |            
   8 HIGH 50%                                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_clk_i_flops = PERIOD TIMEGRP "clk_i_fl | SETUP       |    12.106ns|     7.894ns|       0|           0
-  ops" 20 ns HIGH 50%                       | HOLD        |     0.475ns|            |       0|           0
+  TS_clk_i_flops = PERIOD TIMEGRP "clk_i_fl | SETUP       |    11.409ns|     8.591ns|       0|           0
+  ops" 20 ns HIGH 50%                       | HOLD        |     0.461ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_clk_i = PERIOD TIMEGRP "clk_i" 20 ns H | MINLOWPULSE |    14.000ns|     6.000ns|       0|           0
   IGH 50% INPUT_JITTER 0.1 ns               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_ | SETUP       |     0.842ns|     2.225ns|       0|           0
+  TS_DQ_CE = MAXDELAY FROM TIMEGRP "TNM_DQ_ | SETUP       |     0.857ns|     2.210ns|       0|           0
   CE_IDDR" TO TIMEGRP "TNM_DQS_FLOPS"       | HOLD        |     0.939ns|            |       0|           0
      3.067 ns                               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_pad_to_pad = MAXDELAY FROM TIMEGRP "PA | MAXDELAY    |     1.049ns|     8.951ns|       0|           0
   DS" TO TIMEGRP "PADS" 10 ns               |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF_0  | SETUP       |     1.230ns|     4.812ns|       0|           0
-  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.328ns|            |       0|           0
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF_0  | SETUP       |     1.326ns|     4.897ns|       0|           0
+  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.465ns|            |       0|           0
   _pll_mem_CLKOUT2_BUF_0" TS_clk_i_flops /  |             |            |            |        |            
   3 PHASE         1.66666667 ns HIGH 50%    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<13>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     1.940ns|    28.060ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<7>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     1.962ns|    28.038ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<11>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.157ns|    27.843ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<9>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.188ns|    27.812ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<2>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.210ns|    27.790ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_i_appsfpga_io_i_pll_mem_CLKOUT0_BUF_0  | SETUP       |     2.221ns|     8.891ns|       0|           0
-  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.062ns|            |       0|           0
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT0_BUF_0  | SETUP       |     2.244ns|     8.845ns|       0|           0
+  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.071ns|            |       0|           0
   _pll_mem_CLKOUT0_BUF_0" TS_clk_i_flops /  |             |            |            |        |            
   1.5 HIGH 50%                              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<10>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.267ns|    27.733ns|       0|           0
+  COMP "bidir<13>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.278ns|    27.722ns|       0|           0
    COMP "clk_usb"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<14>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.296ns|    27.704ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
+  TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0  | SETUP       |     2.315ns|     2.685ns|       0|           0
+  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.468ns|            |       0|           0
+  _pll_mem_CLKOUT3_BUF_0" TS_clk_i_flops /  |             |            |            |        |            
+  4 HIGH 50%                                |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<8>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.300ns|    27.700ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<3>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.303ns|    27.697ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<1>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.307ns|    27.693ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<0>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.321ns|    27.679ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<6>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.368ns|    27.632ns|       0|           0
-  COMP "clk_usb"                            |             |            |            |        |            
+  TS_dqs0_flops = PERIOD TIMEGRP "dqs0_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
+  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_dqs7_flops = PERIOD TIMEGRP "dqs7_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
   s" 3.75 ns HIGH 50%                       |             |            |            |        |            
@@ -564,250 +545,275 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_dqs1_flops = PERIOD TIMEGRP "dqs1_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
   s" 3.75 ns HIGH 50%                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_dqs0_flops = PERIOD TIMEGRP "dqs0_flop | MINHIGHPULSE|     2.370ns|     1.380ns|       0|           0
-  s" 3.75 ns HIGH 50%                       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<12>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.416ns|    27.584ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<4>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.427ns|    27.573ns|       0|           0
+  COMP "bidir<7>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.541ns|    27.459ns|       0|           0
   COMP "clk_usb"                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<5>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.453ns|    27.547ns|       0|           0
+  COMP "bidir<14>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.596ns|    27.404ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<1>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.610ns|    27.390ns|       0|           0
   COMP "clk_usb"                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<15>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.561ns|    27.439ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
+  COMP "bidir<3>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.618ns|    27.382ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<2>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.625ns|    27.375ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<4>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.657ns|    27.343ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<5>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.682ns|    27.318ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF =  | MINPERIOD   |     2.778ns|     2.222ns|       0|           0
   PERIOD TIMEGRP         "i_appsfpga_io_i_P |             |            |            |        |            
   LL_clk_CLKOUT0_BUF" TS_clk_i / 4 HIGH 50% |             |            |            |        |            
            INPUT_JITTER 0.1 ns              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
+  COMP "bidir<9>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.790ns|    27.210ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<15>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.791ns|    27.209ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<0>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.791ns|    27.209ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<6>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     2.797ns|    27.203ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<10>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.867ns|    27.133ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<11>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     2.943ns|    27.057ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<8>" OFFSET = OUT 30 ns AFTER  | MAXDELAY    |     3.073ns|    26.927ns|       0|           0
+  COMP "clk_usb"                            |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<12>" OFFSET = OUT 30 ns AFTER | MAXDELAY    |     3.079ns|    26.921ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
   TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF =  | MINPERIOD   |     3.334ns|     1.666ns|       0|           0
   PERIOD TIMEGRP         "i_appsfpga_io_i_p |             |            |            |        |            
   ll_mem_CLKOUT3_BUF" TS_clk_i / 4 HIGH 50% |             |            |            |        |            
            INPUT_JITTER 0.1 ns              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0  | SETUP       |     3.555ns|     1.445ns|       0|           0
-  = PERIOD TIMEGRP         "i_appsfpga_io_i | HOLD        |     0.459ns|            |       0|           0
-  _pll_mem_CLKOUT3_BUF_0" TS_clk_i_flops /  | MINPERIOD   |     3.334ns|     1.666ns|       0|           0
-  4 HIGH 50%                                |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "dclk_ap_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     3.930ns|    11.070ns|       0|           0
+  COMP "dclk_ap_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     3.734ns|    11.266ns|       0|           0
    COMP "clk_i"                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dvalid_ap_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     3.961ns|    11.039ns|       0|           0
+  COMP "dvalid_ap_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     3.765ns|    11.235ns|       0|           0
   ER COMP "clk_i"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.963ns|    11.037ns|       0|           0
+  COMP "dout_ap_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.767ns|    11.233ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.968ns|    11.032ns|       0|           0
-  TER COMP "clk_i"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.968ns|    11.032ns|       0|           0
+  COMP "dout_ap_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.772ns|    11.228ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.970ns|    11.030ns|       0|           0
+  COMP "dout_ap_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.772ns|    11.228ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.976ns|    11.024ns|       0|           0
+  COMP "dout_ap_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.774ns|    11.226ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_ap_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.780ns|    11.220ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.977ns|    11.023ns|       0|           0
+  COMP "dout_ap_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.781ns|    11.219ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.978ns|    11.022ns|       0|           0
+  COMP "dout_ap_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.782ns|    11.218ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.982ns|    11.018ns|       0|           0
+  COMP "dout_ap_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.786ns|    11.214ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.983ns|    11.017ns|       0|           0
+  COMP "dout_cp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.787ns|    11.213ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.984ns|    11.016ns|       0|           0
+  COMP "dout_cp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.788ns|    11.212ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.987ns|    11.013ns|       0|           0
+  COMP "dout_ap_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.791ns|    11.209ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.988ns|    11.012ns|       0|           0
+  COMP "dout_ap_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.792ns|    11.208ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.992ns|    11.008ns|       0|           0
+  COMP "dout_ap_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.796ns|    11.204ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.993ns|    11.007ns|       0|           0
+  COMP "dout_ap_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.797ns|    11.203ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.994ns|    11.006ns|       0|           0
+  COMP "dout_ap_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.798ns|    11.202ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.995ns|    11.005ns|       0|           0
+  COMP "dout_ap_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.799ns|    11.201ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.998ns|    11.002ns|       0|           0
+  COMP "dout_bp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.802ns|    11.198ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.998ns|    11.002ns|       0|           0
+  COMP "dout_ap_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.802ns|    11.198ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.001ns|    10.999ns|       0|           0
+  COMP "dout_cp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.805ns|    11.195ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_ap_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.003ns|    10.997ns|       0|           0
+  COMP "dout_ap_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.807ns|    11.193ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.005ns|    10.995ns|       0|           0
+  COMP "dout_cp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.809ns|    11.191ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.006ns|    10.994ns|       0|           0
+  COMP "dout_bp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.810ns|    11.190ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.010ns|    10.990ns|       0|           0
+  COMP "dout_cp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.814ns|    11.186ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.012ns|    10.988ns|       0|           0
+  COMP "dout_cp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.816ns|    11.184ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.013ns|    10.987ns|       0|           0
+  COMP "dout_cp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.817ns|    11.183ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dclk_cp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     4.017ns|    10.983ns|       0|           0
+  COMP "dclk_cp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     3.821ns|    11.179ns|       0|           0
    COMP "clk_i"                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.018ns|    10.982ns|       0|           0
+  COMP "dout_bp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.822ns|    11.178ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.019ns|    10.981ns|       0|           0
+  COMP "dout_cp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.823ns|    11.177ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.020ns|    10.980ns|       0|           0
+  COMP "dout_cp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.824ns|    11.176ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.020ns|    10.980ns|       0|           0
+  COMP "dout_cp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.824ns|    11.176ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.023ns|    10.977ns|       0|           0
+  COMP "dout_bp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.827ns|    11.173ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.026ns|    10.974ns|       0|           0
+  COMP "dout_bp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.830ns|    11.170ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.030ns|    10.970ns|       0|           0
+  COMP "dout_bp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.834ns|    11.166ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.032ns|    10.968ns|       0|           0
+  COMP "dout_bp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.836ns|    11.164ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.035ns|    10.965ns|       0|           0
-  TER COMP "clk_i"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "dclk_bp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     4.035ns|    10.965ns|       0|           0
+  COMP "dclk_bp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     3.839ns|    11.161ns|       0|           0
    COMP "clk_i"                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.035ns|    10.965ns|       0|           0
+  COMP "dout_cp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.839ns|    11.161ns|       0|           0
+  TER COMP "clk_i"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "dout_dp_o<14>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.839ns|    11.161ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.037ns|    10.963ns|       0|           0
+  COMP "dout_bp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.841ns|    11.159ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.038ns|    10.962ns|       0|           0
+  COMP "dout_cp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.842ns|    11.158ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.039ns|    10.961ns|       0|           0
+  COMP "dout_bp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.843ns|    11.157ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.040ns|    10.960ns|       0|           0
+  COMP "dout_bp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.844ns|    11.156ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.041ns|    10.959ns|       0|           0
+  COMP "dout_bp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.845ns|    11.155ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.041ns|    10.959ns|       0|           0
+  COMP "dout_dp_o<13>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.845ns|    11.155ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dvalid_cp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     4.042ns|    10.958ns|       0|           0
+  COMP "dvalid_cp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     3.846ns|    11.154ns|       0|           0
   ER COMP "clk_i"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.043ns|    10.957ns|       0|           0
+  COMP "dout_bp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.847ns|    11.153ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.047ns|    10.953ns|       0|           0
+  COMP "dout_cp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.851ns|    11.149ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.047ns|    10.953ns|       0|           0
+  COMP "dout_cp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.851ns|    11.149ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.048ns|    10.952ns|       0|           0
+  COMP "dout_bp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.852ns|    11.148ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.048ns|    10.952ns|       0|           0
+  COMP "dout_cp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.852ns|    11.148ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.050ns|    10.950ns|       0|           0
+  COMP "dout_bp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.854ns|    11.146ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.052ns|    10.948ns|       0|           0
+  COMP "dout_bp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.856ns|    11.144ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.053ns|    10.947ns|       0|           0
+  COMP "dout_dp_o<15>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.857ns|    11.143ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dvalid_bp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     4.055ns|    10.945ns|       0|           0
+  COMP "dvalid_bp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     3.859ns|    11.141ns|       0|           0
   ER COMP "clk_i"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_cp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.056ns|    10.944ns|       0|           0
+  COMP "dout_cp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.860ns|    11.140ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.060ns|    10.940ns|       0|           0
+  COMP "dout_dp_o<12>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.864ns|    11.136ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_bp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.063ns|    10.937ns|       0|           0
+  COMP "dout_bp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.867ns|    11.133ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.066ns|    10.934ns|       0|           0
+  COMP "dout_dp_o<10>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.870ns|    11.130ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     4.068ns|    10.932ns|       0|           0
+  COMP "dout_dp_o<11>" OFFSET = OUT 15 ns A | MAXDELAY    |     3.872ns|    11.128ns|       0|           0
   FTER COMP "clk_i"                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.070ns|    10.930ns|       0|           0
+  COMP "dout_dp_o<8>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.874ns|    11.126ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.071ns|    10.929ns|       0|           0
+  COMP "dout_dp_o<5>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.875ns|    11.125ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.071ns|    10.929ns|       0|           0
+  COMP "dout_dp_o<9>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.875ns|    11.125ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.079ns|    10.921ns|       0|           0
+  COMP "dout_dp_o<4>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.883ns|    11.117ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dclk_dp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     4.079ns|    10.921ns|       0|           0
+  COMP "dclk_dp_o" OFFSET = OUT 15 ns AFTER | MAXDELAY    |     3.883ns|    11.117ns|       0|           0
    COMP "clk_i"                             |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.080ns|    10.920ns|       0|           0
+  COMP "dout_dp_o<3>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.884ns|    11.116ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dvalid_dp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     4.080ns|    10.920ns|       0|           0
+  COMP "dvalid_dp_o" OFFSET = OUT 15 ns AFT | MAXDELAY    |     3.884ns|    11.116ns|       0|           0
   ER COMP "clk_i"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.083ns|    10.917ns|       0|           0
+  COMP "dout_dp_o<6>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.887ns|    11.113ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.086ns|    10.914ns|       0|           0
+  COMP "dout_dp_o<7>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.890ns|    11.110ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.093ns|    10.907ns|       0|           0
+  COMP "dout_dp_o<1>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.897ns|    11.103ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.099ns|    10.901ns|       0|           0
+  COMP "dout_dp_o<2>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.903ns|    11.097ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "dout_dp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     4.107ns|    10.893ns|       0|           0
+  COMP "dout_dp_o<0>" OFFSET = OUT 15 ns AF | MAXDELAY    |     3.911ns|    11.089ns|       0|           0
   TER COMP "clk_i"                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF =  | MINHIGHPULSE|     4.116ns|     2.550ns|       0|           0
@@ -829,206 +835,224 @@ Asterisk (*) preceding a constraint indicates it was not met.
   TS_clk_usb = PERIOD TIMEGRP "clk_usb_flop | MINLOWPULSE |    10.830ns|    10.000ns|       0|           0
   s" 20.83 ns HIGH 50%                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.184ns|     0.816ns|       0|           0
-  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
-  ntr_gc<8>"         MAXDELAY = 12 ns       |             |            |            |        |            
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.202ns|     0.798ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<1>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.366ns|     0.634ns|       0|           0
-  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.204ns|     0.796ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<0>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.211ns|     0.789ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<3>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.224ns|     0.776ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<7>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.234ns|     0.766ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<2>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.250ns|     0.750ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<6>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.392ns|     0.608ns|       0|           0
-  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.253ns|     0.747ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<5>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.511ns|     0.489ns|       0|           0
-  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
-  ntr_gc<9>"         MAXDELAY = 12 ns       |             |            |            |        |            
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.255ns|     0.745ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<4>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.527ns|     0.473ns|       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.292ns|     0.708ns|       0|           0
+  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<8>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.335ns|     0.665ns|       0|           0
   _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<9>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.535ns|     0.465ns|       0|           0
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.395ns|     0.605ns|       0|           0
+  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
+  ntr_gc<4>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.518ns|     0.482ns|       0|           0
+  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
   ntr_gc<8>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.553ns|     0.447ns|       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.539ns|     0.461ns|       0|           0
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
-  ntr_gc<7>"         MAXDELAY = 12 ns       |             |            |            |        |            
+  ntr_gc<5>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.557ns|     0.443ns|       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.559ns|     0.441ns|       0|           0
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
-  ntr_gc<4>"         MAXDELAY = 12 ns       |             |            |            |        |            
+  ntr_gc<6>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.659ns|     0.341ns|       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.559ns|     0.441ns|       0|           0
+  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
+  ntr_gc<9>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.662ns|     0.338ns|       0|           0
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<4>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.671ns|     0.329ns|       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.672ns|     0.328ns|       0|           0
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<5>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.674ns|     0.326ns|       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.678ns|     0.322ns|       0|           0
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<7>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.686ns|     0.314ns|       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.689ns|     0.311ns|       0|           0
+  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
+  ntr_gc<7>"         MAXDELAY = 12 ns       |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.691ns|     0.309ns|       0|           0
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<6>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    11.955ns|     3.045ns|       0|           0
-   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.813ns|            |       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.693ns|     0.307ns|       0|           0
+  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<8>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    13.994ns|     1.006ns|       0|           0
-   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.575ns|            |       0|           0
+  NET         "i_appscore/MEMORY_IO_INST/rd | MAXDELAY    |    11.694ns|     0.306ns|       0|           0
+  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
+  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
+  ntr_gc<9>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    15.180ns|     5.650ns|       0|           0
-  T1_BUF_0 = PERIOD TIMEGRP         "i_apps | HOLD        |     0.407ns|            |       0|           0
-  core_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0" |             |            |            |        |            
-   TS_clk_usb PHASE         10.415 ns HIGH  |             |            |            |        |            
-  50%                                       |             |            |            |        |            
+  TS_U_TO_J = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    12.261ns|     2.739ns|       0|           0
+   TO TIMEGRP "J_CLK" 15 ns                 | HOLD        |     1.361ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    19.555ns|     1.275ns|       0|           0
-  T0_BUF_0 = PERIOD TIMEGRP         "i_apps | HOLD        |     0.712ns|            |       0|           0
-  core_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0" | MINPERIOD   |    19.164ns|     1.666ns|       0|           0
-   TS_clk_usb HIGH 50%                      |             |            |            |        |            
+  TS_U_TO_U = MAXDELAY FROM TIMEGRP "U_CLK" | SETUP       |    14.010ns|     0.990ns|       0|           0
+   TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.560ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM | SETUP       |    20.232ns|     6.434ns|       0|           0
-   TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO       | HOLD        |     0.179ns|            |       0|           0
-     TIMEGRP "FFS" TS_i_appsfpga_io_i_pll_m |             |            |            |        |            
-  em_CLKOUT2_BUF * 4                        |             |            |            |        |            
+  TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    15.123ns|     5.707ns|       0|           0
+  T1_BUF = PERIOD TIMEGRP         "i_appsco | HOLD        |     0.339ns|            |       0|           0
+  re_USB_IO_INST_i_pll_usb_CLKOUT1_BUF" TS_ |             |            |            |        |            
+  clk_usb PHASE 10.415         ns HIGH 50%  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<5>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    20.610ns|   -12.410ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
+  TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    19.676ns|     1.154ns|       0|           0
+  T0_BUF = PERIOD TIMEGRP         "i_appsco | HOLD        |     0.600ns|            |       0|           0
+  re_USB_IO_INST_i_pll_usb_CLKOUT0_BUF" TS_ | MINPERIOD   |    19.164ns|     1.666ns|       0|           0
+  clk_usb HIGH 50%                          |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<7>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    20.885ns|   -12.685ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<0>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    20.913ns|   -12.713ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<4>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    20.920ns|   -12.720ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_MC_RD_DATA_SEL = MAXDELAY FROM TIMEGRP | SETUP       |    20.951ns|     5.715ns|       0|           0
-   "TNM_RD_DATA_SEL" TO TIMEGRP "FFS"       | HOLD        |     1.531ns|            |       0|           0
+  TS_MC_RD_DATA_SEL = MAXDELAY FROM TIMEGRP | SETUP       |    20.547ns|     6.119ns|       0|           0
+   "TNM_RD_DATA_SEL" TO TIMEGRP "FFS"       | HOLD        |     1.136ns|            |       0|           0
      TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF |             |            |            |        |            
    * 4                                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<1>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.070ns|   -12.870ns|       0|           0
+  COMP "ctl1" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    20.658ns|   -10.328ns|       0|           0
+  OMP "clk_usb"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_0 = MAXDELAY FROM | SETUP       |    20.805ns|     5.861ns|       0|           0
+   TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO       | HOLD        |     0.855ns|            |       0|           0
+     TIMEGRP "FFS" TS_i_appsfpga_io_i_pll_m |             |            |            |        |            
+  em_CLKOUT2_BUF * 4                        |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "ctl0" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    20.822ns|   -10.492ns|       0|           0
+  OMP "clk_usb"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<7>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.019ns|   -12.819ns|       0|           0
    COMP "clk_usb"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FRO | SETUP       |    21.140ns|     5.526ns|       0|           0
-  M TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO      | HOLD        |     2.344ns|            |       0|           0
+  COMP "bidir<0>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.028ns|   -12.828ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<11>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.083ns|   -12.883ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "ctl2" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    21.138ns|   -10.808ns|       0|           0
+  OMP "clk_usb"                             |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<3>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.193ns|   -12.993ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<6>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.236ns|   -13.036ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<14>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.288ns|   -13.088ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<9>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.311ns|   -13.111ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<4>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.362ns|   -13.162ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<5>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.384ns|   -13.184ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<1>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.389ns|   -13.189ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<2>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.392ns|   -13.192ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<8>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.398ns|   -13.198ns|       0|           0
+   COMP "clk_usb"                           |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<13>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.407ns|   -13.207ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<12>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.556ns|   -13.356ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<10>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.626ns|   -13.426ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  COMP "bidir<15>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.827ns|   -13.627ns|       0|           0
+  E COMP "clk_usb"                          |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    22.517ns|     4.149ns|       0|           0
+  NM_GATE_DLY" TO TIMEGRP "FFS"         TS_ | HOLD        |     0.049ns|            |       0|           0
+  i_appsfpga_io_i_pll_mem_CLKOUT2_BUF * 4   |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  TS_MC_PHY_INIT_DATA_SEL_90 = MAXDELAY FRO | SETUP       |    22.817ns|     3.849ns|       0|           0
+  M TIMEGRP "TNM_PHY_INIT_DATA_SEL" TO      | HOLD        |     0.872ns|            |       0|           0
       TIMEGRP "RAMS" TS_i_appsfpga_io_i_pll |             |            |            |        |            
   _mem_CLKOUT2_BUF * 4                      |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  COMP "bidir<12>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.167ns|   -12.967ns|       0|           0
-  E COMP "clk_usb"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<13>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.169ns|   -12.969ns|       0|           0
-  E COMP "clk_usb"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<3>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.282ns|   -13.082ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<15>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.384ns|   -13.184ns|       0|           0
-  E COMP "clk_usb"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<6>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.453ns|   -13.253ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<2>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.454ns|   -13.254ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<9>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.513ns|   -13.313ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<14>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.541ns|   -13.341ns|       0|           0
-  E COMP "clk_usb"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<8>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    21.642ns|   -13.442ns|       0|           0
-   COMP "clk_usb"                           |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<11>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.680ns|   -13.480ns|       0|           0
-  E COMP "clk_usb"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "ctl1" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    21.745ns|   -11.415ns|       0|           0
-  OMP "clk_usb"                             |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "bidir<10>" OFFSET = IN 8.2 ns BEFOR | SETUP       |    21.765ns|   -13.565ns|       0|           0
-  E COMP "clk_usb"                          |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "ctl2" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    21.844ns|   -11.514ns|       0|           0
-  OMP "clk_usb"                             |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  COMP "ctl0" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    21.858ns|   -11.528ns|       0|           0
-  OMP "clk_usb"                             |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_MC_GATE_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    22.603ns|     4.063ns|       0|           0
-  NM_GATE_DLY" TO TIMEGRP "FFS"         TS_ | HOLD        |     0.247ns|            |       0|           0
-  i_appsfpga_io_i_pll_mem_CLKOUT2_BUF * 4   |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGR | SETUP       |    22.983ns|     3.683ns|       0|           0
-  P "TNM_RDEN_SEL_MUX" TO TIMEGRP "FFS"     | HOLD        |     0.635ns|            |       0|           0
+  TS_MC_RDEN_SEL_MUX = MAXDELAY FROM TIMEGR | SETUP       |    23.721ns|     2.945ns|       0|           0
+  P "TNM_RDEN_SEL_MUX" TO TIMEGRP "FFS"     | HOLD        |     0.486ns|            |       0|           0
        TS_i_appsfpga_io_i_pll_mem_CLKOUT2_B |             |            |            |        |            
   UF * 4                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    23.593ns|     6.407ns|       0|           0
-  IGH 50%                                   | HOLD        |     0.360ns|            |       0|           0
+  TS_J_CLK = PERIOD TIMEGRP "J_CLK" 30 ns H | SETUP       |    24.618ns|     5.382ns|       0|           0
+  IGH 50%                                   | HOLD        |     0.465ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
-  TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGR | SETUP       |    24.690ns|     1.976ns|       0|           0
-  P "TNM_CAL_RDEN_DLY" TO TIMEGRP "FFS"     | HOLD        |     0.087ns|            |       0|           0
-       TS_i_appsfpga_io_i_pll_mem_CLKOUT2_B |             |            |            |        |            
-  UF * 4                                    |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    24.729ns|     1.937ns|       0|           0
-  NM_RDEN_DLY" TO TIMEGRP "FFS"         TS_ | HOLD        |     0.187ns|            |       0|           0
+  TS_MC_RDEN_DLY = MAXDELAY FROM TIMEGRP "T | SETUP       |    24.651ns|     2.015ns|       0|           0
+  NM_RDEN_DLY" TO TIMEGRP "FFS"         TS_ | HOLD        |     0.253ns|            |       0|           0
   i_appsfpga_io_i_pll_mem_CLKOUT2_BUF * 4   |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<6>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_clk2x_mem_to_dqs0_flops_path" TI | SETUP       |         N/A|     2.833ns|     N/A|           0
-  G                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<7>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_dqs7_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
-  G                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_dqs6_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
-  G                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_dqs5_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
-  G                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_dqs4_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
-  G                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_dqs3_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
-  G                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_dqs2_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
-  G                                         |             |            |            |        |            
+  TS_MC_CAL_RDEN_DLY = MAXDELAY FROM TIMEGR | SETUP       |    24.696ns|     1.970ns|       0|           0
+  P "TNM_CAL_RDEN_DLY" TO TIMEGRP "FFS"     | HOLD        |     0.084ns|            |       0|           0
+       TS_i_appsfpga_io_i_pll_mem_CLKOUT2_B |             |            |            |        |            
+  UF * 4                                    |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
@@ -1040,12 +1064,15 @@ Asterisk (*) preceding a constraint indicates it was not met.
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
   ntr_gc<2>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs1_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_p |             |            |            |        |            
   ntr_gc<1>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_dqs1_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  PATH "TS_dqs2_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
   G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
@@ -1060,93 +1087,71 @@ Asterisk (*) preceding a constraint indicates it was not met.
   FROM TIMEGRP "EN_DQS_FF" TO TIMEGRP       |             |            |            |        |            
      "TNM_DQ_CE_IDDR" 3.85 ns DATAPATHONLY  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<8>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_ffs_to_ddr2_ck_n_path" TIG       | MAXDELAY    |         N/A|     2.405ns|     N/A|           0
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_clk_usb_to_TPT_ifclk_bufg_path"  | MAXDELAY    |         N/A|     9.638ns|     N/A|           0
-  TIG                                       |             |            |            |        |            
+  PATH "TS_clk2x_mem_to_dqs6_flops_path" TI | SETUP       |         N/A|     2.576ns|     N/A|           0
+  G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_clk2x_mem_to_dqs7_flops_path" TI | SETUP       |         N/A|     2.581ns|     N/A|           0
   G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<9>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TSfalse_path" TIG                   | SETUP       |         N/A|     2.008ns|     N/A|           0
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_clk2x_mem_to_dqs6_flops_path" TI | SETUP       |         N/A|     2.576ns|     N/A|           0
-  G                                         |             |            |            |        |            
+  PATH "TS_clk_usb_to_TPT_ifclk_bufg_path"  | MAXDELAY    |         N/A|     9.396ns|     N/A|           0
+  TIG                                       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_clk2x_mem_to_dqs5_flops_path" TI | SETUP       |         N/A|     2.576ns|     N/A|           0
   G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<0>"         MAXDELAY = 12 ns       |             |            |            |        |            
+  PATH "TS_ffs_to_ddr2_ck_n_path" TIG       | MAXDELAY    |         N/A|     2.405ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_clk2x_mem_to_dqs4_flops_path" TI | SETUP       |         N/A|     2.581ns|     N/A|           0
   G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<1>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
   PATH "TS_clk2x_mem_to_dqs3_flops_path" TI | SETUP       |         N/A|     2.576ns|     N/A|           0
   G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs2_flops_path" TI | SETUP       |         N/A|     2.833ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TSfalse_path" TIG                   | SETUP       |         N/A|     2.222ns|     N/A|           0
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs1_flops_path" TI | SETUP       |         N/A|     2.824ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_clk2x_mem_to_dqs0_flops_path" TI | SETUP       |         N/A|     2.823ns|     N/A|           0
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs7_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs6_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
+  PATH "TS_dqs5_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
+----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<3>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<2>"         MAXDELAY = 12 ns       |             |            |            |        |            
+  PATH "TS_dqs4_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
+  G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<2>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<3>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<1>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  PATH "TS_clk2x_mem_to_dqs2_flops_path" TI | SETUP       |         N/A|     2.833ns|     N/A|           0
-  G                                         |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
   _ab_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
   rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
   ntr_gc<0>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
-  PATH "TS_clk2x_mem_to_dqs1_flops_path" TI | SETUP       |         N/A|     2.824ns|     N/A|           0
+  PATH "TS_dqs3_flops_to_clk2x_mem_path" TI | N/A         |         N/A|         N/A|     N/A|         N/A
   G                                         |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<4>"         MAXDELAY = 12 ns       |             |            |            |        |            
-----------------------------------------------------------------------------------------------------------
-  NET         "i_appscore/MEMORY_IO_INST/rd | N/A         |         N/A|         N/A|     N/A|         N/A
-  _cd_fifo/U0/xst_fifo_generator/gconvfifo. |             |            |            |        |            
-  rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_p |             |            |            |        |            
-  ntr_gc<5>"         MAXDELAY = 12 ns       |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
 
 
@@ -1161,15 +1166,15 @@ Derived Constraints for TS_clk_i
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 |TS_clk_i                       |     20.000ns|      6.000ns|     13.328ns|            0|            0|            0|          927|
-| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      2.500ns|      1.609ns|            0|            0|            0|          927|
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      2.500ns|      1.530ns|            0|            0|            0|          927|
 | OUT2_BUF                      |             |             |             |             |             |             |             |
-|  TS_MC_RD_DATA_SEL            |     26.667ns|      5.715ns|          N/A|            0|            0|          416|            0|
-|  TS_MC_RDEN_SEL_MUX           |     26.667ns|      3.683ns|          N/A|            0|            0|          128|            0|
-|  TS_MC_PHY_INIT_DATA_SEL_0    |     26.667ns|      6.434ns|          N/A|            0|            0|          300|            0|
-|  TS_MC_PHY_INIT_DATA_SEL_90   |     26.667ns|      5.526ns|          N/A|            0|            0|            8|            0|
-|  TS_MC_GATE_DLY               |     26.667ns|      4.063ns|          N/A|            0|            0|           65|            0|
-|  TS_MC_RDEN_DLY               |     26.667ns|      1.937ns|          N/A|            0|            0|            5|            0|
-|  TS_MC_CAL_RDEN_DLY           |     26.667ns|      1.976ns|          N/A|            0|            0|            5|            0|
+|  TS_MC_RD_DATA_SEL            |     26.667ns|      6.119ns|          N/A|            0|            0|          416|            0|
+|  TS_MC_RDEN_SEL_MUX           |     26.667ns|      2.945ns|          N/A|            0|            0|          128|            0|
+|  TS_MC_PHY_INIT_DATA_SEL_0    |     26.667ns|      5.861ns|          N/A|            0|            0|          300|            0|
+|  TS_MC_PHY_INIT_DATA_SEL_90   |     26.667ns|      3.849ns|          N/A|            0|            0|            8|            0|
+|  TS_MC_GATE_DLY               |     26.667ns|      4.149ns|          N/A|            0|            0|           65|            0|
+|  TS_MC_RDEN_DLY               |     26.667ns|      2.015ns|          N/A|            0|            0|            5|            0|
+|  TS_MC_CAL_RDEN_DLY           |     26.667ns|      1.970ns|          N/A|            0|            0|            5|            0|
 | TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      2.222ns|          N/A|            0|            0|            0|            0|
 | OUT0_BUF                      |             |             |             |             |             |             |             |
 | TS_i_appsfpga_io_i_PLL_clk_CLK|      2.500ns|      1.666ns|          N/A|            0|            0|            0|            0|
@@ -1188,18 +1193,18 @@ Derived Constraints for TS_clk_i_flops
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk_i_flops                 |     20.000ns|      7.894ns|     51.591ns|            0|           32|         5042|        38335|
-| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      4.854ns|          N/A|            0|            0|         9963|            0|
+|TS_clk_i_flops                 |     20.000ns|      8.591ns|     73.245ns|            0|          424|         5042|        53661|
+| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      4.936ns|          N/A|            0|            0|        14485|            0|
 | OUT0_BUF_0                    |             |             |             |             |             |             |             |
 | TS_i_appsfpga_io_i_PLL_clk_CLK|      2.500ns|      1.666ns|          N/A|            0|            0|            0|            0|
 | OUT1_BUF_0                    |             |             |             |             |             |             |             |
-| TS_i_appsfpga_io_i_pll_mem_CLK|     13.333ns|      8.891ns|          N/A|            0|            0|        12172|            0|
+| TS_i_appsfpga_io_i_pll_mem_CLK|     13.333ns|      8.845ns|          N/A|            0|            0|        12391|            0|
 | OUT0_BUF_0                    |             |             |             |             |             |             |             |
-| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|     17.197ns|          N/A|           32|            0|        15533|            0|
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|     24.415ns|          N/A|          424|            0|        26118|            0|
 | OUT1_BUF_0                    |             |             |             |             |             |             |             |
-| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      4.812ns|          N/A|            0|            0|          643|            0|
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      4.897ns|          N/A|            0|            0|          643|            0|
 | OUT2_BUF_0                    |             |             |             |             |             |             |             |
-| TS_i_appsfpga_io_i_pll_mem_CLK|      5.000ns|      1.666ns|          N/A|            0|            0|           24|            0|
+| TS_i_appsfpga_io_i_pll_mem_CLK|      5.000ns|      2.685ns|          N/A|            0|            0|           24|            0|
 | OUT3_BUF_0                    |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
@@ -1209,11 +1214,11 @@ Derived Constraints for TS_clk_usb
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk_usb                     |     20.830ns|     10.000ns|      5.650ns|            0|            0|            0|         5058|
+|TS_clk_usb                     |     20.830ns|     10.000ns|      5.707ns|            0|            0|            0|         5010|
 | TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      1.666ns|          N/A|            0|            0|            1|            0|
-| l_usb_CLKOUT0_BUF_0           |             |             |             |             |             |             |             |
-| TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      5.650ns|          N/A|            0|            0|         5057|            0|
-| l_usb_CLKOUT1_BUF_0           |             |             |             |             |             |             |             |
+| l_usb_CLKOUT0_BUF             |             |             |             |             |             |             |             |
+| TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      5.707ns|          N/A|            0|            0|         5009|            0|
+| l_usb_CLKOUT1_BUF             |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 1 constraint not met.
@@ -1230,14 +1235,14 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 29 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 1 mins 40 secs 
-Total CPU time to PAR completion: 46 secs 
+Total REAL time to PAR completion: 33 secs 
+Total CPU time to PAR completion: 31 secs 
 
-Peak Memory Usage:  942 MB
+Peak Memory Usage:  893 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.
-Timing: Completed - 32 errors found.
+Timing: Completed - 424 errors found.
 
 Number of error messages: 0
 Number of warning messages: 60

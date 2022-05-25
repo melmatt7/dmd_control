@@ -32,6 +32,14 @@
 <msg type="warning" file="ConstraintSystem" num="56" delta="old" >Constraint <arg fmt="%s" index="1">&lt;TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN = PERIOD &quot;i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN&quot; TS_clk_i HIGH 50% INPUT_JITTER 100 ps&gt;</arg>: Unable to find an active <arg fmt="%s" index="2">&apos;TNM&apos;</arg> constraint named &apos;<arg fmt="%s" index="3">i_appsfpga_io_i_pll_mem_CLKFBOUT_CLKFBIN</arg>&apos;.
 </msg>
 
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_usb_flops</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_usb</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF = PERIOD &quot;i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF&quot; TS_clk_usb HIGH 50%&gt;</arg>
+</msg>
+
+<msg type="info" file="ConstraintSystem" num="178" delta="new" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_usb_flops</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_usb</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
+<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF = PERIOD &quot;i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF&quot; TS_clk_usb PHASE 10.415 ns HIGH 50%&gt;</arg>
+</msg>
+
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_i</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_i</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
 <arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = PERIOD &quot;i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF&quot; TS_clk_i / 4 HIGH 50% INPUT_JITTER 100 ps&gt;</arg>
 </msg>
@@ -78,14 +86,6 @@
 
 <msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_i_flops</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_i_flops</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
 <arg fmt="%s" index="7">CLKOUT3</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0 = PERIOD &quot;i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0&quot; TS_clk_i_flops / 4 HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_usb_flops</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_usb</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT0</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0 = PERIOD &quot;i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0&quot; TS_clk_usb HIGH 50%&gt;</arg>
-</msg>
-
-<msg type="info" file="ConstraintSystem" num="178" delta="old" ><arg fmt="%s" index="1">TNM</arg> &apos;<arg fmt="%s" index="2">clk_usb_flops</arg>&apos;, used in period specification &apos;<arg fmt="%s" index="3">TS_clk_usb</arg>&apos;, was traced into <arg fmt="%s" index="4">PLL_ADV</arg> instance <arg fmt="%s" index="5">PLL_ADV_INST</arg>. The following new TNM groups and period specifications were generated at the <arg fmt="%s" index="6">PLL_ADV</arg> output(s): 
-<arg fmt="%s" index="7">CLKOUT1</arg>: <arg fmt="%s" index="8">&lt;TIMESPEC TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0 = PERIOD &quot;i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0&quot; TS_clk_usb PHASE 10.415 ns HIGH 50%&gt;</arg>
 </msg>
 
 <msg type="warning" file="ConstraintSystem" num="0" >The Offset constraint &lt;NET &quot;ctl*&quot;   OFFSET = IN 10.33 ns BEFORE &quot;clk_usb&quot;;&gt; [src/rtl/merge.ucf(11)], is specified without a duration.  This will result in a lack of hold time checks in timing reports.  If hold time checks are desired a duration value should be specified following the &apos;VALID&apos; keyword.

@@ -16,7 +16,7 @@
 -g RdWrPin:Pullup
 -g HswapenPin:PullUp
 -g TckPin:PullUp
--g TdiPin:PullUp
+-g TdiPin:PullDown
 -g TdoPin:PullUp
 -g TmsPin:PullUp
 -g UnusedPin:PullDown

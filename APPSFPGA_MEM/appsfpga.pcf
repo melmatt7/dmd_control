@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Sun Apr 17 15:00:43 2022
+// Written by: Map P.20131013 on Fri May 13 01:03:15 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -1047,6 +1047,7 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/muxed_out_dout_a_q_61" BEL
         "i_appscore/muxed_out_dout_a_q_62" BEL
         "i_appscore/muxed_out_dout_a_q_63" BEL
+        "i_appscore/muxed_out_rst2blkz_q" BEL
         "i_appscore/muxed_out_dout_b_q_0" BEL
         "i_appscore/muxed_out_dout_b_q_1" BEL
         "i_appscore/muxed_out_dout_b_q_2" BEL
@@ -1113,9 +1114,18 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/muxed_out_dout_b_q_63" BEL
         "i_appscore/muxed_out_data_valid_q" BEL
         "i_appscore/muxed_out_rowmd_q_0" BEL "i_appscore/muxed_out_rowmd_q_1"
-        BEL "i_appscore/muxed_out_blkmd_q_0" BEL
-        "i_appscore/muxed_out_blkmd_q_1" BEL "i_appscore/muxed_out_blkad_q_3"
-        BEL "i_appscore/USB_REG_INST/gpio_out_1_0" BEL
+        BEL "i_appscore/muxed_out_rowad_q_0" BEL
+        "i_appscore/muxed_out_rowad_q_1" BEL "i_appscore/muxed_out_rowad_q_2"
+        BEL "i_appscore/muxed_out_rowad_q_3" BEL
+        "i_appscore/muxed_out_rowad_q_4" BEL "i_appscore/muxed_out_rowad_q_5"
+        BEL "i_appscore/muxed_out_rowad_q_6" BEL
+        "i_appscore/muxed_out_rowad_q_7" BEL "i_appscore/muxed_out_rowad_q_8"
+        BEL "i_appscore/muxed_out_rowad_q_9" BEL
+        "i_appscore/muxed_out_blkmd_q_0" BEL "i_appscore/muxed_out_blkmd_q_1"
+        BEL "i_appscore/muxed_out_blkad_q_0" BEL
+        "i_appscore/muxed_out_blkad_q_1" BEL "i_appscore/muxed_out_blkad_q_2"
+        BEL "i_appscore/muxed_out_blkad_q_3" BEL
+        "i_appscore/USB_REG_INST/gpio_out_1_0" BEL
         "i_appscore/USB_REG_INST/gpio_out_1_1" BEL
         "i_appscore/USB_REG_INST/gpio_out_1_2" BEL
         "i_appscore/USB_REG_INST/sw_en_1" BEL
@@ -1131,6 +1141,9 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/USB_REG_INST/sw_override_val_1_7" BEL
         "i_appscore/USB_REG_INST/pat_force_1" BEL
         "i_appscore/USB_REG_INST/DMD_comp_data_1" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_0" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_1" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_2" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_0" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_1" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_2" BEL
@@ -1484,7 +1497,13 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg"
         BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2"
-        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
+        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_2" BEL
@@ -1618,7 +1637,12 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_127" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_4" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_5" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_7" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_9" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_2" BEL
@@ -1674,6 +1698,7 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_0"
         BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_miss_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_enable" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_1q" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_2q" BEL
@@ -2250,6 +2275,7 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/muxed_out_dout_a_q_61" BEL
         "i_appscore/muxed_out_dout_a_q_62" BEL
         "i_appscore/muxed_out_dout_a_q_63" BEL
+        "i_appscore/muxed_out_rst2blkz_q" BEL
         "i_appscore/muxed_out_dout_b_q_0" BEL
         "i_appscore/muxed_out_dout_b_q_1" BEL
         "i_appscore/muxed_out_dout_b_q_2" BEL
@@ -2316,9 +2342,18 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/muxed_out_dout_b_q_63" BEL
         "i_appscore/muxed_out_data_valid_q" BEL
         "i_appscore/muxed_out_rowmd_q_0" BEL "i_appscore/muxed_out_rowmd_q_1"
-        BEL "i_appscore/muxed_out_blkmd_q_0" BEL
-        "i_appscore/muxed_out_blkmd_q_1" BEL "i_appscore/muxed_out_blkad_q_3"
-        BEL "i_appscore/USB_REG_INST/gpio_out_1_0" BEL
+        BEL "i_appscore/muxed_out_rowad_q_0" BEL
+        "i_appscore/muxed_out_rowad_q_1" BEL "i_appscore/muxed_out_rowad_q_2"
+        BEL "i_appscore/muxed_out_rowad_q_3" BEL
+        "i_appscore/muxed_out_rowad_q_4" BEL "i_appscore/muxed_out_rowad_q_5"
+        BEL "i_appscore/muxed_out_rowad_q_6" BEL
+        "i_appscore/muxed_out_rowad_q_7" BEL "i_appscore/muxed_out_rowad_q_8"
+        BEL "i_appscore/muxed_out_rowad_q_9" BEL
+        "i_appscore/muxed_out_blkmd_q_0" BEL "i_appscore/muxed_out_blkmd_q_1"
+        BEL "i_appscore/muxed_out_blkad_q_0" BEL
+        "i_appscore/muxed_out_blkad_q_1" BEL "i_appscore/muxed_out_blkad_q_2"
+        BEL "i_appscore/muxed_out_blkad_q_3" BEL
+        "i_appscore/USB_REG_INST/gpio_out_1_0" BEL
         "i_appscore/USB_REG_INST/gpio_out_1_1" BEL
         "i_appscore/USB_REG_INST/gpio_out_1_2" BEL
         "i_appscore/USB_REG_INST/sw_en_1" BEL
@@ -2334,6 +2369,9 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/USB_REG_INST/sw_override_val_1_7" BEL
         "i_appscore/USB_REG_INST/pat_force_1" BEL
         "i_appscore/USB_REG_INST/DMD_comp_data_1" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_0" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_1" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_2" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_0" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_1" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_2" BEL
@@ -2687,7 +2725,13 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg"
         BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2"
-        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
+        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_2" BEL
@@ -2821,7 +2865,12 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_127" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_4" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_5" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_7" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_9" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_2" BEL
@@ -2877,6 +2926,7 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_0"
         BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_miss_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_enable" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_1q" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_2q" BEL
@@ -3453,6 +3503,7 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/muxed_out_dout_a_q_61" BEL
         "i_appscore/muxed_out_dout_a_q_62" BEL
         "i_appscore/muxed_out_dout_a_q_63" BEL
+        "i_appscore/muxed_out_rst2blkz_q" BEL
         "i_appscore/muxed_out_dout_b_q_0" BEL
         "i_appscore/muxed_out_dout_b_q_1" BEL
         "i_appscore/muxed_out_dout_b_q_2" BEL
@@ -3519,9 +3570,18 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/muxed_out_dout_b_q_63" BEL
         "i_appscore/muxed_out_data_valid_q" BEL
         "i_appscore/muxed_out_rowmd_q_0" BEL "i_appscore/muxed_out_rowmd_q_1"
-        BEL "i_appscore/muxed_out_blkmd_q_0" BEL
-        "i_appscore/muxed_out_blkmd_q_1" BEL "i_appscore/muxed_out_blkad_q_3"
-        BEL "i_appscore/USB_REG_INST/gpio_out_1_0" BEL
+        BEL "i_appscore/muxed_out_rowad_q_0" BEL
+        "i_appscore/muxed_out_rowad_q_1" BEL "i_appscore/muxed_out_rowad_q_2"
+        BEL "i_appscore/muxed_out_rowad_q_3" BEL
+        "i_appscore/muxed_out_rowad_q_4" BEL "i_appscore/muxed_out_rowad_q_5"
+        BEL "i_appscore/muxed_out_rowad_q_6" BEL
+        "i_appscore/muxed_out_rowad_q_7" BEL "i_appscore/muxed_out_rowad_q_8"
+        BEL "i_appscore/muxed_out_rowad_q_9" BEL
+        "i_appscore/muxed_out_blkmd_q_0" BEL "i_appscore/muxed_out_blkmd_q_1"
+        BEL "i_appscore/muxed_out_blkad_q_0" BEL
+        "i_appscore/muxed_out_blkad_q_1" BEL "i_appscore/muxed_out_blkad_q_2"
+        BEL "i_appscore/muxed_out_blkad_q_3" BEL
+        "i_appscore/USB_REG_INST/gpio_out_1_0" BEL
         "i_appscore/USB_REG_INST/gpio_out_1_1" BEL
         "i_appscore/USB_REG_INST/gpio_out_1_2" BEL
         "i_appscore/USB_REG_INST/sw_en_1" BEL
@@ -3537,6 +3597,9 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/USB_REG_INST/sw_override_val_1_7" BEL
         "i_appscore/USB_REG_INST/pat_force_1" BEL
         "i_appscore/USB_REG_INST/DMD_comp_data_1" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_0" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_1" BEL
+        "i_appscore/USB_REG_INST/update_mode_1_2" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_0" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_1" BEL
         "i_appscore/USB_REG_INST/pattern_sel_1_2" BEL
@@ -3890,7 +3953,13 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg"
         BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2"
-        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
+        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_2" BEL
@@ -4024,7 +4093,12 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_127" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_4" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_5" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_7" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_9" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_2" BEL
@@ -4080,6 +4154,7 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_0"
         BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_miss_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_enable" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_1q" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_2q" BEL
@@ -6451,6 +6526,14 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT0_BUF = BEL
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_rden_pipe_cnt_4"
         BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_0"
+        BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_1"
+        BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_2"
+        BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_3"
+        BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_idel_tap_cnt_0"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_idel_tap_cnt_1"
@@ -6882,14 +6965,6 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT0_BUF = BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_found_window"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_stable_window"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_0"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_1"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_2"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_3"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/Mshreg_rdd_fall_q1_bit1_r"
         BEL
@@ -8464,6 +8539,14 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT0_BUF_0 = BEL
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/calib_rden_pipe_cnt_4"
         BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_0"
+        BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_1"
+        BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_2"
+        BEL
+        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_3"
+        BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_idel_tap_cnt_0"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_idel_tap_cnt_1"
@@ -8895,14 +8978,6 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT0_BUF_0 = BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_found_window"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal4_stable_window"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_0"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_1"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_2"
-        BEL
-        "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/cal1_window_cnt_3"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/u_phy_calib/Mshreg_rdd_fall_q1_bit1_r"
         BEL
@@ -9581,7 +9656,6 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT1_BUF = BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_11" BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_12" BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_13" BEL
-        "i_appscore/MEMORY_IO_INST/mem_get_data1" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_0" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_1" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_2" BEL
@@ -9729,21 +9803,21 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT1_BUF = BEL
         "i_appscore/MEMORY_IO_INST/pattern_read_done_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_3q" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q4" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_0" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_1" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_2" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_3" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_4" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_5" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_6" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_7" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_8" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_9" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_10" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_11" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_12" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_13" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_14" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_0" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_1" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_2" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_3" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_4" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_5" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_6" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_7" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_8" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_9" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_10" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_11" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_12" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_13" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_14" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_0" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_1" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_2" BEL
@@ -12140,11 +12214,12 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT1_BUF = BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_ck[1].u_oddr_ck_i/N9"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_ck[1].u_oddr_ck_i"
-        BEL "i_appscore/MEMORY_IO_INST/app_af_wren" BEL
-        "i_appscore/MEMORY_IO_INST/app_af_cmd_0" BEL
-        "i_appscore/MEMORY_IO_INST/burst_indicator" BEL
+        BEL "i_appscore/MEMORY_IO_INST/burst_indicator" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done1" BEL
         "i_appscore/MEMORY_IO_INST/app_wdf_wren" BEL
+        "i_appscore/MEMORY_IO_INST/mem_get_data1" BEL
+        "i_appscore/MEMORY_IO_INST/app_af_wren" BEL
+        "i_appscore/MEMORY_IO_INST/app_af_cmd_0" BEL
         "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
         BEL
         "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0"
@@ -12884,7 +12959,6 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0 = BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_11" BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_12" BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_13" BEL
-        "i_appscore/MEMORY_IO_INST/mem_get_data1" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_0" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_1" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_2" BEL
@@ -13032,21 +13106,21 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0 = BEL
         "i_appscore/MEMORY_IO_INST/pattern_read_done_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_3q" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q4" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_0" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_1" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_2" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_3" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_4" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_5" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_6" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_7" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_8" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_9" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_10" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_11" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_12" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_13" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_14" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_0" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_1" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_2" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_3" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_4" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_5" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_6" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_7" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_8" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_9" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_10" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_11" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_12" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_13" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_14" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_0" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_1" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_2" BEL
@@ -15443,11 +15517,12 @@ TIMEGRP i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0 = BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_ck[1].u_oddr_ck_i/N9"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_ck[1].u_oddr_ck_i"
-        BEL "i_appscore/MEMORY_IO_INST/app_af_wren" BEL
-        "i_appscore/MEMORY_IO_INST/app_af_cmd_0" BEL
-        "i_appscore/MEMORY_IO_INST/burst_indicator" BEL
+        BEL "i_appscore/MEMORY_IO_INST/burst_indicator" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done1" BEL
         "i_appscore/MEMORY_IO_INST/app_wdf_wren" BEL
+        "i_appscore/MEMORY_IO_INST/mem_get_data1" BEL
+        "i_appscore/MEMORY_IO_INST/app_af_wren" BEL
+        "i_appscore/MEMORY_IO_INST/app_af_cmd_0" BEL
         "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
         BEL
         "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0"
@@ -18807,7 +18882,6 @@ TIMEGRP MEM_GRP = BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_11" BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_12" BEL
         "i_appscore/MEMORY_IO_INST/wr_offset_addr_13" BEL
-        "i_appscore/MEMORY_IO_INST/mem_get_data1" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_0" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_1" BEL
         "i_appscore/MEMORY_IO_INST/rd_offset_addr_2" BEL
@@ -18955,21 +19029,21 @@ TIMEGRP MEM_GRP = BEL
         "i_appscore/MEMORY_IO_INST/pattern_read_done_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_3q" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q4" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_0" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_1" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_2" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_3" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_4" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_5" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_6" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_7" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_8" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_9" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_10" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_11" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_12" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_13" BEL
-        "i_appscore/MEMORY_IO_INST/rd_pattern_id_14" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_0" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_1" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_2" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_3" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_4" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_5" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_6" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_7" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_8" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_9" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_10" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_11" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_12" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_13" BEL
+        "i_appscore/MEMORY_IO_INST/rd_pattern_id1_14" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_0" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_1" BEL
         "i_appscore/MEMORY_IO_INST/write_pattern_count_2" BEL
@@ -21366,11 +21440,12 @@ TIMEGRP MEM_GRP = BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_ck[1].u_oddr_ck_i/N9"
         BEL
         "i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_ck[1].u_oddr_ck_i"
-        BEL "i_appscore/MEMORY_IO_INST/app_af_wren" BEL
-        "i_appscore/MEMORY_IO_INST/app_af_cmd_0" BEL
-        "i_appscore/MEMORY_IO_INST/burst_indicator" BEL
+        BEL "i_appscore/MEMORY_IO_INST/burst_indicator" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done1" BEL
         "i_appscore/MEMORY_IO_INST/app_wdf_wren" BEL
+        "i_appscore/MEMORY_IO_INST/mem_get_data1" BEL
+        "i_appscore/MEMORY_IO_INST/app_af_wren" BEL
+        "i_appscore/MEMORY_IO_INST/app_af_cmd_0" BEL
         "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_fb_i"
         BEL
         "i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_gc_0"
@@ -23618,11 +23693,11 @@ TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF_0 = PERIOD TIMEGRP
         1.66666667 ns HIGH 50%;
 TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0 = PERIOD TIMEGRP
         "i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0" TS_clk_i_flops / 4 HIGH 50%;
-TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0 = PERIOD TIMEGRP
-        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0" TS_clk_usb HIGH 50%;
-TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0 = PERIOD TIMEGRP
-        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0" TS_clk_usb PHASE
-        10.415 ns HIGH 50%;
+TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF = PERIOD TIMEGRP
+        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF" TS_clk_usb HIGH 50%;
+TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF = PERIOD TIMEGRP
+        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF" TS_clk_usb PHASE 10.415
+        ns HIGH 50%;
 PIN
         i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/u_ff_ras_n_pins<2>
         = BEL

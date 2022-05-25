@@ -16,6 +16,7 @@
 #define D4100_SW_OVERRIDE       0x0025
 #define D4100_PATTERN_SELECT	0x0026
 #define PATTERN_NUM				0x0027
+#define MODE					0x0028
 
 //D4100 USB Control register 0x03 bits
 #define D4100_CTLBIT_WRITEBLOCK	0x0001

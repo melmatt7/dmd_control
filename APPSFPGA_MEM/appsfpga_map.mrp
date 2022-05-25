@@ -9,38 +9,38 @@ Target Device  : xc5vlx50
 Target Package : ff1153
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Sun Apr 17 14:58:57 2022
+Mapped Date    : Fri May 13 01:02:08 2022
 
 Design Summary
 --------------
 Number of errors:      0
-Number of warnings:   88
+Number of warnings:   91
 Slice Logic Utilization:
-  Number of Slice Registers:                 3,991 out of  28,800   13%
-    Number used as Flip Flops:               3,990
-    Number used as Latches:                      1
-  Number of Slice LUTs:                      2,995 out of  28,800   10%
-    Number used as logic:                    2,918 out of  28,800   10%
-      Number using O6 output only:           2,378
-      Number using O5 output only:             195
+  Number of Slice Registers:                 4,025 out of  28,800   13%
+    Number used as Flip Flops:               4,019
+    Number used as Latches:                      6
+  Number of Slice LUTs:                      3,012 out of  28,800   10%
+    Number used as logic:                    2,936 out of  28,800   10%
+      Number using O6 output only:           2,395
+      Number using O5 output only:             196
       Number using O5 and O6:                  345
     Number used as Memory:                      40 out of   7,680    1%
       Number used as Shift Register:            40
         Number using O6 output only:            40
-    Number used as exclusive route-thru:        37
-  Number of route-thrus:                       231
-    Number using O6 output only:               230
+    Number used as exclusive route-thru:        36
+  Number of route-thrus:                       232
+    Number using O6 output only:               231
     Number using O5 output only:                 1
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,918 out of   7,200   26%
-  Number of LUT Flip Flop pairs used:        5,080
-    Number with an unused Flip Flop:         1,089 out of   5,080   21%
-    Number with an unused LUT:               2,085 out of   5,080   41%
-    Number of fully used LUT-FF pairs:       1,906 out of   5,080   37%
-    Number of unique control sets:             240
+  Number of occupied Slices:                 1,908 out of   7,200   26%
+  Number of LUT Flip Flop pairs used:        5,104
+    Number with an unused Flip Flop:         1,079 out of   5,104   21%
+    Number with an unused LUT:               2,092 out of   5,104   40%
+    Number of fully used LUT-FF pairs:       1,933 out of   5,104   37%
+    Number of unique control sets:             244
     Number of slice register sites lost
-      to control set restrictions:             361 out of  28,800    1%
+      to control set restrictions:             359 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -74,11 +74,11 @@ Specific Feature Utilization:
   Number of OSERDESs:                           91
   Number of PLL_ADVs:                            3 out of       6   50%
 
-Average Fanout of Non-Clock Nets:                2.96
+Average Fanout of Non-Clock Nets:                2.97
 
-Peak Memory Usage:  1069 MB
-Total REAL time to MAP completion:  1 mins 50 secs 
-Total CPU time to MAP completion:   42 secs 
+Peak Memory Usage:  1066 MB
+Total REAL time to MAP completion:  1 mins 8 secs 
+Total CPU time to MAP completion:   1 mins 5 secs 
 
 Table of Contents
 -----------------
@@ -612,53 +612,60 @@ WARNING:Place:838 - An IO Bus with more than one IO standard is found.
    	 Comp: apps_testpt<30>   IOSTANDARD = LVCMOS33
 
 
+WARNING:PhysDesignRules:372 - Gated clock. Clock net i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear_not0001 is sourced
+   by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
+   flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_UPDATE_OUT[1].UPDATE_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal does not
    drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_appscore/mem_dmd_rowad<6>> is incomplete. The signal does not drive any load
+   pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_appscore/mem_dmd_rowad<2>> is incomplete. The signal does not drive any load
+   pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/phy_init_addr<4>> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp756.PULL is set but the tri state is
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp805.PULL is set but the tri state is
    not configured. 
-WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp756.PULL.1 is set but the tri state
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp805.PULL.1 is set but the tri state
    is not configured. 
 
 Section 3 - Informational
@@ -721,7 +728,7 @@ Section 4 - Removed Logic Summary
 ---------------------------------
  906 block(s) removed
  526 block(s) optimized away
-1835 signal(s) removed
+1846 signal(s) removed
 
 Section 5 - Removed Logic
 -------------------------
@@ -1420,6 +1427,22 @@ removed.
 The signal "i_appscore/mem_rd_cd_fifo_out<9>" is sourceless and has been
 removed.
 The signal "i_appscore/mem_rd_cd_fifo_valid" is sourceless and has been removed.
+The signal "i_appscore/mem_rd_pattern_id<10>" is sourceless and has been
+removed.
+The signal "i_appscore/mem_rd_pattern_id<11>" is sourceless and has been
+removed.
+The signal "i_appscore/mem_rd_pattern_id<12>" is sourceless and has been
+removed.
+The signal "i_appscore/mem_rd_pattern_id<13>" is sourceless and has been
+removed.
+The signal "i_appscore/mem_rd_pattern_id<14>" is sourceless and has been
+removed.
+The signal "i_appscore/mem_rd_pattern_id<4>" is sourceless and has been removed.
+The signal "i_appscore/mem_rd_pattern_id<5>" is sourceless and has been removed.
+The signal "i_appscore/mem_rd_pattern_id<6>" is sourceless and has been removed.
+The signal "i_appscore/mem_rd_pattern_id<7>" is sourceless and has been removed.
+The signal "i_appscore/mem_rd_pattern_id<8>" is sourceless and has been removed.
+The signal "i_appscore/mem_rd_pattern_id<9>" is sourceless and has been removed.
 The signal "i_appscore/usb_pattern_force" is sourceless and has been removed.
 The signal "i_appscore/usb_pattern_nmbr<0>" is sourceless and has been removed.
 The signal "i_appscore/usb_pattern_nmbr<1>" is sourceless and has been removed.
@@ -7667,7 +7690,7 @@ removed.
 The signal "CONTROL1<9>" is unused and has been removed.
  Unused block "i_icon/U0/U_ICON/U_CTRL_OUT/F_NCP[1].F_CMD[5].U_LCE" (ROM)
 removed.
-The signal "appcore_blkad_q<2>" is unused and has been removed.
+The signal "appcore_dout_c_q<10>" is unused and has been removed.
 The signal "apps_testpt_1_OBUF" is unused and has been removed.
 The signal "appsfpga_io_STEP_VCC_enbl_q" is unused and has been removed.
 The signal "appsfpga_io_cnthalt_q" is unused and has been removed.
@@ -9214,7 +9237,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-* TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0  | SETUP       |    -0.849ns|    10.063ns|      31|       18800
+* TS_i_appsfpga_io_i_pll_mem_CLKOUT1_BUF_0  | SETUP       |    -0.926ns|    10.371ns|     174|      151210
   = PERIOD TIMEGRP "i_appsfpga_io_i_pll_mem | HOLD        |    -0.117ns|            |      23|        2400
   _CLKOUT1_BUF_0" TS_clk_i_flops / 3 HIGH 5 |             |            |            |        |            
   0%                                        |             |            |            |        |            
@@ -9684,9 +9707,9 @@ Asterisk (*) preceding a constraint indicates it was not met.
    TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.219ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    18.673ns|     2.157ns|       0|           0
-  T1_BUF_0 = PERIOD TIMEGRP "i_appscore_USB | HOLD        |     0.120ns|            |       0|           0
-  _IO_INST_i_pll_usb_CLKOUT1_BUF_0" TS_clk_ | MINPERIOD   |    18.608ns|     2.222ns|       0|           0
-  usb PHASE 10.415 ns HIGH 50%              |             |            |            |        |            
+  T1_BUF = PERIOD TIMEGRP "i_appscore_USB_I | HOLD        |     0.120ns|            |       0|           0
+  O_INST_i_pll_usb_CLKOUT1_BUF" TS_clk_usb  | MINPERIOD   |    18.608ns|     2.222ns|       0|           0
+  PHASE 10.415 ns HIGH 50%                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   COMP "bidir<0>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
    COMP "clk_usb"                           |             |            |            |        |            
@@ -9737,9 +9760,9 @@ Asterisk (*) preceding a constraint indicates it was not met.
    COMP "clk_usb"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    20.195ns|     0.635ns|       0|           0
-  T0_BUF_0 = PERIOD TIMEGRP "i_appscore_USB | HOLD        |     0.195ns|            |       0|           0
-  _IO_INST_i_pll_usb_CLKOUT0_BUF_0" TS_clk_ | MINPERIOD   |    19.164ns|     1.666ns|       0|           0
-  usb HIGH 50%                              |             |            |            |        |            
+  T0_BUF = PERIOD TIMEGRP "i_appscore_USB_I | HOLD        |     0.195ns|            |       0|           0
+  O_INST_i_pll_usb_CLKOUT0_BUF" TS_clk_usb  | MINPERIOD   |    19.164ns|     1.666ns|       0|           0
+  HIGH 50%                                  |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   COMP "ctl0" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    20.568ns|   -10.238ns|       0|           0
   OMP "clk_usb"                             |             |            |            |        |            
@@ -10006,14 +10029,14 @@ Derived Constraints for TS_clk_i_flops
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk_i_flops                 |     20.000ns|      6.000ns|     30.189ns|            0|          226|         5042|        38335|
-| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      2.442ns|          N/A|            8|            0|         9963|            0|
+|TS_clk_i_flops                 |     20.000ns|      6.000ns|     31.113ns|            0|          369|         5042|        53661|
+| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      2.442ns|          N/A|            8|            0|        14485|            0|
 | OUT0_BUF_0                    |             |             |             |             |             |             |             |
 | TS_i_appsfpga_io_i_PLL_clk_CLK|      2.500ns|      1.666ns|          N/A|            0|            0|            0|            0|
 | OUT1_BUF_0                    |             |             |             |             |             |             |             |
-| TS_i_appsfpga_io_i_pll_mem_CLK|     13.333ns|      3.999ns|          N/A|          164|            0|        12172|            0|
+| TS_i_appsfpga_io_i_pll_mem_CLK|     13.333ns|      3.999ns|          N/A|          164|            0|        12391|            0|
 | OUT0_BUF_0                    |             |             |             |             |             |             |             |
-| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|     10.063ns|          N/A|           54|            0|        15533|            0|
+| TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|     10.371ns|          N/A|          197|            0|        26118|            0|
 | OUT1_BUF_0                    |             |             |             |             |             |             |             |
 | TS_i_appsfpga_io_i_pll_mem_CLK|      6.667ns|      2.500ns|          N/A|            0|            0|          643|            0|
 | OUT2_BUF_0                    |             |             |             |             |             |             |             |
@@ -10027,11 +10050,11 @@ Derived Constraints for TS_clk_usb
 |           Constraint          | Requirement |-------------+-------------|-------------+-------------|-------------+-------------|
 |                               |             |   Direct    | Derivative  |   Direct    | Derivative  |   Direct    | Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
-|TS_clk_usb                     |     20.830ns|     10.000ns|      2.222ns|            0|            0|            0|         5058|
+|TS_clk_usb                     |     20.830ns|     10.000ns|      2.222ns|            0|            0|            0|         5010|
 | TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      1.666ns|          N/A|            0|            0|            1|            0|
-| l_usb_CLKOUT0_BUF_0           |             |             |             |             |             |             |             |
-| TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      2.222ns|          N/A|            0|            0|         5057|            0|
-| l_usb_CLKOUT1_BUF_0           |             |             |             |             |             |             |             |
+| l_usb_CLKOUT0_BUF             |             |             |             |             |             |             |             |
+| TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      2.222ns|          N/A|            0|            0|         5009|            0|
+| l_usb_CLKOUT1_BUF             |             |             |             |             |             |             |             |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 
 9 constraints not met.

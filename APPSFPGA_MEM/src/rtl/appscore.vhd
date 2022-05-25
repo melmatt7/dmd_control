@@ -202,6 +202,7 @@ architecture Behavioral of appscore is
         appsfpga_io_STEP_VCC_enbl_q :in std_logic;
         appsfpga_io_float_q         :in std_logic;
         in_dmd_type                 :in std_logic_vector(3 downto 0);
+		  update_mode                 :in std_logic_vector(2 downto 0);
 
         --DDC control
         ddc_init_active             :in std_logic;
@@ -222,7 +223,9 @@ architecture Behavioral of appscore is
         dmd_rst2blkz                    :out std_logic;
 		  
 		  mem_read_enable					:out std_logic;
-
+		  rd_pattern_id						:in std_logic_vector(14 downto 0);
+		  num_patterns                : in std_logic_vector(14 downto 0);
+		  
         --Memory signals
         rd_ab_fifo_valid            :in std_logic;
         rd_cd_fifo_valid            :in std_logic;
@@ -277,7 +280,9 @@ architecture Behavioral of appscore is
         reg_data_from_usb   :out std_logic_vector(15 downto 0);
         reg_data_to_usb     :in std_logic_vector(15 downto 0);
         reg_addra_USB       :out std_logic_vector(7 downto 0);
-        reg_data_valid      :out std_logic
+        reg_data_valid      :out std_logic;
+		  
+		  update_mode         :in std_logic_vector(2 downto 0)
     );
     end component;
 
@@ -309,9 +314,11 @@ architecture Behavioral of appscore is
         ddr2_dm                     : out std_logic_vector((DM_WIDTH-1) downto 0);
 		  
 		  mem_init_done					: out std_logic;
+		  rd_pattern_id					: out std_logic_vector(14 downto 0);
 		  mem_read_enable					: in std_logic;
 
         num_patterns                : in std_logic_vector(14 downto 0);
+		  update_mode						: in std_logic_vector(2 downto 0);
         --dmd_1080p_connected         : in std_logic;
 
         --usb interface
@@ -378,7 +385,8 @@ COMPONENT D4100_registers
  
            DMD_RowLoads                         : OUT   STD_LOGIC_VECTOR(15 DOWNTO 0);
            dmd_write_block                      : OUT   STD_LOGIC;
-			  num_patterns									: OUT STD_LOGIC_VECTOR(14 DOWNTO 0));
+			  num_patterns									: OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+			  update_mode 									: OUT STD_LOGIC_VECTOR(2 DOWNTO 0));
 END COMPONENT;
 --    component control_registers
 --    port(
@@ -473,7 +481,8 @@ END COMPONENT;
     signal dmd_get_mem_data     :std_logic;
 	 signal mem_preload_done	    :std_logic;
 	 signal mem_read_enable			:std_logic;
-    
+    signal mem_rd_pattern_id		:std_logic_vector(14 downto 0);
+	 
     signal dvalid_space_info    :std_logic_vector(3 downto 0);
     signal BUILD_NUMBER         :std_logic_vector(7 downto 0);
 
@@ -523,6 +532,7 @@ END COMPONENT;
     signal usb_pattern_nmbr          : std_logic_vector(2 downto 0);
     signal usb_swtch_override_val    : std_logic_vector(7 downto 0);
 	 signal usb_num_patterns			 : std_logic_vector(14 downto 0);
+	 signal usb_update_mode			 : std_logic_vector(2 downto 0);
 
     signal muxed_comp_data_en_q      : std_logic; 
     signal muxed_ns_flip_en_q        : std_logic; 
@@ -656,6 +666,7 @@ trigger_j <= gpioa_i(0);
         appsfpga_io_STEP_VCC_enbl_q => appsfpga_io_STEP_VCC_enbl_q,
         appsfpga_io_float_q         => muxed_mirror_float_q,
         in_dmd_type                 => in_dmd_type,
+		  update_mode						=> usb_update_mode,
         ddc_init_active             => init_active_gq,
         dmd_dout_a                  => mem_dmd_dout_a,
         dmd_dout_b                  => mem_dmd_dout_b,
@@ -679,6 +690,8 @@ trigger_j <= gpioa_i(0);
         rd_ab_fifo_out              => mem_rd_ab_fifo_out,
         rd_cd_fifo_out              => mem_rd_cd_fifo_out,
         mem_preload_done				=> mem_preload_done,
+		  rd_pattern_id					=> mem_rd_pattern_id,
+		  num_patterns						=> usb_num_patterns,
 		  mem_read_enable             => mem_read_enable,
 		  trigger_miss						=> trigger_miss,
         trigger                     => trigger_j --should be trigger
@@ -735,7 +748,9 @@ trigger_j <= gpioa_i(0);
         reg_data_from_usb   => reg_data_from_usb,
         reg_data_to_usb     => reg_data_to_usb,
         reg_addra_USB       => reg_addra_USB,
-        reg_data_valid      => reg_data_valid
+        reg_data_valid      => reg_data_valid,
+		  update_mode  		 => usb_update_mode
+
     );
     
     MEMORY_IO_INST : MEM_IO_Verilog
@@ -763,6 +778,7 @@ trigger_j <= gpioa_i(0);
         ddr2_dm                     => ddr2_dm,
 		  mem_init_done					=> mem_init_done,
         num_patterns                => usb_num_patterns,
+		  update_mode						=> usb_update_mode,
         --dmd_1080p_connected         => full_buss_connected,
         wr_data                     => mem_wr_data,
         mem_get_data                => mem_get_data,
@@ -777,6 +793,7 @@ trigger_j <= gpioa_i(0);
 		  rd_ab_fifo_data_valid       => mem_rd_ab_fifo_data_valid,
 		  rd_cd_fifo_data_valid       => mem_rd_cd_fifo_data_valid,
         mem_preload_done				=> mem_preload_done,
+		  rd_pattern_id					=> mem_rd_pattern_id,
         mem_rd_fifo_reset           => mem_rd_fifo_reset
     );
 
@@ -862,7 +879,8 @@ USB_REG_INST : D4100_registers
             swtch_override_val         => usb_swtch_override_val,        
             DMD_RowLoads               => DMD_RowLoads,
             dmd_write_block            => dmd_write_block,
-				num_patterns					=> usb_num_patterns);
+				num_patterns					=> usb_num_patterns,
+				update_mode					=> usb_update_mode);
 
 
     --- Original tpg/apps function

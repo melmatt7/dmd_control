@@ -70,7 +70,8 @@ ENTITY D4100_registers is
 	
 	 DMD_RowLoads		: OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
 	 dmd_write_block	: OUT STD_LOGIC;
-	 num_patterns : OUT STD_LOGIC_VECTOR(14 DOWNTO 0));
+	 num_patterns : OUT STD_LOGIC_VECTOR(14 DOWNTO 0);
+	 update_mode : OUT STD_LOGIC_VECTOR(2 DOWNTO 0));
 			  
 END D4100_registers;
 
@@ -112,8 +113,9 @@ SIGNAL tpg_en_1                : STD_LOGIC;
 SIGNAL sw_override_val_1       : STD_LOGIC_VECTOR(7 DOWNTO 0);
 SIGNAL pattern_sel_1           : STD_LOGIC_VECTOR(2 DOWNTO 0);
 SIGNAL num_patterns_1 			 : STD_LOGIC_VECTOR(14 DOWNTO 0);
+SIGNAL update_mode_1 			 : STD_LOGIC_VECTOR(2 DOWNTO 0);
 
-SIGNAL ResetComplete	       : STD_LOGIC;
+SIGNAL ResetComplete	       	 : STD_LOGIC;
 SIGNAL dmd_write_block_2q      : STD_LOGIC;
 SIGNAL dmd_write_block_3q      : STD_LOGIC;
 SIGNAL DMD_ext_reset_1q        : STD_LOGIC;
@@ -160,6 +162,7 @@ BEGIN
       WHEN x"25"  => reg_read_data <= "00000000"        & sw_override_val_1 AFTER 1 PS; 
       WHEN x"26"  => reg_read_data <= "0000000000000"   & pattern_sel_1 AFTER 1 PS; 
 		WHEN x"27" => reg_read_data <= "0" & num_patterns_1 AFTER 1 PS;
+		WHEN x"28" => reg_read_data <= "0000000000000" & update_mode_1 AFTER 1 PS;
   
       WHEN OTHERS => reg_read_data <= x"DEAD" AFTER 1 PS;
     END CASE;	  
@@ -201,7 +204,8 @@ BEGIN
     sw_override_val_1       <= "00000000";  --  STD_LOGIC_VECTOR(7 DOWNTO 0);
     pattern_sel_1           <= "000";       --  STD_LOGIC_VECTOR(2 DOWNTO 0); 
 	 num_patterns_1 <= "000000000000000"; --  STD_LOGIC_VECTOR(14 DOWNTO 0);
-  
+	 update_mode_1 <= "000";	--  STD_LOGIC_VECTOR(2 DOWNTO 0);
+	 
     GPIO_reset_complete_1   <= '0';
   ELSIF system_clk'EVENT AND system_clk = '1' THEN
 
@@ -274,6 +278,9 @@ BEGIN
 	  
 			WHEN x"27"=>
 			num_patterns_1 <= reg_write_data(14 downto 0);
+			
+			WHEN x"28"=>
+			update_mode_1 <= reg_write_data(2 downto 0);
                 								
         WHEN OTHERS =>  NULL;
       END CASE;
@@ -360,6 +367,7 @@ GPIO_reset_complete   <= GPIO_reset_complete_f;
 swtch_override_val    <= sw_override_val_1;
 pattern_nmbr          <= pattern_sel_1;
 num_patterns <= num_patterns_1;
+update_mode <= update_mode_1;
 load4_en              <= load4_1;
 tpg_en                <= tpg_en_1;
 pattern_force         <= pat_force_1;

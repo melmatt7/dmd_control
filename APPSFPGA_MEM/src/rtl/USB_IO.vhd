@@ -45,7 +45,9 @@ entity USB_IO is
         reg_data_from_usb   :out std_logic_vector(15 downto 0);
         reg_data_to_usb     :in std_logic_vector(15 downto 0);
         reg_addra_USB       :out std_logic_vector(7 downto 0);
-        reg_data_valid      :out std_logic
+        reg_data_valid      :out std_logic;
+		  
+		  update_mode			 :in std_logic_vector(2 downto 0)
     );
 end USB_IO;
 
@@ -180,10 +182,44 @@ architecture Behavioral of USB_IO is
 	 
 	 signal usb_din_cnt	:std_logic_vector(11 downto 0);
 	 signal row_cnt      :std_logic_vector(11 downto 0);
+     signal rows      :std_logic_vector(11 downto 0);
 	 signal usb_recv_fifo_wr_en_q1 :std_logic;
 	 signal num_data     :std_logic_vector(15 downto 0);
 
 begin
+        ------------------------------------------------------------------------
+    --000: Global
+    --001: Float
+    --010: Single
+    --011: Dual
+    --100: Quad
+	 --101: Phased
+    ------------------------------------------------------------------------
+    process (system_clk, system_reset)
+    begin
+        case update_mode is
+        when "000" => 
+        rows <= "001011111111";
+
+        when "001" =>
+        rows <= "001011111111";
+
+        when "010" =>
+        rows <= "000000101111";
+
+        when "011" =>
+        rows <= "000001011111";
+
+        when "100" => 
+        rows <= "000010111111";
+		  
+		  when "101" => 
+        rows <= "000000101111";
+
+        when others =>
+        rows <= "001011111111";
+    end case;
+        end process;
 --	 IF_SIM: if SIM = true generate
 --		 DATA_loop: for i in 0 to 15 generate
 --			  gpif_from_port(i) <= usb_din(i) when gpif_out_enable_n = '1'  else 'Z';
@@ -318,7 +354,7 @@ begin
 								num_data <= num_data + "0000000000000001";
 								usb_din_cnt <= "000000000001";
 								--[TODO] Arbitrary number area
-								if row_cnt = "001011111111" and num_data >= "0000000000000001" then --test only
+								if row_cnt = rows and num_data >= "0000000000000001" then --test only
 									row_cnt <= (others => '0');
 								else
 									row_cnt <= row_cnt + "000000000001";
