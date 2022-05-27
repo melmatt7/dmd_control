@@ -10,7 +10,7 @@ from scipy.io import loadmat  # this is the SciPy module that loads mat-files
 
 sns.set_style("whitegrid")
 results_path = "C:\\Users\\Impact\\Desktop\\Melvin\\dmd_control\\raw_results\\picoscope\\fourier\\"
-name = "200k"
+name = "140k"
 file = results_path + name + ".mat"
 
 save_path = "C:\\Users\\Impact\\Desktop\\Melvin\\dmd_control\\DMDController\\PythonUtilities\\fourier_results\\"
@@ -34,9 +34,9 @@ print(int(data["Tstart"][0][0]))
 time = np.linspace(data["Tstart"][0][0],data["Length"][0][0]*data["Tinterval"][0][0],int(data["Length"][0][0]))
 print(time)
 # plt.ylim(0.0065,0.012)
-plt.xlim(0,0.5e6)
+plt.xlim(0,0.2e6)
 plt.plot(time, data["A"])
-plt.plot(time, data["B"])
+# plt.plot(time, data["B"])
 # plt.plot(time, data["C"])
 plt.savefig(save_path+name+".svg")
 plt.show()
