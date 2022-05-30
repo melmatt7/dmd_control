@@ -1,0 +1,113 @@
+Release 14.7 - netgen P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm appsfpga -w -dir
+netgen/synthesis -ofmt vhdl -sim appsfpga.ngc appsfpga_synthesis.vhd  
+
+Reading design 'appsfpga.ngc' ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+
+WARNING:NetListWriters:306 - Signal bus cal2_idel_dec_cnt_mux0000( 5 downto 0 )
+   on block ddr2_phy_calib is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus calib_done_tmp( 3 downto 0 ) on block
+   ddr2_phy_calib is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus calib_start_shift0_r( 15 downto 0 ) on
+   block ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus calib_start_shift1_r( 15 downto 0 ) on
+   block ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus calib_start_shift3_r( 15 downto 0 ) on
+   block ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus NlwRenamedSignal_ddr_addr_r( 7 downto 1
+   ) on block ddr2_phy_init is not reconstructed, because there are some missing
+   bus signals.
+
+WARNING:NetListWriters:306 - Signal bus ddr_addr_r( 10 downto 2 ) on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus NlwRenamedSig_OI_i_calib_start( 3 downto
+   0 ) on block ddr2_phy_init is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus init_state_r1( 26 downto 0 ) on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus init_state_r2( 23 downto 0 ) on block
+   ddr2_phy_init is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus init_data_f( 10 downto 0 ) on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus init_data_r( 10 downto 0 ) on block
+   ddr2_phy_write is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus precharge_ok_cnt_r_mux0001( 3 downto 0 )
+   on block ddr2_ctrl is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus state_r1( 9 downto 1 ) on block
+   ddr2_ctrl is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus app_af_addr( 30 downto 0 ) on block
+   MEM_IO_Verilog is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus BSA_count( 4 downto 0 ) on block pgen is
+   not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus WL_count( 5 downto 1 ) on block pgen is
+   not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus row_count( 7 downto 3 ) on block pgen is
+   not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus NlwRenamedSignal_dmd_rowad( 4 downto 0 )
+   on block DMD_trigger_control is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus dmd_rowad_mux0002( 10 downto 1 ) on
+   block DMD_trigger_control is not reconstructed, because there are some
+   missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus row_count( 10 downto 0 ) on block
+   DMD_trigger_control is not reconstructed, because there are some missing bus
+   signals.
+
+WARNING:NetListWriters:306 - Signal bus reg_fifo_in_sclk( 31 downto 0 ) on block
+   USB_IO is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus temp_dvalid( 2 downto 0 ) on block
+   appsfpga_io is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus appcore_dout_b_q( 62 downto 0 ) on block
+   appsfpga is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus appcore_dout_c_q( 63 downto 1 ) on block
+   appsfpga is not reconstructed, because there are some missing bus signals.
+
+WARNING:NetListWriters:306 - Signal bus appcore_dout_d_q( 62 downto 0 ) on block
+   appsfpga is not reconstructed, because there are some missing bus signals.
+Writing VHDL netlist
+'/home/ise/dmd_control/APPSFPGA_MEM/netgen/synthesis/appsfpga_synthesis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 26
+Number of info messages: 1
+Total memory usage is 339444 kilobytes

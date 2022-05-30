@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">cal2_idel_dec_cnt_mux0000</arg><arg fmt="%s" index="2">( 5 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_calib</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">calib_done_tmp</arg><arg fmt="%s" index="2">( 3 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_calib</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">calib_start_shift0_r</arg><arg fmt="%s" index="2">( 15 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">calib_start_shift1_r</arg><arg fmt="%s" index="2">( 15 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">calib_start_shift3_r</arg><arg fmt="%s" index="2">( 15 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_ddr_addr_r</arg><arg fmt="%s" index="2">( 7 downto 1 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">ddr_addr_r</arg><arg fmt="%s" index="2">( 10 downto 2 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">NlwRenamedSig_OI_i_calib_start</arg><arg fmt="%s" index="2">( 3 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">init_state_r1</arg><arg fmt="%s" index="2">( 26 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">init_state_r2</arg><arg fmt="%s" index="2">( 23 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_init</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">init_data_f</arg><arg fmt="%s" index="2">( 10 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_write</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">init_data_r</arg><arg fmt="%s" index="2">( 10 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_phy_write</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">precharge_ok_cnt_r_mux0001</arg><arg fmt="%s" index="2">( 3 downto 0 )</arg> on block <arg fmt="%s" index="3">ddr2_ctrl</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">state_r1</arg><arg fmt="%s" index="2">( 9 downto 1 )</arg> on block <arg fmt="%s" index="3">ddr2_ctrl</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">app_af_addr</arg><arg fmt="%s" index="2">( 30 downto 0 )</arg> on block <arg fmt="%s" index="3">MEM_IO_Verilog</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">BSA_count</arg><arg fmt="%s" index="2">( 4 downto 0 )</arg> on block <arg fmt="%s" index="3">pgen</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">WL_count</arg><arg fmt="%s" index="2">( 5 downto 1 )</arg> on block <arg fmt="%s" index="3">pgen</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">row_count</arg><arg fmt="%s" index="2">( 7 downto 3 )</arg> on block <arg fmt="%s" index="3">pgen</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">NlwRenamedSignal_dmd_rowad</arg><arg fmt="%s" index="2">( 4 downto 0 )</arg> on block <arg fmt="%s" index="3">DMD_trigger_control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">dmd_rowad_mux0002</arg><arg fmt="%s" index="2">( 10 downto 1 )</arg> on block <arg fmt="%s" index="3">DMD_trigger_control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">row_count</arg><arg fmt="%s" index="2">( 10 downto 0 )</arg> on block <arg fmt="%s" index="3">DMD_trigger_control</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">reg_fifo_in_sclk</arg><arg fmt="%s" index="2">( 31 downto 0 )</arg> on block <arg fmt="%s" index="3">USB_IO</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">temp_dvalid</arg><arg fmt="%s" index="2">( 2 downto 0 )</arg> on block <arg fmt="%s" index="3">appsfpga_io</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">appcore_dout_b_q</arg><arg fmt="%s" index="2">( 62 downto 0 )</arg> on block <arg fmt="%s" index="3">appsfpga</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">appcore_dout_c_q</arg><arg fmt="%s" index="2">( 63 downto 1 )</arg> on block <arg fmt="%s" index="3">appsfpga</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="warning" file="NetListWriters" num="306" delta="new" >Signal bus <arg fmt="%s" index="1">appcore_dout_d_q</arg><arg fmt="%s" index="2">( 62 downto 0 )</arg> on block <arg fmt="%s" index="3">appsfpga</arg> is not reconstructed, because there are some missing bus signals.
+</msg>
+
+<msg type="info" file="NetListWriters" num="635" delta="new" >The generated VHDL netlist contains Xilinx <arg fmt="%s" index="1">UNISIM</arg> simulation primitives and has to be used with <arg fmt="%s" index="2">UNISIM</arg> library for correct compilation and simulation. 
+</msg>
+
+</messages>
+

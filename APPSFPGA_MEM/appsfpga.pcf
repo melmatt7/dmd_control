@@ -1,5 +1,5 @@
 //! **************************************************************************
-// Written by: Map P.20131013 on Fri May 13 01:03:15 2022
+// Written by: Map P.20131013 on Wed May 18 18:13:37 2022
 //! **************************************************************************
 
 SCHEMATIC START;
@@ -1497,13 +1497,7 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg"
         BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2"
-        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
+        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_2" BEL
@@ -1635,14 +1629,16 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_125" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_126" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_127" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_4" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_5" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_7" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_9" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_2" BEL
@@ -1657,6 +1653,12 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_2" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_1"
         BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_2"
@@ -1698,7 +1700,6 @@ TIMEGRP SYS_GRP = BEL "in_dmd_type_0" BEL "in_dmd_type_1" BEL "in_dmd_type_2"
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_0"
         BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_miss_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_enable" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_1q" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_2q" BEL
@@ -2725,13 +2726,7 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg"
         BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2"
-        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
+        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_2" BEL
@@ -2863,14 +2858,16 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_125" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_126" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_127" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_4" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_5" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_7" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_9" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_2" BEL
@@ -2885,6 +2882,12 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_2" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_1"
         BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_2"
@@ -2926,7 +2929,6 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_0"
         BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_miss_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_enable" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_1q" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_2q" BEL
@@ -3953,13 +3955,7 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg"
         BEL
         "i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_asreg_d2"
-        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
+        BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/data_in_count_2" BEL
@@ -4091,14 +4087,16 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_125" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_126" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_ab_127" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowmd_1" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_dvalid_1q" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_4" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_5" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_7" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad_9" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_2" BEL
@@ -4113,6 +4111,12 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_count_2" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3" BEL
+        "i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_1"
         BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_2"
@@ -4154,7 +4158,6 @@ TIMEGRP i_appsfpga_io_i_PLL_clk_CLKOUT0_BUF_0 = BEL "in_dmd_type_0" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_0"
         BEL "i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_miss_1" BEL
         "i_appscore/DMD_TRIGGER_CONTROL_INST/rst_enable" BEL
-        "i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid" BEL
         "i_appscore/MEMORY_IO_INST/mem_read_enable_q1" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_1q" BEL
         "i_appscore/MEMORY_IO_INST/mem_preload_done_2q" BEL
@@ -23693,11 +23696,11 @@ TS_i_appsfpga_io_i_pll_mem_CLKOUT2_BUF_0 = PERIOD TIMEGRP
         1.66666667 ns HIGH 50%;
 TS_i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0 = PERIOD TIMEGRP
         "i_appsfpga_io_i_pll_mem_CLKOUT3_BUF_0" TS_clk_i_flops / 4 HIGH 50%;
-TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF = PERIOD TIMEGRP
-        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF" TS_clk_usb HIGH 50%;
-TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF = PERIOD TIMEGRP
-        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF" TS_clk_usb PHASE 10.415
-        ns HIGH 50%;
+TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0 = PERIOD TIMEGRP
+        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT0_BUF_0" TS_clk_usb HIGH 50%;
+TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0 = PERIOD TIMEGRP
+        "i_appscore_USB_IO_INST_i_pll_usb_CLKOUT1_BUF_0" TS_clk_usb PHASE
+        10.415 ns HIGH 50%;
 PIN
         i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/u_ff_ras_n_pins<2>
         = BEL

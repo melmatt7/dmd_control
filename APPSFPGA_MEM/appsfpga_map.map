@@ -10,7 +10,7 @@ Target Device  : xc5vlx50
 Target Package : ff1153
 Target Speed   : -1
 Mapper Version : virtex5 -- $Revision: 1.55 $
-Mapped Date    : Fri May 13 01:02:08 2022
+Mapped Date    : Wed May 18 18:12:33 2022
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:54 - 'xc5vlx50' is a WebPack part.
@@ -994,9 +994,9 @@ Asterisk (*) preceding a constraint indicates it was not met.
    TO TIMEGRP "U_CLK" 15 ns                 | HOLD        |     0.219ns|            |       0|           0
 ----------------------------------------------------------------------------------------------------------
   TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    18.673ns|     2.157ns|       0|           0
-  T1_BUF = PERIOD TIMEGRP "i_appscore_USB_I | HOLD        |     0.120ns|            |       0|           0
-  O_INST_i_pll_usb_CLKOUT1_BUF" TS_clk_usb  | MINPERIOD   |    18.608ns|     2.222ns|       0|           0
-  PHASE 10.415 ns HIGH 50%                  |             |            |            |        |            
+  T1_BUF_0 = PERIOD TIMEGRP "i_appscore_USB | HOLD        |     0.120ns|            |       0|           0
+  _IO_INST_i_pll_usb_CLKOUT1_BUF_0" TS_clk_ | MINPERIOD   |    18.608ns|     2.222ns|       0|           0
+  usb PHASE 10.415 ns HIGH 50%              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   COMP "bidir<0>" OFFSET = IN 8.2 ns BEFORE | SETUP       |    18.733ns|   -10.533ns|       0|           0
    COMP "clk_usb"                           |             |            |            |        |            
@@ -1047,9 +1047,9 @@ Asterisk (*) preceding a constraint indicates it was not met.
    COMP "clk_usb"                           |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   TS_i_appscore_USB_IO_INST_i_pll_usb_CLKOU | SETUP       |    20.195ns|     0.635ns|       0|           0
-  T0_BUF = PERIOD TIMEGRP "i_appscore_USB_I | HOLD        |     0.195ns|            |       0|           0
-  O_INST_i_pll_usb_CLKOUT0_BUF" TS_clk_usb  | MINPERIOD   |    19.164ns|     1.666ns|       0|           0
-  HIGH 50%                                  |             |            |            |        |            
+  T0_BUF_0 = PERIOD TIMEGRP "i_appscore_USB | HOLD        |     0.195ns|            |       0|           0
+  _IO_INST_i_pll_usb_CLKOUT0_BUF_0" TS_clk_ | MINPERIOD   |    19.164ns|     1.666ns|       0|           0
+  usb HIGH 50%                              |             |            |            |        |            
 ----------------------------------------------------------------------------------------------------------
   COMP "ctl0" OFFSET = IN 10.33 ns BEFORE C | SETUP       |    20.568ns|   -10.238ns|       0|           0
   OMP "clk_usb"                             |             |            |            |        |            
@@ -1144,7 +1144,7 @@ Asterisk (*) preceding a constraint indicates it was not met.
 ----------------------------------------------------------------------------------------------------------
   PATH "TS_ffs_to_ddr2_ck_n_path" TIG       | MAXDELAY    |         N/A|     2.354ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
-  PATH "TSfalse_path" TIG                   | SETUP       |         N/A|     0.904ns|     N/A|           0
+  PATH "TSfalse_path" TIG                   | SETUP       |         N/A|     1.470ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
   NET "i_appscore/MEMORY_IO_INST/rd_ab_fifo | N/A         |         N/A|         N/A|     N/A|         N/A
   /U0/xst_fifo_generator/gconvfifo.rf/grf.r |             |            |            |        |            
@@ -1348,8 +1348,8 @@ Derivative  |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
 |TS_clk_i_flops                 |     20.000ns|      6.000ns|     31.113ns|            0|          369|         5042|   
-    53661|
-| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      2.442ns|          N/A|            8|            0|        14485|   
+    53675|
+| TS_i_appsfpga_io_i_PLL_clk_CLK|      5.000ns|      2.442ns|          N/A|            8|            0|        14499|   
         0|
 | OUT0_BUF_0                    |             |             |             |             |             |             |   
          |
@@ -1391,11 +1391,11 @@ Derivative  |
      5010|
 | TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      1.666ns|          N/A|            0|            0|            1|   
         0|
-| l_usb_CLKOUT0_BUF             |             |             |             |             |             |             |   
+| l_usb_CLKOUT0_BUF_0           |             |             |             |             |             |             |   
          |
 | TS_i_appscore_USB_IO_INST_i_pl|     20.830ns|      2.222ns|          N/A|            0|            0|         5009|   
         0|
-| l_usb_CLKOUT1_BUF             |             |             |             |             |             |             |   
+| l_usb_CLKOUT1_BUF_0           |             |             |             |             |             |             |   
          |
 +-------------------------------+-------------+-------------+-------------+-------------+-------------+-------------+---
 ----------+
@@ -1411,11 +1411,11 @@ INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 16 secs 
+Total REAL time at the beginning of Placer: 15 secs 
 Total CPU  time at the beginning of Placer: 14 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:fe2cf290) REAL time: 17 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:65ccffab) REAL time: 16 secs 
 
 Phase 2.7  Design Feasibility Check
 WARNING:Place:837 - Partially locked IO Bus is found. 
@@ -1462,19 +1462,19 @@ WARNING:Place:838 - An IO Bus with more than one IO standard is found.
 INFO:Place:834 - Only a subset of IOs are locked. Out of 378 IOs, 375 are locked
    and 3 are not locked. If you would like to print the names of these IOs,
    please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
-Phase 2.7  Design Feasibility Check (Checksum:fe2cf290) REAL time: 17 secs 
+Phase 2.7  Design Feasibility Check (Checksum:65ccffab) REAL time: 16 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:fa4f5538) REAL time: 17 secs 
+Phase 3.31  Local Placement Optimization (Checksum:59fa83c3) REAL time: 16 secs 
 
 Phase 4.37  Local Placement Optimization
-Phase 4.37  Local Placement Optimization (Checksum:a1c98b33) REAL time: 17 secs 
+Phase 4.37  Local Placement Optimization (Checksum:d2476841) REAL time: 16 secs 
 
 Phase 5.33  Local Placement Optimization
-Phase 5.33  Local Placement Optimization (Checksum:a1c98b33) REAL time: 24 secs 
+Phase 5.33  Local Placement Optimization (Checksum:d2476841) REAL time: 23 secs 
 
 Phase 6.32  Local Placement Optimization
-Phase 6.32  Local Placement Optimization (Checksum:a1c98b33) REAL time: 24 secs 
+Phase 6.32  Local Placement Optimization (Checksum:d2476841) REAL time: 24 secs 
 
 Phase 7.2  Initial Clock and IO Placement
 ....
@@ -1698,13 +1698,13 @@ AREA_GROUP "CLKAG_i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/
 
 
 ............
-Phase 7.2  Initial Clock and IO Placement (Checksum:8f950df1) REAL time: 26 secs 
+Phase 7.2  Initial Clock and IO Placement (Checksum:32d958f5) REAL time: 25 secs 
 
 Phase 8.36  Local Placement Optimization
-Phase 8.36  Local Placement Optimization (Checksum:8f950df1) REAL time: 26 secs 
+Phase 8.36  Local Placement Optimization (Checksum:32d958f5) REAL time: 25 secs 
 
 ...
-.............................
+..................
 Phase 9.30  Global Clock Region Assignment
 
 
@@ -1773,7 +1773,7 @@ AREA_GROUP "CLKAG_clk_r_o_OBUF" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CL
 # i_appscore/USB_IO_INST/clk_u driven by BUFGCTRL_X0Y17
 NET "i_appscore/USB_IO_INST/clk_u" TNM_NET = "TN_i_appscore/USB_IO_INST/clk_u" ;
 TIMEGRP "TN_i_appscore/USB_IO_INST/clk_u" AREA_GROUP = "CLKAG_i_appscore/USB_IO_INST/clk_u" ;
-AREA_GROUP "CLKAG_i_appscore/USB_IO_INST/clk_u" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
+AREA_GROUP "CLKAG_i_appscore/USB_IO_INST/clk_u" RANGE =   CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
 
 # i_appscore/USB_IO_INST/clk_180_u driven by BUFGCTRL_X0Y30
 NET "i_appscore/USB_IO_INST/clk_180_u" TNM_NET = "TN_i_appscore/USB_IO_INST/clk_180_u" ;
@@ -1793,7 +1793,7 @@ AREA_GROUP "CLKAG_CONTROL0<0>" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLO
 # clk_i_IBUFG driven by BUFGCTRL_X0Y8
 NET "clk_i_IBUFG" TNM_NET = "TN_clk_i_IBUFG" ;
 TIMEGRP "TN_clk_i_IBUFG" AREA_GROUP = "CLKAG_clk_i_IBUFG" ;
-AREA_GROUP "CLKAG_clk_i_IBUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3, CLOCKREGION_X0Y4, CLOCKREGION_X1Y4, CLOCKREGION_X0Y5, CLOCKREGION_X1Y5 ;
+AREA_GROUP "CLKAG_clk_i_IBUFG" RANGE =   CLOCKREGION_X0Y0, CLOCKREGION_X1Y0, CLOCKREGION_X0Y1, CLOCKREGION_X1Y1, CLOCKREGION_X0Y2, CLOCKREGION_X1Y2, CLOCKREGION_X0Y3, CLOCKREGION_X1Y3 ;
 
 # NOTE: 
 # This report is provided to help reproduce successful clock-region 
@@ -1822,11 +1822,11 @@ Clock-Region: <CLOCKREGION_X0Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |     21 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     66 |clk_g
+      0 |      0 |      0 |      0 |      0 |     21 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     63 |clk_g
       0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk_r_o_OBUF
       0 |      0 |      0 |      0 |      0 |     21 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      1 |      0 |      0 |     42 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     66 | Total 
+      0 |      0 |      1 |      0 |      0 |     42 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     63 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -1840,16 +1840,16 @@ Clock-Region: <CLOCKREGION_X1Y0>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      1 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     26 |clk_g
+      1 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |clk_g
       0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
       1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |mem_clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     26 | Total 
+      2 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y1> 
- key resource utilizations (used/available): global-clocks - 3/10 ;
+ key resource utilizations (used/available): global-clocks - 5/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -1858,16 +1858,18 @@ Clock-Region: <CLOCKREGION_X0Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      1 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    146 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |      0 |CONTROL0<0>
+      1 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    169 |clk_g
       0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     53 |mem_clk2x
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |mem_clk200
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     21 |mem_clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    199 | Total 
+      2 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    194 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y1> 
- key resource utilizations (used/available): global-clocks - 5/10 ;
+ key resource utilizations (used/available): global-clocks - 4/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -1876,18 +1878,17 @@ Clock-Region: <CLOCKREGION_X1Y1>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     23 |CONTROL0<0>
-      0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    180 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     39 |CONTROL0<0>
+      0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    140 |clk_g
       0 |      0 |      0 |      0 |      0 |     22 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |mem_clk200
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     51 |mem_clk2x
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     24 |mem_clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    262 | Total 
+      0 |      0 |      0 |      0 |      0 |     44 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    203 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y2> 
- key resource utilizations (used/available): global-clocks - 5/10 ;
+ key resource utilizations (used/available): global-clocks - 7/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -1896,18 +1897,20 @@ Clock-Region: <CLOCKREGION_X0Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     30 |     15 |CONTROL0<0>
-      2 |      0 |      0 |      0 |      0 |      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    203 |clk_g
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |clk_i_IBUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     26 |     15 |CONTROL0<0>
+      2 |      0 |      0 |      0 |      0 |      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    159 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |clk_i_IBUFG
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     23 |i_appscore/USB_IO_INST/clk_180_u
       0 |      0 |      0 |      0 |      0 |      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appsfpga_io/clk2x
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     28 |mem_clk2x
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     16 |mem_clk200
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     70 |mem_clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |     30 |    258 | Total 
+      4 |      0 |      0 |      0 |      0 |      8 |      0 |      0 |      0 |      0 |      0 |      0 |     26 |    299 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y2> 
- key resource utilizations (used/available): global-clocks - 6/10 ;
+ key resource utilizations (used/available): global-clocks - 4/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -1916,14 +1919,12 @@ Clock-Region: <CLOCKREGION_X1Y2>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     33 |CONTROL0<0>
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     34 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     19 |CONTROL0<0>
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     51 |clk_g
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |mem_clk0
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |mem_clk200
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    307 |mem_clk2x
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |mem_clk2x90
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    180 |mem_clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    410 | Total 
+      4 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    262 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -1937,14 +1938,14 @@ Clock-Region: <CLOCKREGION_X0Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    132 |clk_g
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    196 |clk_g
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |clk_i_IBUFG
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    117 |i_appscore/USB_IO_INST/clk_180_u
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |i_appscore/USB_IO_INST/clk_u
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     63 |mem_clk0
-      1 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     83 |mem_clk2x
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     55 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |i_appscore/USB_IO_INST/clk_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     33 |mem_clk0
+      1 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |     94 |mem_clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      6 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    403 | Total 
+      4 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    385 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -1958,19 +1959,19 @@ Clock-Region: <CLOCKREGION_X1Y3>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |clk_g
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |      9 |clk_g
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     19 |clk_i_IBUFG
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     53 |mem_clk0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |     21 |mem_clk0
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |mem_clk200
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    339 |mem_clk2x
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |mem_clk2x90
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    428 |mem_clk2x
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     20 |mem_clk2x90
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      3 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    431 | Total 
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    501 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X0Y4> 
- key resource utilizations (used/available): global-clocks - 4/10 ;
+ key resource utilizations (used/available): global-clocks - 6/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -1979,17 +1980,19 @@ Clock-Region: <CLOCKREGION_X0Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    140 |i_appscore/USB_IO_INST/clk_180_u
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |clk_g
+      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    178 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |i_appscore/USB_IO_INST/clk_u
       0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |i_appscore/USB_IO_INST/ifclk_bufg
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    118 |mem_clk0
-      2 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    234 |mem_clk2x
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    143 |mem_clk0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      2 |    223 |mem_clk2x
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    492 | Total 
+      4 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |    553 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y4> 
- key resource utilizations (used/available): global-clocks - 5/10 ;
+ key resource utilizations (used/available): global-clocks - 6/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -1998,13 +2001,14 @@ Clock-Region: <CLOCKREGION_X1Y4>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk_g
       1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |i_appscore/USB_IO_INST/clk_180_u
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    204 |mem_clk0
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |    224 |mem_clk0
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      1 |mem_clk200
-      1 |      0 |      0 |      0 |      0 |     16 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    216 |mem_clk2x
-      0 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     37 |mem_clk2x90
+      2 |      0 |      0 |      0 |      0 |     16 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    223 |mem_clk2x
+      0 |      0 |      0 |      0 |      0 |     18 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     36 |mem_clk2x90
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |     34 |      0 |      0 |      0 |      0 |      1 |      0 |      6 |    462 | Total 
+      4 |      0 |      0 |      0 |      0 |     34 |      0 |      0 |      0 |      0 |      1 |      0 |      6 |    488 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
@@ -2019,18 +2023,18 @@ Clock-Region: <CLOCKREGION_X0Y5>
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
       0 |      0 |      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |clk_r_o_OBUF
-      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |i_appscore/USB_IO_INST/clk_180_u
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    201 |mem_clk0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      5 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    227 |mem_clk0
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |mem_clk200
-      2 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |    212 |mem_clk2x
-      1 |      0 |      0 |      0 |      0 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     69 |mem_clk2x90
+      2 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |      8 |    207 |mem_clk2x
+      1 |      0 |      0 |      0 |      0 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |     59 |mem_clk2x90
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      4 |      0 |      1 |      0 |      0 |     33 |      0 |      0 |      0 |      0 |      1 |      0 |      8 |    494 | Total 
+      4 |      0 |      1 |      0 |      0 |     33 |      0 |      0 |      0 |      0 |      1 |      0 |      8 |    498 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 
 Clock-Region: <CLOCKREGION_X1Y5> 
- key resource utilizations (used/available): global-clocks - 4/10 ;
+ key resource utilizations (used/available): global-clocks - 5/10 ;
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
    BRAM |    DCM |    PLL |     GT | ILOGIC | OLOGIC |   MULT |  TEMAC |    PPC |   PCIE | IDLYCT | BUFGCT | LUTRAM |     FF | <- (Types of Resources in this  Region)
    FIFO |        |        |        |        |        |        |        |        |        |        |        |        |        |
@@ -2039,12 +2043,13 @@ Clock-Region: <CLOCKREGION_X1Y5>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
         |        |        |        |        |        |        |        |        |        |        |        |        |        | <Global clock Net Name>
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    265 |mem_clk0
+      1 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      4 |i_appscore/USB_IO_INST/clk_180_u
+      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |    260 |mem_clk0
       0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      0 |      1 |      0 |      0 |      0 |mem_clk200
-      1 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    152 |mem_clk2x
-      1 |      0 |      0 |      0 |      0 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |     68 |mem_clk2x90
+      2 |      0 |      0 |      0 |      0 |      6 |      0 |      0 |      0 |      0 |      0 |      0 |     12 |    197 |mem_clk2x
+      1 |      0 |      0 |      0 |      0 |     27 |      0 |      0 |      0 |      0 |      0 |      0 |      6 |     79 |mem_clk2x90
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
-      2 |      0 |      0 |      0 |      0 |     33 |      0 |      0 |      0 |      0 |      1 |      0 |     18 |    485 | Total 
+      4 |      0 |      0 |      0 |      0 |     33 |      0 |      0 |      0 |      0 |      1 |      0 |     18 |    540 | Total 
 --------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+--------+----------------------------------------
 
 NOTE:
@@ -2057,97 +2062,96 @@ maybe moved to adjacent clock-regions as long as the "number of clocks per regio
 ######################################################################################
 
 
-Phase 9.30  Global Clock Region Assignment (Checksum:8f950df1) REAL time: 28 secs 
+Phase 9.30  Global Clock Region Assignment (Checksum:32d958f5) REAL time: 27 secs 
 
 Phase 10.3  Local Placement Optimization
 ...
-Phase 10.3  Local Placement Optimization (Checksum:aa4fe769) REAL time: 28 secs 
+Phase 10.3  Local Placement Optimization (Checksum:4da421a0) REAL time: 27 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:aa4fe769) REAL time: 28 secs 
+Phase 11.5  Local Placement Optimization (Checksum:4da421a0) REAL time: 27 secs 
 
 Phase 12.8  Global Placement
-.....................................................
-................
-.........................................................................
+...............................................
+.............
+......................................................................................
 ..............................
 .....................................
 ................
-Phase 12.8  Global Placement (Checksum:6ae6847b) REAL time: 34 secs 
+Phase 12.8  Global Placement (Checksum:48b985a0) REAL time: 33 secs 
 
 Phase 13.29  Local Placement Optimization
-Phase 13.29  Local Placement Optimization (Checksum:6ae6847b) REAL time: 34 secs 
+Phase 13.29  Local Placement Optimization (Checksum:48b985a0) REAL time: 33 secs 
 
 Phase 14.5  Local Placement Optimization
-Phase 14.5  Local Placement Optimization (Checksum:6ae6847b) REAL time: 34 secs 
+Phase 14.5  Local Placement Optimization (Checksum:48b985a0) REAL time: 33 secs 
 
 Phase 15.18  Placement Optimization
-Phase 15.18  Placement Optimization (Checksum:46408cea) REAL time: 1 mins 4 secs 
+Phase 15.18  Placement Optimization (Checksum:ea4ee25a) REAL time: 1 mins 2 secs 
 
 Phase 16.5  Local Placement Optimization
-Phase 16.5  Local Placement Optimization (Checksum:46408cea) REAL time: 1 mins 4 secs 
+Phase 16.5  Local Placement Optimization (Checksum:ea4ee25a) REAL time: 1 mins 2 secs 
 
 Phase 17.34  Placement Validation
-Phase 17.34  Placement Validation (Checksum:46408cea) REAL time: 1 mins 4 secs 
+Phase 17.34  Placement Validation (Checksum:ea4ee25a) REAL time: 1 mins 2 secs 
 
-Total REAL time to Placer completion: 1 mins 4 secs 
-Total CPU  time to Placer completion: 1 mins 2 secs 
+Total REAL time to Placer completion: 1 mins 2 secs 
+Total CPU  time to Placer completion: 1 mins 1 secs 
 Running post-placement packing...
 Writing output files...
-WARNING:PhysDesignRules:372 - Gated clock. Clock net i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear_not0001 is sourced
-   by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
-   flip-flop.
 WARNING:PhysDesignRules:372 - Gated clock. Clock net i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_not0001 is sourced
    by a combinatorial pin. This is not good design practice. Use the CE pin to control the loading of data into the
    flip-flop.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[6].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[8].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[9].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[2].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[5].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[7].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[10].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[3].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[1].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[11].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[14].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[13].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[12].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[4].SYNC_OUT_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_UPDATE_OUT[1].UPDATE_CELL/out_temp> is incomplete. The
-   signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/GEN_UPDATE_OUT[29].UPDATE_CELL/out_temp> is incomplete. The
+WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_SYNC_OUT[0].SYNC_OUT_CELL/out_temp> is incomplete. The
    signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_vio_mem/U0/I_VIO/reset_f_edge/iDOUT<1>> is incomplete. The signal does not
    drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_vio_sys/U0/I_VIO/GEN_UPDATE_OUT[1].UPDATE_CELL/out_temp> is incomplete. The
+   signal does not drive any load pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_appscore/mem_dmd_rowad<6>> is incomplete. The signal does not drive any load
    pins in the design.
 WARNING:PhysDesignRules:367 - The signal <i_appscore/mem_dmd_rowad<2>> is incomplete. The signal does not drive any load
    pins in the design.
+WARNING:PhysDesignRules:367 - The signal <i_appscore/mem_dmd_rowad<0>> is incomplete. The signal does not drive any load
+   pins in the design.
 WARNING:PhysDesignRules:367 - The signal
    <i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_ctl_io/phy_init_addr<4>> is
    incomplete. The signal does not drive any load pins in the design.
-WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp805.PULL is set but the tri state is
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp811.PULL is set but the tri state is
    not configured. 
-WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp805.PULL.1 is set but the tri state
+WARNING:PhysDesignRules:781 - PULLDOWN on an active net. PULLDOWN of comp ProtoComp811.PULL.1 is set but the tri state
    is not configured. 
 
 Design Summary
@@ -2157,31 +2161,30 @@ Design Summary:
 Number of errors:      0
 Number of warnings:   91
 Slice Logic Utilization:
-  Number of Slice Registers:                 4,025 out of  28,800   13%
-    Number used as Flip Flops:               4,019
-    Number used as Latches:                      6
-  Number of Slice LUTs:                      3,012 out of  28,800   10%
-    Number used as logic:                    2,936 out of  28,800   10%
-      Number using O6 output only:           2,395
+  Number of Slice Registers:                 4,021 out of  28,800   13%
+    Number used as Flip Flops:               4,020
+    Number used as Latches:                      1
+  Number of Slice LUTs:                      3,025 out of  28,800   10%
+    Number used as logic:                    2,949 out of  28,800   10%
+      Number using O6 output only:           2,404
       Number using O5 output only:             196
-      Number using O5 and O6:                  345
+      Number using O5 and O6:                  349
     Number used as Memory:                      40 out of   7,680    1%
       Number used as Shift Register:            40
         Number using O6 output only:            40
     Number used as exclusive route-thru:        36
-  Number of route-thrus:                       232
+  Number of route-thrus:                       231
     Number using O6 output only:               231
-    Number using O5 output only:                 1
 
 Slice Logic Distribution:
-  Number of occupied Slices:                 1,908 out of   7,200   26%
-  Number of LUT Flip Flop pairs used:        5,104
-    Number with an unused Flip Flop:         1,079 out of   5,104   21%
-    Number with an unused LUT:               2,092 out of   5,104   40%
-    Number of fully used LUT-FF pairs:       1,933 out of   5,104   37%
-    Number of unique control sets:             244
+  Number of occupied Slices:                 1,927 out of   7,200   26%
+  Number of LUT Flip Flop pairs used:        5,134
+    Number with an unused Flip Flop:         1,113 out of   5,134   21%
+    Number with an unused LUT:               2,109 out of   5,134   41%
+    Number of fully used LUT-FF pairs:       1,912 out of   5,134   37%
+    Number of unique control sets:             247
     Number of slice register sites lost
-      to control set restrictions:             359 out of  28,800    1%
+      to control set restrictions:             371 out of  28,800    1%
 
   A LUT Flip Flop pair for this architecture represents one LUT paired with
   one Flip Flop within a slice.  A control set is a unique combination of
@@ -2218,8 +2221,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                2.97
 
 Peak Memory Usage:  1066 MB
-Total REAL time to MAP completion:  1 mins 8 secs 
-Total CPU time to MAP completion:   1 mins 5 secs 
+Total REAL time to MAP completion:  1 mins 6 secs 
+Total CPU time to MAP completion:   1 mins 4 secs 
 
 Mapping completed.
 See MAP report file "appsfpga_map.mrp" for details.
