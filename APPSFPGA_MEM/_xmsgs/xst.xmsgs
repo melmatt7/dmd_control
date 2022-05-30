@@ -8,13 +8,7 @@
 <msg type="warning" file="HDLParsers" num="3530" delta="old" >Time stamp of file &quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl</arg>&quot; is newer than current system time.
 </msg>
 
-<msg type="warning" file="HDLParsers" num="3530" delta="old" >Time stamp of file &quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/USB_IO.vhd</arg>&quot; is newer than current system time.
-</msg>
-
 <msg type="warning" file="HDLParsers" num="3530" delta="old" >Time stamp of file &quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appscore.vhd</arg>&quot; is newer than current system time.
-</msg>
-
-<msg type="warning" file="HDLParsers" num="3530" delta="old" >Time stamp of file &quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appsfpga_load4_a.vhd</arg>&quot; is newer than current system time.
 </msg>
 
 <msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appsfpga_load4_a.vhd</arg>&quot; line <arg fmt="%d" index="2">333</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">ICON</arg>&gt;.
@@ -40,8 +34,12 @@
 <arg fmt="%s" index="3">&lt;update_mode&gt;, &lt;assign_type&gt;, &lt;phased_num&gt;, &lt;phased_rowad&gt;</arg>
 </msg>
 
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl</arg>&quot; line <arg fmt="%d" index="2">537</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-<arg fmt="%s" index="3">&lt;phased&gt;, &lt;rd_pattern_id&gt;, &lt;row_count&gt;</arg>
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl</arg>&quot; line <arg fmt="%d" index="2">347</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;phased&gt;, &lt;block_clear&gt;, &lt;phased_num&gt;</arg>
+</msg>
+
+<msg type="warning" file="Xst" num="819" delta="new" >&quot;<arg fmt="%s" index="1">/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl</arg>&quot; line <arg fmt="%d" index="2">559</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<arg fmt="%s" index="3">&lt;row_count&gt;</arg>
 </msg>
 
 <msg type="info" file="Xst" num="2679" delta="old" >Register &lt;<arg fmt="%s" index="1">dmd_cd</arg>&gt; in unit &lt;<arg fmt="%s" index="2">DMD_trigger_control</arg>&gt; has a constant value of <arg fmt="%s" index="3">00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</arg> during circuit operation. The register is replaced by logic.
@@ -1938,16 +1936,13 @@
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">BSA_count</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 </msg>
 
+<msg type="info" file="Xst" num="1608" delta="old" >Relative priorities of control signals on register &lt;<arg fmt="%s" index="1">dmd_blkad</arg>&gt; differ from those commonly found in the selected device family. This will result in additional logic around the register.
+</msg>
+
+<msg type="info" file="Xst" num="1608" delta="old" >Relative priorities of control signals on register &lt;<arg fmt="%s" index="1">dmd_blkmd</arg>&gt; differ from those commonly found in the selected device family. This will result in additional logic around the register.
+</msg>
+
 <msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">get_row_data</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">4</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">phased_num</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="warning" file="Xst" num="737" delta="old" >Found <arg fmt="%d" index="1">1</arg>-bit latch for signal &lt;<arg fmt="%s" index="2">block_clear</arg>&gt;. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-</msg>
-
-<msg type="info" file="Xst" num="2371" delta="new" >HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
 </msg>
 
 <msg type="warning" file="Xst" num="646" delta="old" >Signal &lt;<arg fmt="%s" index="1">fifo_cd_data_out_1q&lt;127:64&gt;</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
@@ -4445,6 +4440,12 @@ It will be removed from the design.
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pgen_pgq_rowmd_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pgen_pgq</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pgen_pgq_data_valid_q&gt; </arg>
 </msg>
 
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dmd_rowad_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">DMD_trigger_control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dmd_rowad_6&gt; &lt;dmd_rowad_8&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dmd_rowad_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">DMD_trigger_control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dmd_rowad_1&gt; &lt;dmd_rowad_2&gt; &lt;dmd_rowad_3&gt; </arg>
+</msg>
+
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">doutd_temp1_2</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pgen</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">29 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;doutd_temp1_7&gt; &lt;doutd_temp1_10&gt; &lt;doutd_temp1_15&gt; &lt;doutd_temp1_18&gt; &lt;doutd_temp1_23&gt; &lt;doutd_temp1_26&gt; &lt;doutd_temp1_31&gt; &lt;doutd_temp1_34&gt; &lt;doutd_temp1_39&gt; &lt;doutd_temp1_42&gt; &lt;doutd_temp1_50&gt; &lt;doutd_temp1_55&gt; &lt;doutd_temp1_58&gt; &lt;doutd_temp1_63&gt; &lt;doutb_temp1_2&gt; &lt;doutb_temp1_7&gt; &lt;doutb_temp1_10&gt; &lt;doutb_temp1_18&gt; &lt;doutb_temp1_23&gt; &lt;doutb_temp1_26&gt; &lt;doutb_temp1_31&gt; &lt;doutb_temp1_34&gt; &lt;doutb_temp1_39&gt; &lt;doutb_temp1_42&gt; &lt;doutb_temp1_47&gt; &lt;doutb_temp1_50&gt; &lt;doutb_temp1_55&gt; &lt;doutb_temp1_58&gt; &lt;doutb_temp1_63&gt; </arg>
 </msg>
 
@@ -4479,12 +4480,6 @@ It will be removed from the design.
 </msg>
 
 <msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">pgen_pgd_blkmd_q_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">pgen_pgd</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;pgen_pgd_blkmd_q_1&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dmd_rowad_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">DMD_trigger_control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">2 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dmd_rowad_6&gt; &lt;dmd_rowad_8&gt; </arg>
-</msg>
-
-<msg type="info" file="Xst" num="2261" delta="old" >The FF/Latch &lt;<arg fmt="%s" index="1">dmd_rowad_0</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">DMD_trigger_control</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">3 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dmd_rowad_1&gt; &lt;dmd_rowad_2&gt; &lt;dmd_rowad_3&gt; </arg>
 </msg>
 
 <msg type="warning" file="Xst" num="1710" delta="old" >FF/Latch &lt;<arg fmt="%s" index="1">data_in_count_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">DMD_trigger_control</arg>&gt;. This FF/Latch will be trimmed during the optimization process.

@@ -186,7 +186,7 @@ architecture Behavioral of DMD_trigger_control is
 		  
 		  phased_init <= "1010";
 		  phased_max <= "1011";
-		  
+		  phased_num <= phased_init + rd_pattern_id(3 downto 0);
 		  
 		  process (clk_g, locked_init_rstz_gq)
         begin
@@ -351,20 +351,25 @@ architecture Behavioral of DMD_trigger_control is
 					 blk_dvalid <= '0';
 					 rst_enable <= '0';
 					 rst_count <= "0000";
-					 dmd_blkmd <= "00";
-					 dmd_blkad <= "0000";
+--					 dmd_blkmd <= "00";
+--					 dmd_blkad <= "0000";
 --					 block_clear <= '0';
 					 
---						if phased = '1' and phased_num > phased_init then
---							dmd_blkad <= phased_num - "0001"; --block 10
---							dmd_blkmd <= "01";
---						elsif phased = '1' and phased_num = phased_init then
---							dmd_blkad <= phased_max; --block 11
---							dmd_blkmd <= "01";
---						else
---							dmd_blkmd <= "00";
---							dmd_blkad <= "0000";
---						end if;
+					if phased = '1' and block_clear = '0' then
+						if phased_num > phased_init then
+							dmd_blkad <= phased_num - "0001"; --block 10
+							dmd_blkmd <= "01";
+							block_clear <= '1';                                       
+					   elsif phased_num = phased_init then
+							dmd_blkad <= phased_max; --block 11
+							dmd_blkmd <= "01";
+							block_clear <= '1';
+						end if;
+					else
+						dmd_blkmd <= "00";
+						dmd_blkad <= "0000";
+					end if;
+					
             elsif clk_g = '1' and clk_g'event then
 					 if cnts_row_pos_cnt = "00000000000" and cnts_row_pos_cnt_q1 = row_count then
 					     rst_enable <= '1';	
@@ -388,27 +393,41 @@ architecture Behavioral of DMD_trigger_control is
 								rst_count <= "0000";
 --								block_clear <= '0';
 								
-								
+						  elsif rst_count = "0011" then
+								block_clear <= '0';
+								rst_count <= rst_count + "0001";
 						  else
 						      rst_count <= rst_count + "0001";
 								
 								
 						  end if;
 						  
-						  if block_clear = '1' then
-							  dmd_blkmd <= "01";
-								if phased_num > phased_init then
-									dmd_blkad <= phased_num - "0001"; --block 10
-								elsif phased_num = phased_init then
-									dmd_blkad <= phased_max;
-								end if;
---								dmd_blkad <= phased_num;
---							  blk_dvalid <= '0';
-						  else 
+--						  if block_clear = '1' then
+--							  dmd_blkmd <= "01";
+--								if phased_num > phased_init then
+--									dmd_blkad <= phased_num - "0001"; --block 10
+--								elsif phased_num = phased_init then
+--									dmd_blkad <= phased_max;
+--								end if;
+----								dmd_blkad <= phased_num;
+----							  blk_dvalid <= '0';
+--						  else 
+						if phased = '1' and block_clear = '1' then
+							if phased_num = phased_max then
+								dmd_blkad <= phased_num - "0001"; --block 10
+								dmd_blkmd <= "10";
+							elsif phased_num = phased_init then
+								dmd_blkad <= phased_max; --block 11
+								dmd_blkmd <= "10";
+							end if;
+						else
 							  dmd_blkmd <= blkmd;
 							  dmd_blkad <= blkad;
-							  blk_dvalid <= '1';
-						  end if;
+						end if;
+							  							  blk_dvalid <= '1';
+
+						  
+--						  end if;
 --						  block_clear <= '1';
 						  
 --						  if phased = '1' and phased_num > phased_init then
@@ -441,21 +460,24 @@ architecture Behavioral of DMD_trigger_control is
 						  
 
 					 else
-						
 						blk_dvalid <= '0';
---						block_clear <= '0';
---						if phased = '1' and phased_num > phased_init then
---							dmd_blkad <= phased_num - "0001"; --block 10
---							dmd_blkmd <= "10";
---						elsif phased = '1' and phased_num = phased_init then
---							dmd_blkad <= phased_max; --block 11
---							dmd_blkmd <= "10";
---						else 							
---							dmd_blkmd <= "00";
---							dmd_blkad <= "0000";
+
+--						else 
+							
+	--						block_clear <= '0';
+	--						if phased = '1' and phased_num > phased_init then
+	--							dmd_blkad <= phased_num - "0001"; --block 10
+	--							dmd_blkmd <= "10";
+	--						elsif phased = '1' and phased_num = phased_init then
+	--							dmd_blkad <= phased_max; --block 11
+	--							dmd_blkmd <= "10";
+	--						else 							
+	--							dmd_blkmd <= "00";
+	--							dmd_blkad <= "0000";
+	--						end if;
+							dmd_blkmd <= "00";
+							dmd_blkad <= "0000";
 --						end if;
-						dmd_blkmd <= "00";
-					   dmd_blkad <= "0000";
 					 end if;
 				end if;
         end process;
@@ -543,13 +565,13 @@ architecture Behavioral of DMD_trigger_control is
 				  dmd_dvalid_1 <= '0';
 				  counter_reset <= '0';
 				  mem_read_enable <= '0';
-				  if phased = '1' then
-						block_clear <= '0';
-					end if;
+--				  if phased = '1' then
+--						block_clear <= '0';
+--					end if;
 					  
 				  if trigger = '1' and ddc_init_active = '0' and mem_preload_done = '1' then
 						next_state <= S1;
-						phased_num <= phased_init + rd_pattern_id(3 downto 0);
+						
 						
 --						if phased = '1' then
 --							if phased_num = "0000" then
@@ -573,9 +595,9 @@ architecture Behavioral of DMD_trigger_control is
 						get_row_data <= '0';
 						dmd_dvalid_1 <= '0';
 						mem_read_enable <= '0';
-						if phased = '1' then
-							block_clear <= '1';
-						end if;
+--						if phased = '1' then
+--							block_clear <= '1';
+--						end if;
 
 --						if phased = '1' then
 --							phased_num <= phased_init;

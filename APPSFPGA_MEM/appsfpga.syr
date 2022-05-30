@@ -164,7 +164,6 @@ Entity <dmd_trigger_control> (Architecture <behavioral>) compiled.
 Compiling vhdl file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_control.vhd" in Library work.
 Architecture behavioral of Entity dmd_control is up to date.
 Compiling vhdl file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/USB_IO.vhd" in Library work.
-WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/USB_IO.vhd" is newer than current system time.
 Architecture behavioral of Entity usb_io is up to date.
 Compiling vhdl file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/D4100_registers.vhd" in Library work.
 Architecture behavioral of Entity d4100_registers is up to date.
@@ -202,7 +201,6 @@ Compiling vhdl file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appscore.vhd" in
 WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appscore.vhd" is newer than current system time.
 Architecture behavioral of Entity appscore is up to date.
 Compiling vhdl file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appsfpga_load4_a.vhd" in Library work.
-WARNING:HDLParsers:3530 - Time stamp of file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appsfpga_load4_a.vhd" is newer than current system time.
 Architecture behavioral of Entity appsfpga is up to date.
 Compiling vhdl file "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/appsfpga_io_400_a.vhd" in Library work.
 Architecture behavioral of Entity appsfpga_io is up to date.
@@ -772,8 +770,10 @@ WARNING:Xst:819 - "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_contro
    <phased_num>
 WARNING:Xst:819 - "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl" line 214: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <update_mode>, <assign_type>, <phased_num>, <phased_rowad>
-WARNING:Xst:819 - "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl" line 537: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <phased>, <rd_pattern_id>, <row_count>
+WARNING:Xst:819 - "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl" line 347: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <phased>, <block_clear>, <phased_num>
+WARNING:Xst:819 - "/home/ise/dmd_control/APPSFPGA_MEM/src/rtl/DMD_trigger_control.vhdl" line 559: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <row_count>
 INFO:Xst:2679 - Register <dmd_cd> in unit <DMD_trigger_control> has a constant value of 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 during circuit operation. The register is replaced by logic.
 Entity <DMD_trigger_control> analyzed. Unit <DMD_trigger_control> generated.
 
@@ -2914,33 +2914,33 @@ WARNING:Xst:646 - Signal <dmd_1080p_connected_2q> is assigned but never used. Th
 WARNING:Xst:646 - Signal <cnts_row_pos_cnt_q2> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <WL_count> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
 WARNING:Xst:646 - Signal <BSA_count> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1608 - Relative priorities of control signals on register <dmd_blkad> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+INFO:Xst:1608 - Relative priorities of control signals on register <dmd_blkmd> differ from those commonly found in the selected device family. This will result in additional logic around the register.
 WARNING:Xst:737 - Found 1-bit latch for signal <get_row_data>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-WARNING:Xst:737 - Found 4-bit latch for signal <phased_num>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Using one-hot encoding for signal <assign_type>.
-WARNING:Xst:737 - Found 1-bit latch for signal <block_clear>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
     Found 2-bit register for signal <dmd_rowmd>.
     Found 4-bit register for signal <dmd_blkad>.
     Found 11-bit register for signal <dmd_rowad>.
     Found 2-bit register for signal <dmd_blkmd>.
     Found 1-bit register for signal <blk_dvalid>.
+    Found 1-bit register for signal <block_clear>.
     Found 11-bit register for signal <cnts_row_pos_cnt_q1>.
     Found 1-bit register for signal <current_state<0>>.
     Found 4-bit register for signal <data_in_count>.
-    Found 4-bit adder for signal <data_in_count$addsub0000> created at line 621.
+    Found 4-bit adder for signal <data_in_count$addsub0000> created at line 643.
     Found 128-bit register for signal <dmd_ab>.
-    Found 4-bit subtractor for signal <dmd_blkad$addsub0000> created at line 401.
-    Found 4-bit comparator greater for signal <dmd_blkad$cmp_gt0000> created at line 400.
+    Found 4-bit subtractor for signal <dmd_blkad$addsub0000> created at line 360.
+    Found 4-bit comparator greater for signal <dmd_blkad$cmp_gt0000> created at line 359.
     Found 1-bit register for signal <dmd_dvalid_1q>.
-    Found 11-bit comparator equal for signal <mem_read_enable$cmp_eq0001> created at line 568.
-    Found 4-bit adder for signal <phased_num$add0000> created at line 552.
+    Found 11-bit comparator equal for signal <mem_read_enable$cmp_eq0001> created at line 590.
+    Found 4-bit adder for signal <phased_num>.
     Found 4-bit up counter for signal <rst_count>.
     Found 1-bit register for signal <rst_enable>.
-    Found 11-bit comparator not equal for signal <rst_enable$cmp_ne0001> created at line 369.
+    Found 11-bit comparator not equal for signal <rst_enable$cmp_ne0001> created at line 374.
     Found 1-bit register for signal <trigger_miss_1>.
     Summary:
 	inferred   1 Counter(s).
-	inferred 167 D-type flip-flop(s).
+	inferred 162 D-type flip-flop(s).
 	inferred   3 Adder/Subtractor(s).
 	inferred   3 Comparator(s).
 Unit <DMD_trigger_control> synthesized.
@@ -3890,8 +3890,8 @@ Macro Statistics
  8-bit down counter                                    : 3
 # Accumulators                                         : 1
  2-bit up accumulator                                  : 1
-# Registers                                            : 1580
- 1-bit register                                        : 1354
+# Registers                                            : 1581
+ 1-bit register                                        : 1355
  11-bit register                                       : 43
  12-bit register                                       : 3
  128-bit register                                      : 8
@@ -3911,9 +3911,8 @@ Macro Statistics
  64-bit register                                       : 24
  7-bit register                                        : 6
  8-bit register                                        : 6
-# Latches                                              : 3
- 1-bit latch                                           : 2
- 4-bit latch                                           : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
 # Comparators                                          : 99
  10-bit comparator less                                : 2
  11-bit comparator equal                               : 39
@@ -4729,11 +4728,10 @@ Macro Statistics
  8-bit down counter                                    : 3
 # Accumulators                                         : 1
  2-bit up accumulator                                  : 1
-# Registers                                            : 5870
- Flip-Flops                                            : 5870
-# Latches                                              : 3
- 1-bit latch                                           : 2
- 4-bit latch                                           : 1
+# Registers                                            : 5865
+ Flip-Flops                                            : 5865
+# Latches                                              : 1
+ 1-bit latch                                           : 1
 # Comparators                                          : 99
  10-bit comparator less                                : 2
  11-bit comparator equal                               : 39
@@ -4972,6 +4970,8 @@ INFO:Xst:2261 - The FF/Latch <count_rden_2> in Unit <ddr2_phy_calib> is equivale
 INFO:Xst:2261 - The FF/Latch <blkmode_0> in Unit <pgen_pgd> is equivalent to the following FF/Latch, which will be removed : <blkmode_1> 
 INFO:Xst:2261 - The FF/Latch <pgen_pgd_rowmd_0> in Unit <pgen_pgd> is equivalent to the following FF/Latch, which will be removed : <pgen_pgd_data_valid_q> 
 INFO:Xst:2261 - The FF/Latch <pgen_pgq_rowmd_0> in Unit <pgen_pgq> is equivalent to the following FF/Latch, which will be removed : <pgen_pgq_data_valid_q> 
+INFO:Xst:2261 - The FF/Latch <dmd_rowad_4> in Unit <DMD_trigger_control> is equivalent to the following 2 FFs/Latches, which will be removed : <dmd_rowad_6> <dmd_rowad_8> 
+INFO:Xst:2261 - The FF/Latch <dmd_rowad_0> in Unit <DMD_trigger_control> is equivalent to the following 3 FFs/Latches, which will be removed : <dmd_rowad_1> <dmd_rowad_2> <dmd_rowad_3> 
 INFO:Xst:2261 - The FF/Latch <doutd_temp1_2> in Unit <pgen> is equivalent to the following 29 FFs/Latches, which will be removed : <doutd_temp1_7> <doutd_temp1_10> <doutd_temp1_15> <doutd_temp1_18> <doutd_temp1_23> <doutd_temp1_26> <doutd_temp1_31> <doutd_temp1_34> <doutd_temp1_39> <doutd_temp1_42> <doutd_temp1_50> <doutd_temp1_55> <doutd_temp1_58> <doutd_temp1_63> <doutb_temp1_2> <doutb_temp1_7> <doutb_temp1_10> <doutb_temp1_18> <doutb_temp1_23> <doutb_temp1_26> <doutb_temp1_31> <doutb_temp1_34> <doutb_temp1_39> <doutb_temp1_42> <doutb_temp1_47> <doutb_temp1_50> <doutb_temp1_55> <doutb_temp1_58> <doutb_temp1_63> 
 INFO:Xst:2261 - The FF/Latch <doutc_temp1_0> in Unit <pgen> is equivalent to the following 28 FFs/Latches, which will be removed : <doutc_temp1_5> <doutc_temp1_8> <doutc_temp1_13> <doutc_temp1_16> <doutc_temp1_21> <doutc_temp1_24> <doutc_temp1_29> <doutc_temp1_32> <doutc_temp1_37> <doutc_temp1_40> <doutc_temp1_45> <doutc_temp1_53> <doutc_temp1_56> <doutc_temp1_61> <douta_temp1_0> <douta_temp1_5> <douta_temp1_8> <douta_temp1_13> <douta_temp1_21> <douta_temp1_24> <douta_temp1_29> <douta_temp1_32> <douta_temp1_37> <douta_temp1_40> <douta_temp1_45> <douta_temp1_53> <douta_temp1_56> <douta_temp1_61> 
 INFO:Xst:2261 - The FF/Latch <doutc_temp1_1> in Unit <pgen> is equivalent to the following 31 FFs/Latches, which will be removed : <doutc_temp1_4> <doutc_temp1_9> <doutc_temp1_12> <doutc_temp1_17> <doutc_temp1_20> <doutc_temp1_25> <doutc_temp1_28> <doutc_temp1_33> <doutc_temp1_36> <doutc_temp1_41> <doutc_temp1_44> <doutc_temp1_49> <doutc_temp1_52> <doutc_temp1_57> <doutc_temp1_60> <douta_temp1_1> <douta_temp1_4> <douta_temp1_9> <douta_temp1_12> <douta_temp1_17> <douta_temp1_20> <douta_temp1_25> <douta_temp1_28> <douta_temp1_33> <douta_temp1_36> <douta_temp1_41> <douta_temp1_44> <douta_temp1_49> <douta_temp1_52> <douta_temp1_57> <douta_temp1_60> 
@@ -5052,8 +5052,6 @@ Optimizing unit <ddr2_usr_top> ...
 Optimizing unit <ddr2_phy_io> ...
 
 Optimizing unit <DMD_trigger_control> ...
-INFO:Xst:2261 - The FF/Latch <dmd_rowad_4> in Unit <DMD_trigger_control> is equivalent to the following 2 FFs/Latches, which will be removed : <dmd_rowad_6> <dmd_rowad_8> 
-INFO:Xst:2261 - The FF/Latch <dmd_rowad_0> in Unit <DMD_trigger_control> is equivalent to the following 3 FFs/Latches, which will be removed : <dmd_rowad_1> <dmd_rowad_2> <dmd_rowad_3> 
 WARNING:Xst:1710 - FF/Latch <data_in_count_3> (without init value) has a constant value of 0 in block <DMD_trigger_control>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <rst_count_3> (without init value) has a constant value of 0 in block <DMD_trigger_control>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:1710 - FF/Latch <data_in_count_3> (without init value) has a constant value of 0 in block <DMD_trigger_control>. This FF/Latch will be trimmed during the optimization process.
@@ -7656,8 +7654,8 @@ Unit <u_phy_write> processed.
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 3423
- Flip-Flops                                            : 3423
+# Registers                                            : 3424
+ Flip-Flops                                            : 3424
 # Shift Registers                                      : 14
  15-bit shift register                                 : 3
  16-bit shift register                                 : 1
@@ -7692,32 +7690,32 @@ Design Statistics
 # IOs                              : 378
 
 Cell Usage :
-# BELS                             : 4957
-#      GND                         : 203
-#      INV                         : 193
+# BELS                             : 4972
+#      GND                         : 204
+#      INV                         : 192
 #      LUT1                        : 245
-#      LUT2                        : 707
-#      LUT3                        : 498
-#      LUT4                        : 537
-#      LUT5                        : 443
-#      LUT6                        : 921
+#      LUT2                        : 704
+#      LUT3                        : 497
+#      LUT4                        : 546
+#      LUT5                        : 440
+#      LUT6                        : 937
 #      MUXCY                       : 529
 #      MUXCY_L                     : 25
 #      MUXF5                       : 2
 #      MUXF6                       : 1
-#      MUXF7                       : 32
+#      MUXF7                       : 29
 #      VCC                         : 201
 #      XORCY                       : 420
-# FlipFlops/Latches                : 4807
+# FlipFlops/Latches                : 4803
 #      FD                          : 945
 #      FD_1                        : 2
-#      FDC                         : 828
-#      FDCE                        : 652
-#      FDCPE                       : 26
+#      FDC                         : 826
+#      FDCE                        : 648
+#      FDCPE                       : 32
 #      FDCPE_1                     : 8
 #      FDE                         : 235
 #      FDP                         : 185
-#      FDPE                        : 61
+#      FDPE                        : 62
 #      FDR                         : 618
 #      FDRE                        : 212
 #      FDRS                        : 138
@@ -7727,9 +7725,7 @@ Cell Usage :
 #      FDS_1                       : 2
 #      FDSE                        : 15
 #      IDDR_2CLK                   : 64
-#      LD                          : 1
 #      LDC_1                       : 1
-#      LDE_1                       : 4
 #      ODDR                        : 146
 # RAMS                             : 38
 #      RAMB18                      : 2
@@ -7765,18 +7761,18 @@ Selected Device : 5vlx50ff1153-1
 
 
 Slice Logic Utilization: 
- Number of Slice Registers:            4807  out of  28800    16%  
- Number of Slice LUTs:                 3591  out of  28800    12%  
-    Number used as Logic:              3544  out of  28800    12%  
+ Number of Slice Registers:            4803  out of  28800    16%  
+ Number of Slice LUTs:                 3608  out of  28800    12%  
+    Number used as Logic:              3561  out of  28800    12%  
     Number used as Memory:               47  out of   7680     0%  
        Number used as SRL:               47
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:   6570
-   Number with an unused Flip Flop:    1763  out of   6570    26%  
-   Number with an unused LUT:          2979  out of   6570    45%  
-   Number of fully used LUT-FF pairs:  1828  out of   6570    27%  
-   Number of unique control sets:       410
+ Number of LUT Flip Flop pairs used:   6587
+   Number with an unused Flip Flop:    1784  out of   6587    27%  
+   Number with an unused LUT:          2979  out of   6587    45%  
+   Number of fully used LUT-FF pairs:  1824  out of   6587    27%  
+   Number of unique control sets:       413
 
 IO Utilization: 
  Number of IOs:                         378
@@ -7811,16 +7807,14 @@ Clock Signal                                                                    
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
 i_icon/U0/U_ICON/I_YES_BSCAN.U_BS/iDRCK_LOCAL                                                                                                                                                                                                            | BUFG                                                                                                                                | 93    |
 i_icon/U0/iUPDATE_OUT                                                                                                                                                                                                                                    | NONE(i_icon/U0/U_ICON/U_iDATA_CMD)                                                                                                  | 1     |
-i_appsfpga_io/i_PLL_clk/CLKOUT0_BUF                                                                                                                                                                                                                      | BUFG                                                                                                                                | 1205  |
+i_appsfpga_io/i_PLL_clk/CLKOUT0_BUF                                                                                                                                                                                                                      | BUFG                                                                                                                                | 1206  |
 i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_miss_1                                                                                                                                                                                                       | NONE(i_vio_sys/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/U_RISING)                                                                       | 2     |
 i_appsfpga_io/i_pll_mem/CLKOUT1_BUF                                                                                                                                                                                                                      | BUFG                                                                                                                                | 1866  |
 clk_i                                                                                                                                                                                                                                                    | IBUFG+BUFG                                                                                                                          | 54    |
 i_appsfpga_io/i_PLL_clk/CLKOUT1_BUF                                                                                                                                                                                                                      | BUFG                                                                                                                                | 91    |
 i_appscore/USB_IO_INST/i_pll_usb/CLKOUT1_BUF                                                                                                                                                                                                             | BUFG                                                                                                                                | 404   |
 i_appscore/USB_IO_INST/i_pll_usb/CLKOUT0_BUF                                                                                                                                                                                                             | BUFG                                                                                                                                | 2     |
-i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear_not0001(i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear_not00011:O)                                                                                                                                      | NONE(*)(i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear)                                                                            | 1     |
 i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_not0001(i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_not00011:O)                                                                                                                                    | NONE(*)(i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data)                                                                           | 1     |
-i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0                                                                                                                                                                                                      | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/phased_num_0)                                                                              | 4     |
 i_appsfpga_io/i_pll_mem/CLKOUT3_BUF                                                                                                                                                                                                                      | BUFG                                                                                                                                | 25    |
 i_appsfpga_io/i_pll_mem/CLKOUT2_BUF                                                                                                                                                                                                                      | BUFG                                                                                                                                | 335   |
 i_appsfpga_io/i_pll_mem/CLKOUT0_BUF                                                                                                                                                                                                                      | BUFG                                                                                                                                | 961   |
@@ -7833,7 +7827,7 @@ i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io
 i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/dqs_ibuf(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/gen_dqs_iob_ddr2_ddr3.u_iobuf_dqs:O)| IODELAY+BUFIO(*)(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[1].u_iob_dqs/u_iddr_dq_ce)| 1     |
 i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/dqs_ibuf(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/gen_dqs_iob_ddr2_ddr3.u_iobuf_dqs:O)| IODELAY+BUFIO(*)(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce)| 1     |
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+-------+
-(*) These 10 clock signal(s) are generated by combinatorial logic,
+(*) These 9 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
 Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
 INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
@@ -7844,7 +7838,7 @@ Asynchronous Control Signals Information:
 Control Signal                                                                                                                                                                                                                                  | Buffer(FF name)                                                                                                                                                                                                                  | Load  |
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
 i_appscore/system_reset(i_appscore/system_reset1_INV_0:O)                                                                                                                                                                                       | NONE(i_appscore/DMD_CONTROL_INST/C_BLOCK_WRITE_STATE_FSM_FFd1)                                                                                                                                                                   | 191   |
-i_appscore/DMD_TRIGGER_CONTROL_INST/locked_init_rstz_gq_inv(i_appscore/DMD_TRIGGER_CONTROL_INST/locked_init_rstz_gq_inv1_INV_0:O)                                                                                                               | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid)                                                                                                                                                                             | 163   |
+i_appscore/DMD_TRIGGER_CONTROL_INST/locked_init_rstz_gq_inv(i_appscore/DMD_TRIGGER_CONTROL_INST/locked_init_rstz_gq_inv1_INV_0:O)                                                                                                               | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/blk_dvalid)                                                                                                                                                                             | 157   |
 i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/rstblk/rd_rst_reg<0>(i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/rstblk/rd_rst_reg_0:Q)                                                                                                   | NONE(i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/mem/dout_i_0)                                                                                                                                                              | 128   |
 i_appscore/USB_IO_INST/fifo_usb_ab/BU2/dbiterr(i_appscore/USB_IO_INST/fifo_usb_ab/BU2/XST_GND:G)                                                                                                                                                | NONE(i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/mem/gbm.gbmg.gbmga.ngecc.bmg/blk_mem_generator/valid.cstr/ramloop[0].ram.r/v5.ram/SDP.SINGLE_PRIM36.TDP)                                                                   | 128   |
 i_appscore/USB_IO_INST/arst_usb(i_appscore/USB_IO_INST/arst_usb:Q)                                                                                                                                                                              | NONE(i_appscore/USB_IO_INST/data_fifo_wr_en_if)                                                                                                                                                                                  | 81    |
@@ -7984,12 +7978,14 @@ i_appsfpga_io/rowmd_loop[0].rowmd_io/N0(i_appsfpga_io/rowmd_loop[0].rowmd_io/XST
 i_appsfpga_io/rowmd_loop[1].rowmd_io/N0(i_appsfpga_io/rowmd_loop[1].rowmd_io/XST_GND:G)                                                                                                                                                         | NONE(i_appsfpga_io/rowmd_loop[1].rowmd_io/OSERDES_TX_DATA_d)                                                                                                                                                                     | 4     |
 i_vio_mem/U0/I_VIO/GEN_TRANS.U_ARM/iCLR(i_vio_mem/U0/I_VIO/GEN_TRANS.U_ARM/U_CLEAR:O)                                                                                                                                                           | NONE(i_vio_mem/U0/I_VIO/GEN_TRANS.U_ARM/U_DOUT0)                                                                                                                                                                                 | 4     |
 i_vio_sys/U0/I_VIO/GEN_TRANS.U_ARM/iCLR(i_vio_sys/U0/I_VIO/GEN_TRANS.U_ARM/U_CLEAR:O)                                                                                                                                                           | NONE(i_vio_sys/U0/I_VIO/GEN_TRANS.U_ARM/U_DOUT0)                                                                                                                                                                                 | 4     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3__or0001(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3__or00011:O)                                                                                                                             | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/block_clear)                                                                                                                                                                            | 3     |
 i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                                         | NONE(i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                         | 3     |
 i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                                         | NONE(i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                         | 3     |
 i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/rstblk/rd_rst_comb(i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)                                                                                                     | NONE(i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                                                       | 3     |
 i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb(i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_comb1:O)                                         | NONE(i_appscore/USB_IO_INST/mem_data_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                         | 3     |
 i_appscore/USB_IO_INST/reg_fifo_in/BU2/U0/grf.rf/rstblk/rd_rst_comb(i_appscore/USB_IO_INST/reg_fifo_in/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)                                                                                                     | NONE(i_appscore/USB_IO_INST/reg_fifo_in/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                                                       | 3     |
 i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/rd_rst_comb(i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/rd_rst_comb1:O)                                                                                                   | NONE(i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/rd_rst_reg_0)                                                                                                                                                      | 3     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3__or0000(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0__or0000111:O)                                                                                                                           | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_3)                                                                                                                                                                            | 2     |
 i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                                         | NONE(i_appscore/MEMORY_IO_INST/rd_ab_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                                                                                         | 2     |
 i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb(i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_comb1:O)                                         | NONE(i_appscore/MEMORY_IO_INST/rd_cd_fifo/U0/xst_fifo_generator/gconvfifo.rf/grf.rf/rstblk/wr_rst_reg_0)                                                                                                                         | 2     |
 i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_addr_fifo/N1(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_addr_fifo/XST_VCC:P)                                                   | NONE(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_usr_top/u_usr_addr_fifo/u_af)                                                                                                                               | 2     |
@@ -8000,6 +7996,14 @@ i_appscore/USB_IO_INST/reg_fifo_in/BU2/U0/grf.rf/rstblk/wr_rst_comb(i_appscore/U
 i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_comb(i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_comb1:O)                                                                                                   | NONE(i_appscore/USB_IO_INST/reg_fifo_out/BU2/U0/grf.rf/rstblk/wr_rst_reg_0)                                                                                                                                                      | 2     |
 i_appscore/USB_REG_INST/fifo_reset_1(i_appscore/USB_REG_INST/fifo_reset_1:Q)                                                                                                                                                                    | NONE(i_appscore/USB_IO_INST/fifo_usb_ab/BU2/U0/grf.rf/rstblk/rd_rst_asreg)                                                                                                                                                       | 2     |
 i_vio_sys/U0/I_VIO/RESET(i_vio_sys/U0/I_VIO/reset_f_edge/I_H2L.U_DOUT:Q)                                                                                                                                                                        | NONE(i_vio_sys/U0/I_VIO/GEN_SYNC_IN[0].SYNC_IN_CELL/U_FALLING)                                                                                                                                                                   | 2     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0__or0000(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0__or00001:O)                                                                                                                             | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0)                                                                                                                                                                            | 1     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0__or0001(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0__or00011:O)                                                                                                                             | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_0)                                                                                                                                                                            | 1     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1__or0000(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1__or0000:O)                                                                                                                              | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1)                                                                                                                                                                            | 1     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1__or0001(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1__or00011:O)                                                                                                                             | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_1)                                                                                                                                                                            | 1     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2__and0000(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2__and00001:O)                                                                                                                           | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2)                                                                                                                                                                            | 1     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2__or0000(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2__or0000:O)                                                                                                                              | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkad_2)                                                                                                                                                                            | 1     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1__or0000(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1__or00001:O)                                                                                                                             | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1)                                                                                                                                                                            | 1     |
+i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_rowad<10>(i_appscore/DMD_TRIGGER_CONTROL_INST/XST_GND:G)                                                                                                                                                | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/dmd_blkmd_1)                                                                                                                                                                            | 1     |
 i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_or0000(i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data_or00001:O)                                                                                                                             | NONE(i_appscore/DMD_TRIGGER_CONTROL_INST/get_row_data)                                                                                                                                                                           | 1     |
 i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/N0(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/XST_GND:G)                       | NONE(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce)                                                                                                         | 1     |
 i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/en_dqs_sync(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/u_iodelay_dq_ce:DATAOUT)| NONE(i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[0].u_iob_dqs/u_iddr_dq_ce)                                                                                                         | 1     |
@@ -8027,7 +8031,7 @@ Speed Grade: -1
 
    Minimum period: 6.003ns (Maximum Frequency: 166.593MHz)
    Minimum input arrival time before clock: 5.342ns
-   Maximum output required time after clock: 4.519ns
+   Maximum output required time after clock: 4.513ns
    Maximum combinational path delay: 3.738ns
 
 Timing Detail:
@@ -8087,31 +8091,30 @@ Delay:               1.392ns (Levels of Logic = 1)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'i_appsfpga_io/i_PLL_clk/CLKOUT0_BUF'
-  Clock period: 4.840ns (frequency: 206.612MHz)
-  Total number of paths / destination ports: 16487 / 2520
+  Clock period: 4.828ns (frequency: 207.125MHz)
+  Total number of paths / destination ports: 16501 / 2523
 -------------------------------------------------------------------------
-Delay:               4.840ns (Levels of Logic = 6)
-  Source:            i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_4 (FF)
+Delay:               4.828ns (Levels of Logic = 6)
+  Source:            i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_9 (FF)
   Destination:       i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_1 (FF)
   Source Clock:      i_appsfpga_io/i_PLL_clk/CLKOUT0_BUF rising
   Destination Clock: i_appsfpga_io/i_PLL_clk/CLKOUT0_BUF rising
 
-  Data Path: i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_4 to i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_1
+  Data Path: i_appscore/DMD_TRIGGER_CONTROL_INST/cnts_row_pos_cnt_q1_9 to i_appscore/DMD_TRIGGER_CONTROL_INST/trigger_write_counter/cnts_row_pos_cnt_1_1
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDCE:C->Q             4   0.471   1.085  cnts_row_pos_cnt_1_4 (cnts_row_pos_cnt_1_4)
-     end scope: 'trigger_write_counter'
-     LUT6:I0->O            1   0.094   0.480  mem_read_enable_cmp_eq0000_SW0 (N10)
-     LUT6:I5->O           13   0.094   0.642  mem_read_enable_cmp_eq0000 (mem_read_enable_cmp_eq0000)
-     LUT6:I4->O            1   0.094   0.576  mem_read_enable_cmp_eq000111496_SW0 (N29)
-     LUT6:I4->O            8   0.094   0.518  counter_en1 (counter_en)
+     FDC:C->Q              6   0.471   1.096  cnts_row_pos_cnt_q1_9 (cnts_row_pos_cnt_q1_9)
+     LUT6:I0->O            1   0.094   0.480  mem_read_enable_cmp_eq00011199_SW0 (N19)
+     LUT6:I5->O            1   0.094   0.480  mem_read_enable_cmp_eq000111128 (mem_read_enable_cmp_eq000111128)
+     LUT6:I5->O            2   0.094   0.715  mem_read_enable_cmp_eq000111204 (mem_read_enable_cmp_eq000111204)
+     LUT6:I3->O            8   0.094   0.518  counter_en1 (counter_en)
      begin scope: 'trigger_write_counter'
      LUT2:I1->O           10   0.094   0.385  cnts_row_pos_cnt_1_and00001 (cnts_row_pos_cnt_1_and0000)
      FDCE:CE                   0.213          cnts_row_pos_cnt_1_1
     ----------------------------------------
-    Total                      4.840ns (1.154ns logic, 3.686ns route)
-                                       (23.8% logic, 76.2% route)
+    Total                      4.828ns (1.154ns logic, 3.674ns route)
+                                       (23.9% logic, 76.1% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'i_appsfpga_io/i_pll_mem/CLKOUT1_BUF'
@@ -8437,28 +8440,6 @@ Offset:              2.367ns (Levels of Logic = 3)
                                        (47.5% logic, 52.5% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0'
-  Total number of paths / destination ports: 4 / 4
--------------------------------------------------------------------------
-Offset:              2.203ns (Levels of Logic = 3)
-  Source:            gpioa_i<0> (PAD)
-  Destination:       i_appscore/DMD_TRIGGER_CONTROL_INST/phased_num_0 (LATCH)
-  Destination Clock: i_appscore/DMD_TRIGGER_CONTROL_INST/current_state_0 rising
-
-  Data Path: gpioa_i<0> to i_appscore/DMD_TRIGGER_CONTROL_INST/phased_num_0
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O             4   0.818   0.726  gpioa_i_0_IBUF (gpioa_i_0_IBUF)
-     begin scope: 'i_appscore'
-     begin scope: 'DMD_TRIGGER_CONTROL_INST'
-     LUT3:I0->O            4   0.094   0.352  next_state_0_mux000011 (phased_num_and0000)
-     LDE_1:GE                  0.213          phased_num_3
-    ----------------------------------------
-    Total                      2.203ns (1.125ns logic, 1.078ns route)
-                                       (51.1% logic, 48.9% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'i_appscore/MEMORY_IO_INST/u_mig_top/u_ddr2_top_0/u_mem_if_top/u_phy_top/u_phy_io/gen_dqs[7].u_iob_dqs/dqs_ibuf'
   Total number of paths / destination ports: 1 / 1
 -------------------------------------------------------------------------
@@ -8662,7 +8643,7 @@ Offset:              3.395ns (Levels of Logic = 5)
 Timing constraint: Default OFFSET OUT AFTER for Clock 'i_appsfpga_io/i_PLL_clk/CLKOUT0_BUF'
   Total number of paths / destination ports: 27 / 25
 -------------------------------------------------------------------------
-Offset:              4.519ns (Levels of Logic = 4)
+Offset:              4.513ns (Levels of Logic = 4)
   Source:            i_appscore/MEMORY_IO_INST/mem_preload_done_1q (FF)
   Destination:       led1 (PAD)
   Source Clock:      i_appsfpga_io/i_PLL_clk/CLKOUT0_BUF rising
@@ -8672,14 +8653,14 @@ Offset:              4.519ns (Levels of Logic = 4)
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      FDR:C->Q              2   0.471   0.581  mem_preload_done_1q (mem_preload_done_1q)
-     LUT2:I0->O            3   0.094   0.347  mem_preload_done2 (mem_preload_done)
+     LUT2:I0->O            2   0.094   0.341  mem_preload_done2 (mem_preload_done)
      end scope: 'MEMORY_IO_INST'
      end scope: 'i_appscore'
      INV:I->O              1   0.238   0.336  led11_INV_0 (led1_OBUF)
      OBUF:I->O                 2.452          led1_OBUF (led1)
     ----------------------------------------
-    Total                      4.519ns (3.255ns logic, 1.264ns route)
-                                       (72.0% logic, 28.0% route)
+    Total                      4.513ns (3.255ns logic, 1.258ns route)
+                                       (72.1% logic, 27.9% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'i_appsfpga_io/i_pll_mem/CLKOUT2_BUF'
@@ -8959,15 +8940,15 @@ Delay:               3.738ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 84.00 secs
-Total CPU time to Xst completion: 76.07 secs
+Total REAL time to Xst completion: 80.00 secs
+Total CPU time to Xst completion: 74.66 secs
  
 --> 
 
 
-Total memory usage is 918596 kilobytes
+Total memory usage is 919180 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings : 3728 (   0 filtered)
-Number of infos    :  303 (   0 filtered)
+Number of warnings : 3725 (   0 filtered)
+Number of infos    :  304 (   0 filtered)
 
