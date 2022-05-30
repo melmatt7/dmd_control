@@ -9,11 +9,11 @@ from scipy.io import loadmat  # this is the SciPy module that loads mat-files
 # for tutorials look here: https://seaborn.pydata.org/tutorial.html
 
 sns.set_style("whitegrid")
-results_path = "C:\\Users\\Impact\\Desktop\\Melvin\\dmd_control\\raw_results\\picoscope\\fourier\\"
-name = "200k"
+results_path = "../../../picoscope/fourier/"
+name = "10k"
 file = results_path + name + ".mat"
 
-save_path = "C:\\Users\\Impact\\Desktop\\Melvin\\dmd_control\\DMDController\\PythonUtilities\\fourier_results\\"
+save_path = "fourier_results/"
 
 data = loadmat(file_name=file)
 
@@ -34,12 +34,12 @@ print(int(data["Tstart"][0][0]))
 time = np.linspace(data["Tstart"][0][0],data["Length"][0][0]*data["Tinterval"][0][0],int(data["Length"][0][0]))
 print(time)
 # plt.ylim(0.0065,0.012)
-plt.xlim(0,0.5e6)
+plt.xlim(0,0.40e3)
 plt.plot(time, data["A"])
 plt.plot(time, data["B"])
 # plt.plot(time, data["C"])
 plt.savefig(save_path+name+".svg")
-plt.show()
+# plt.show()
     
 # Manually set your data like this
 #t = np.linspace(0,6*np.pi,1000)
